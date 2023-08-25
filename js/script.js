@@ -4,4 +4,5 @@ $(document).ready(function () {});
 window.onload = function () {
   // AOS 적용
   AOS.init();
+
 };
