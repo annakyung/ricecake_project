@@ -1,1 +1,25 @@
 /* 떡 세트 추천 */
+.recommend {
+    position: relative;
+    display: block;
+    padding: 50px 0;
+    background-color: aqua;
+    height: 400px;
+}
+
+.recommend h2 {
+    position: relative;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 20px 0;
+    background-color: palegoldenrod;
+}
+
+.good-box {
+    position: relative;
+    display: block;
+    width: 290px;
+    height: 410px;
+    background-color: #fff;
+}
