@@ -1,5 +1,6 @@
 /* 공통요소 */
 .clearfix::after {
+  content: "";
   position: relative;
   display: block;
   width: 100%;
@@ -8,4 +9,26 @@
 
 .inner {
   position: relative;
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 전체 레이아웃 */
+.wrap {
+  position: relative;
+  display: block;
+}
+
+/* swiper 기본 셋팅 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
