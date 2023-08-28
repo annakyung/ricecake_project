@@ -1,1 +1,49 @@
 /* 상단 */
+.header{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 80px;
+    background-color: #FFED86;
+}
+.logo > a > img{
+    position: absolute;
+    display: block;
+    width: 150px;
+    top: 5px;
+    left: 100px;
+    padding: 0;
+    margin: 0;
+}
+.top-menu{
+    position: relative;
+    display: block;
+    margin-left: 300px;
+}
+.menu-list{
+    position: absolute;
+    display: flex;
+    top: 35px;
+    left: 250px;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    /* background-color: aqua; */
+}
+/* .menu-list > ul > li:hover{
+    border-bottom: 2px;
+    font-size: 18px;
+} */
+.login{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    top: 30px;
+    right: 30px;
+}
+.login > p{
+    margin-left: 20px;
+}
