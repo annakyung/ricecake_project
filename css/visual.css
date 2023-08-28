@@ -1,1 +1,29 @@
+@charset "utf-8";
 /* 비주얼 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    position: relative;
+    display: block;
+    background-color: #0C2668;
+    width: 100vw;
+    height: 3850px;
+    margin-top: 700px;
+}
+.visual-section-01{
+    position: relative;
+    display: block;
+    width: 1580px;
+    height: 900px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    top: 200px;
+}
+.visual-section-01{
+    position: relative;
+    display: block;
+    
+}
