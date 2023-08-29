@@ -84,12 +84,25 @@
     <![endif]-->
     <script src="js/prefixfree.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
     <!-- css -->
+
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/visual.css" />
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script src="js/brandinfo.js"></script>
+    <script src="js/choosecake.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/promotion.js"></script>
+    <script src="js/quizevent.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/topperevent.js"></script>
+    <script src="js/visual.js"></script>
+
   </head>
   <body>
     <div class="wrap">
@@ -116,19 +129,59 @@
       <!-- 비주얼 -->
       <section class="visual">
         <div class="bg">
-          <div class="event-letter"></div>
+
+          <p class="birth">20th anniversary <br><span>EVENT</span></p>
+          <div class="event-letter">
+            <a href="#" class="letter"><img src="images/letter00.png" alt=""></a>
+            <a href="#" class="letter-open"><img src="images/letter-top.png" alt=""></a>
+            <a href="#" class="letter-logo"><img src="images/main_logo.png" alt=""></a>
+            <a href="#" class="click"><img src="images/click.png" alt=""></a>
+            <p>CLICK</p>
+            <!-- <img src="images/letter01.png" alt="편지봉투"> -->
+          </div>
           <div class="visual-section-01">
-            <p>20주년 기념 50% 할인!</p>
-            <div class="title-name">앙금플라워<br />2단 찜케익</div>
+            <div class="sale-text">
+              <p>20주년 기념 50% 할인!</p>
+            </div>
+            <div class="title-name">앙금플라워<br />	&nbsp;	&nbsp;2단 찜케익</div>
+
             <div class="left-section">
               <a href="#"><img src="images/cake01_detail01.png" alt="" /></a>
               <a href="#"><img src="images/cake01_detail02.png" alt="" /></a>
               <a href="#"><img src="images/cake01_detail03.png" alt="" /></a>
+
+            </div>
+            <div class="price-size">
+
               <p>61,000원</p>
               <p>지름 23cm x 높이 11cm</p>
             </div>
-            <div class="main-section"></div>
-            <div class="right-section"></div>
+            <div class="main-section">
+              <img src="images/cake01-l.png" alt="좌측케이크" class="left-cake">
+              <img src="images/cake01-r.png" alt="우측케이크" class="right-cake">
+              <p class="explane-text">
+                더욱 화려하고 다양해진 모듬떡으로<br>
+                남녀노소 좋아할 맛과 구성으로 이루어진 케익을<br>
+                떡끼의하루에서 선보입니다.
+              </p>
+              <p class="detailed-description01" id="detailed-description01">앙금에 천연 색을 입혀 만든 수제 앙금꽃</p>
+              <p class="detailed-description02" id="detailed-description02">흰 찜설기 사이 달콤한 건포도</p>
+              <p class="detailed-description03" id="detailed-description03">국산 쌀가루로 만들어 부드러운 찜설기 케익과<br>고소한 흑임자 찜설기의 2단 케익</p>
+              <button class="goshopping"><a href="#">구매하러 가기 &nbsp;&nbsp;></a></button>
+            </div>
+            <div class="right-section">
+              <div class="right-cake-box">
+                <div class="right-cake-img">
+                  <a href="#"><img src="images/arrow-top.png" alt=""></a>
+                  <a href="#" class="select"><img src="images/cake01-a.png" alt=""></a>
+                  <a href="#"><img src="images/cake02-a.png" alt=""></a>
+                  <a href="#"><img src="images/cake03-a.png" alt=""></a>
+                  <a href="#"><img src="images/cake04-a.png" alt=""></a>
+                  <a href="#"><img src="images/arrow-bottom.png" alt=""></a>
+                </div>
+                
+              </div>
+            </div>
             <div class="point"></div>
           </div>
           <div class="visual-section-02">
@@ -255,7 +308,26 @@
         <div class="footer-logo"></div>
         <div class="text"></div>
         <div class="umber"></div>
-        <div class="sns-icon"></div>
+        <div class="sns-icon">
+          <ul class="wrapper">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </li>
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fab fa-twitter"></i></span>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
   </body>
