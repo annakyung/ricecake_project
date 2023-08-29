@@ -1,4 +1,9 @@
+@charset "utf-8";
 /* 상단 */
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 .header{
     position: relative;
     display: block;
