@@ -4,22 +4,84 @@
     display: block;
     padding: 50px 0;
     background-color: aqua;
-    height: 400px;
+    height: 800px;
 }
-
+.layout-wrap {
+  position: relative;
+  display: block;
+}
 .recommend h2 {
     position: relative;
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 2rem 0;
     background-color: palegoldenrod;
 }
-
+.recommend-slide {
+    position: relative;
+    display: block;
+}
 .good-box {
     position: relative;
     display: block;
-    width: 290px;
-    height: 410px;
-    background-color: #fff;
+    width: 14.4rem;
+    height: 19.4rem;
+    border-radius: 5%;
+}
+.round {
+    position: absolute;
+    display: block;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 50%;
+}
+.image img {
+    position: absolute;
+    display: block;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10.7rem;
+    height: auto;
+    transition: all ease-in 0.2s;
+}
+.good-box span {
+    position: relative;
+    display: block;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+.good-box a {
+    position: relative;
+    display: block;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 1.6rem;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+}
+.good-box:hover .image img {
+    width: 11.5rem;
+}
+.good-box a:hover {
+    background-color: #e0a13d;
+}
+.slide-control {
+  position: relative;
+  display: block;
+  width: 140px;
+  background-color: blueviolet;
 }

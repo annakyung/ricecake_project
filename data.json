@@ -1,1 +1,76 @@
-{}
+{
+    "recommendgood": [
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        },
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        },
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        },
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        },
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        },
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        },
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        },
+        {
+          "maincolor": "#FFF0D8",
+          "pointcolor": "#FFC361",
+          "pic": "../images/corn.png",
+          "alt": "떡 추천 이미지",
+          "name": "옥수수방울기정떡",
+          "id": "0",
+          "link": "#"
+        }
+      ]
+}
