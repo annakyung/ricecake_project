@@ -6,11 +6,12 @@
   width: 100%;
   clear: both;
 }
-
 .inner {
   position: relative;
   display: block;
-  width: 1200px;
+  /* width: 1300px; */
+  width: 67.7vw;
+  min-width: 390px;
   margin: 0 auto;
 }
 
@@ -25,7 +26,6 @@
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   position: relative;
   display: block;

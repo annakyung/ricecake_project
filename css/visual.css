@@ -1,10 +1,4 @@
-@charset "utf-8";
 /* 비주얼 */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .bg{
     position: relative;
     display: block;

@@ -78,6 +78,7 @@
     <!-- Smooth Scrollbar -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.js"></script>
     <!-- IE 9 이하는 HTML5 태그를 지원하지 않는다. -->
+    <link rel="stylesheet" href="css/reset.css" />
     <!--[if lt IE 9]>
       <script src="js/respond.min.js"></script>
       <script src="js/html5shiv.min.js"></script>
@@ -85,23 +86,22 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- css -->
-
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/visual.css" />
     <!-- js -->
     <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/visual.js"></script>
     <script src="js/brandinfo.js"></script>
     <script src="js/choosecake.js"></script>
+    <script src="js/topperevent.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/promotion.js"></script>
     <script src="js/quizevent.js"></script>
+    <script src="js/promotion.js"></script>
     <script src="js/recommend.js"></script>
     <script src="js/review.js"></script>
-    <script src="js/topperevent.js"></script>
-    <script src="js/visual.js"></script>
+    <script src="js/footer.js"></script>
+    
+    
 
   </head>
   <body>
@@ -262,21 +262,19 @@
       <!-- 떡 세트 추천 -->
       <section class="recommend">
         <div class="inner">
-          <div class="clearfix">
+          <div class="layout-wrap clearfix">
             <h2>함께 선물하면 더 좋은 떡 세트</h2>
 
             <!-- 추천상품 슬라이드 -->
             <div class="recommend-slide" id="data-recommend">
               <!-- 외부데이터 연동 js -->
-              <div class="swiper sw-recommend">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="good-box"></div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <!-- // 추천상품 슬라이드 -->
+
+            <div class="slide-control">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </section>
