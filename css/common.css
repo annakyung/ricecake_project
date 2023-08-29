@@ -18,6 +18,7 @@
 .wrap {
   position: relative;
   display: block;
+  background-color: #ffff;
 }
 
 /* swiper 기본 셋팅 */
