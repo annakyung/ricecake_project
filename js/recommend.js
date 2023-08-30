@@ -1,6 +1,6 @@
 // 떡 세트 추천
 window.addEventListener("load", function () {
-  // =========================================
+    // =========================================
   // data.json을 로딩 (new Date()처럼 복사해온 것)
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function (event) {
@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
   // 추천상품
   let RECOMMEND_GOOD;
   let recommendTag = document.getElementById("data-recommend");
-
+  
   // =========================================
   // 추천 상품 화면 출력 기능
   function showRecommendGood() {
@@ -70,19 +70,6 @@ window.addEventListener("load", function () {
       pagination: {
         el: ".recommend .slide-pg",
         type: "fraction",
-      },
-      breakpoints: {
-        // 반응형 조건 속성
-        640: {
-          // 640 이상일 때
-          spaceBetween: 30,
-        },
-        768: {
-          spaceBetween: 20,
-        },
-        1024: {
-          spaceBetween: 10,
-        },
       },
     });
   }
