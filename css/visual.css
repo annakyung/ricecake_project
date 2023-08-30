@@ -1,9 +1,10 @@
 @charset "utf-8";
 @font-face {
-    font-family: 'HANAMDAUM';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+font-family: "HANAMDAUM";
+src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+    format("woff2");
+font-weight: 400;
+font-style: normal;
 }
 /* 비주얼 */
 * {
@@ -16,15 +17,15 @@ position: relative;
 display: block;
 background-color: #0c2668;
 width: 100vw;
-height: 10500px;
+height: 5185px;
 margin-top: 700px;
 }
 .birth {
 position: absolute;
 display: block;
-font-size: 300px;
-font-weight: 900;
-line-height: 0.7em;
+font-size: 250px;
+font-family: "Shrikhand", cursive;
+line-height: 0.8em;
 color: #606e91;
 z-index: 9;
 top: -620px;
@@ -51,23 +52,26 @@ top: 0;
 /* 편지지 */
 .letter-paper-wrap {
 position: absolute;
-top: 200px;
+top: 120px;
 left: 50%;
 transform: translateX(-50%);
 width: 100%;
-height:100%;
+height: 120%;
 overflow: hidden;
+}
+.letter-paper-wrap-active {
+z-index: 7 !important;
 }
 
 .letter-paper {
 position: absolute;
-top: 150px;
+top: 180px;
 left: 50%;
 transform: translateX(-50%);
-transition: top 1s 0.3s;
+transition: top 1s;
 }
 .letter-paper-active {
-top: -100px !important;
+top: -58px !important;
 }
 
 /* 편지몸통 */
@@ -75,13 +79,18 @@ top: -100px !important;
 position: absolute;
 left: 0;
 top: 0;
+z-index: 5;
+}
+.letter-cover-active {
+z-index: 8 !important;
 }
 
 /* 편지날개 */
 .letter-top {
+z-index: 6;
 position: absolute;
 left: 0;
-top: -2px;
+top: 351px;
 transform-origin: 0 0;
 transform: rotateX(0deg);
 filter: brightness(1);
@@ -90,7 +99,9 @@ transform-style: preserve-3d;
 transition: filter 0.5s, transform 1s;
 cursor: pointer;
 }
+
 .letter-top-active {
+top: 351px !important;
 transform-origin: 0 0 !important;
 transform: rotateX(180deg) !important;
 filter: brightness(0.8) !important;
@@ -98,6 +109,7 @@ filter: brightness(0.8) !important;
 
 /* 로고 */
 .letter-logo {
+z-index: 8;
 position: absolute;
 display: block;
 width: 120px;
@@ -105,13 +117,16 @@ top: 80%;
 left: 50%;
 transform: translate(-50%, 50%);
 z-index: 99999;
+opacity: 1;
+transition: opacity 0.5s;
 }
-.letter-logo-active{
-    position: absolute;
-    display: none;
+.letter-logo-active {
+z-index: 10;
+opacity: 0;
 }
 /* click 아이콘 */
 .letter-click {
+z-index: 9;
 position: absolute;
 display: block;
 top: 75%;
@@ -119,7 +134,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 width: 60px;
 opacity: 1;
-transition: opacity 0.7s;
+transition: opacity 0.3s;
 }
 .letter-click-active {
 opacity: 0 !important;
@@ -134,9 +149,13 @@ z-index: 99999;
 color: #fff;
 font-size: 20px;
 font-weight: 800;
+opacity: 1;
+transition: opacity 0.3s;
+}
+.letter-click-txt-active {
+opacity: 0 !important;
 }
 /* ------------------------편지 봉투----------------- */
-
 
 /* 비주얼 section01 */
 .visual-section-01 {
@@ -175,9 +194,9 @@ top: -2px;
 .title-name {
 position: relative;
 display: block;
-font-family: 'HANAMDAUM';
+font-family: "HANAMDAUM";
 font-size: 100px;
-letter-spacing : -0.03em;
+letter-spacing: -0.03em;
 color: #888888;
 margin-top: 130px;
 line-height: 90px;
@@ -190,7 +209,6 @@ margin-left: 200px;
 /* background-color: #f2cf02; */
 z-index: 999;
 margin-top: 70px;
-
 }
 .left-section > a > img {
 position: relative;
@@ -356,9 +374,8 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-
 /* 비주얼 section02 */
-.visual-section-02{
+.visual-section-02 {
 position: relative;
 display: block;
 width: 1580px;
@@ -392,9 +409,9 @@ top: -2px;
 .title-name {
 position: relative;
 display: block;
-font-family: 'HANAMDAUM';
+font-family: "HANAMDAUM";
 font-size: 100px;
-letter-spacing : -0.03em;
+letter-spacing: -0.03em;
 color: #888888;
 margin-top: 130px;
 line-height: 90px;
@@ -407,7 +424,6 @@ margin-left: 200px;
 /* background-color: #f2cf02; */
 z-index: 999;
 margin-top: 70px;
-
 }
 .left-section > a > img {
 position: relative;
@@ -574,7 +590,7 @@ transform: translate(-50%, -50%);
 }
 
 /* 비주얼 section03 */
-.visual-section-03{
+.visual-section-03 {
 position: relative;
 display: block;
 width: 1580px;
@@ -608,9 +624,9 @@ top: -2px;
 .title-name {
 position: relative;
 display: block;
-font-family: 'HANAMDAUM';
+font-family: "HANAMDAUM";
 font-size: 100px;
-letter-spacing : -0.03em;
+letter-spacing: -0.03em;
 color: #888888;
 margin-top: 130px;
 line-height: 90px;
@@ -623,7 +639,6 @@ margin-left: 200px;
 /* background-color: #f2cf02; */
 z-index: 999;
 margin-top: 70px;
-
 }
 .left-section > a > img {
 position: relative;
@@ -789,8 +804,8 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-    /* 비주얼 section04 */
-.visual-section-04{
+/* 비주얼 section04 */
+.visual-section-04 {
 position: relative;
 display: block;
 width: 1580px;
@@ -824,9 +839,9 @@ top: -2px;
 .title-name {
 position: relative;
 display: block;
-font-family: 'HANAMDAUM';
+font-family: "HANAMDAUM";
 font-size: 100px;
-letter-spacing : -0.03em;
+letter-spacing: -0.03em;
 color: #888888;
 margin-top: 130px;
 line-height: 90px;
@@ -839,7 +854,6 @@ margin-left: 200px;
 /* background-color: #f2cf02; */
 z-index: 999;
 margin-top: 70px;
-
 }
 .left-section > a > img {
 position: relative;
