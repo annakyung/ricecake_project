@@ -41,7 +41,7 @@
   
 }
 .bt:hover {
-  background-color: rgb(119, 119, 119);
+  background-color: #152a5e;
 transition: 0.3s;
 }
 .bt:hover a {

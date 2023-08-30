@@ -1,6 +1,7 @@
 /* 퀴즈 이벤트 */
 .quizevent {
   width: 1920px;
+  height: 2780px;
   background-color: #152a5e;
 }
 .quizevent .inner {
