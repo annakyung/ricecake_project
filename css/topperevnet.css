@@ -1,6 +1,7 @@
 /* 토퍼 무료 제작 이벤트 */
 .topperevent {
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
   background-color: #152a5e;
   margin-bottom: 288px;
 }
