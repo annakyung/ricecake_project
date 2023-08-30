@@ -4,27 +4,22 @@
   box-sizing: border-box;
   outline-style: none;
 }
-
 a {
   text-decoration: none;
   color: #000;
 }
-
 ul,
 li {
   list-style: none;
 }
-
 img {
   max-width: 100%;
   vertical-align: middle;
   border: 0;
 }
-
 html {
   font-size: 16px;
 }
-
 body {
   /* font 셋팅 필요 */
   /* font-family: ; */
@@ -34,5 +29,6 @@ body {
   letter-spacing: 0;
   font-weight: 400;
   color: #000;
+ 
   /* height: 5000px; */
 }

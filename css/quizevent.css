@@ -1,1 +1,14 @@
 /* 퀴즈 이벤트 */
+.quizevent {
+  width: 1920px;
+  background-color: #152a5e;
+}
+.quizevent .inner {
+  width: 1300px;
+  height: 2300px;
+  background-color: #fff8ce;
+}
+.quizevent .inner img {
+  width: 100%;
+  margin: 0 auto;
+}

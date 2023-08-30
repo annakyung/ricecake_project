@@ -1,1 +1,55 @@
 /* 홍보 영상 */
+.promotion {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.promotion video {
+  width: 100%;
+  /* width: 1300px; */
+  min-width: 390px;
+  /* height: 730px; */
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.video h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.bt {
+  /* background-color: rgb(58, 241, 180); */
+  width: 21vw;
+  min-width: 115px;
+  height: auto;
+  height: 85px;
+  line-height: 85px;
+  border: 3px solid #152a5e;
+  text-align: center;
+  margin-bottom: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  
+}
+.bt:hover {
+  background-color: rgb(119, 119, 119);
+transition: 0.3s;
+}
+.bt:hover a {
+  color: #fff;
+}
+.bt1 {
+  margin-right: 20px;
+}
+.bt2 {
+  margin-left: 20px;
+}
