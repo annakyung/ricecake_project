@@ -6,11 +6,22 @@ src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDA
 font-weight: 400;
 font-style: normal;
 }
+@font-face {
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 비주얼 */
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+}
+.bg-wrap{
+    position: relative;
+    display: block;
+
 }
 .bg {
 position: relative;
@@ -19,17 +30,24 @@ background-color: #0c2668;
 width: 100vw;
 height: 5185px;
 margin-top: 700px;
-}
-.birth {
-position: absolute;
-display: block;
-font-size: 250px;
-font-family: "Shrikhand", cursive;
-line-height: 0.8em;
-color: #606e91;
 z-index: 9;
-top: -620px;
-left: 100px;
+}
+/* .bg > video{
+    position: absolute;
+    width: 100%;
+    top: -1000px;
+} */
+.birth {
+    position: absolute;
+    display: block;
+    font-size: 600px;
+    font-family: "Shrikhand", cursive;
+    line-height: 0.9em;
+    color: #b6b6b6;
+    z-index: 9;
+    top: -620px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* 편지 봉투 */
@@ -104,7 +122,7 @@ cursor: pointer;
 top: 351px !important;
 transform-origin: 0 0 !important;
 transform: rotateX(180deg) !important;
-filter: brightness(0.8) !important;
+filter: brightness(0.85) !important;
 }
 
 /* 로고 */
