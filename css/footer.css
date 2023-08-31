@@ -7,7 +7,9 @@
 position: relative;
 display: block;
 background: url("../images/footer-bg.png") no-repeat center; 
-width: 100%;
+width: 100vw;
+/* background-color: #FFEB78; */
+
 }
 .footer-logo{
     position: absolute;
@@ -16,18 +18,13 @@ width: 100%;
     top: 60%;
     left: 150px;
 }
-.sns-icon{
-    position: absolute;
-    display: block;
-    bottom: 50px;
-    right:200px;
-}
+
 .footer-menu{
     position: relative;
     display: block;
     /* background-color: #1877F2; */
-
 }
+
 .footer-menu-list{
     position: relative;
     display: flex;
@@ -39,7 +36,19 @@ width: 100%;
     transform: translateX(-50%);
     font-size: 13px;
 }
+
+.list:hover { 
+    font-weight: 800;
+}
+
 /* sns 아이콘 */
+.sns-icon{
+    position: absolute;
+    display: block;
+top: 50px;
+left: 50%;
+transform: translate(-50%);
+}
 *:focus,
 *:active {
 outline: none !important;

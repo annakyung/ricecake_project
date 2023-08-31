@@ -255,6 +255,13 @@ font-size: 12px;
 }
 
 /* 케이크 상세 설명 */
+
+#container {
+    margin: 20px;
+    width: 400px;
+    height: 8px;
+  }
+  
 .main-section {
 position: relative;
 display: block;
