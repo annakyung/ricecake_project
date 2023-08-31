@@ -28,7 +28,7 @@ position: relative;
 display: block;
 background-color: #0c2668;
 width: 100vw;
-height: 5185px;
+height: 4450px;
 margin-top: 700px;
 z-index: 9;
 }
@@ -174,7 +174,26 @@ transition: opacity 0.3s;
 opacity: 0 !important;
 }
 /* ------------------------편지 봉투----------------- */
-
+/* 공통 css*/
+.main-section > .goshopping > a {
+    position: absolute;
+    display: block;
+    top: -150px;
+    left: 1150px;
+    background-color: #ffffff;
+    border: 2px solid #0c2668;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px 20px;
+    font-weight: 600;
+    }
+    .main-section > .goshopping > a:hover {
+    background-color: #0c2668;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.3s;
+    }
+    
 /* 비주얼 section01 */
 .visual-section-01 {
 position: relative;
@@ -256,16 +275,9 @@ font-size: 12px;
 
 /* 케이크 상세 설명 */
 
-#container {
-    margin: 20px;
-    width: 400px;
-    height: 8px;
-  }
-  
 .main-section {
 position: relative;
 display: block;
-margin-top: 0px;
 }
 .main-section > .left-cake {
 position: absolute;
@@ -273,15 +285,6 @@ display: block;
 width: 300px;
 top: -610px;
 left: 520px;
-}
-.main-section > .left-cake::after {
-content: "";
-position: absolute;
-display: block;
-width: 2px;
-height: 400px;
-background-color: #f2cf02;
-z-index: 999;
 }
 .main-section > .right-cake {
 position: absolute;
@@ -489,15 +492,6 @@ width: 300px;
 top: -610px;
 left: 520px;
 }
-.main-section > .left-cake::after {
-content: "";
-position: absolute;
-display: block;
-width: 2px;
-height: 400px;
-background-color: #f2cf02;
-z-index: 999;
-}
 .main-section > .right-cake {
 position: absolute;
 display: block;
@@ -538,24 +532,6 @@ display: inline-block;
 top: -240px;
 left: 980px;
 font-size: 12px;
-}
-.main-section > .goshopping > a {
-position: absolute;
-display: block;
-top: -150px;
-left: 1150px;
-background-color: #ffffff;
-border: 2px solid #0c2668;
-border-radius: 30px;
-font-size: 15px;
-padding: 5px 20px;
-font-weight: 600;
-}
-.main-section > .goshopping > a:hover {
-background-color: #0c2668;
-color: #fff;
-border-radius: 30px;
-transition: 0.3s;
 }
 
 /* 선택바 */
@@ -703,15 +679,6 @@ display: block;
 width: 300px;
 top: -610px;
 left: 520px;
-}
-.main-section > .left-cake::after {
-content: "";
-position: absolute;
-display: block;
-width: 2px;
-height: 400px;
-background-color: #f2cf02;
-z-index: 999;
 }
 .main-section > .right-cake {
 position: absolute;
@@ -919,15 +886,6 @@ width: 300px;
 top: -610px;
 left: 520px;
 }
-.main-section > .left-cake::after {
-content: "";
-position: absolute;
-display: block;
-width: 2px;
-height: 400px;
-background-color: #f2cf02;
-z-index: 999;
-}
 .main-section > .right-cake {
 position: absolute;
 display: block;
@@ -968,24 +926,6 @@ display: inline-block;
 top: -240px;
 left: 980px;
 font-size: 12px;
-}
-.main-section > .goshopping > a {
-position: absolute;
-display: block;
-top: -150px;
-left: 1150px;
-background-color: #ffffff;
-border: 2px solid #0c2668;
-border-radius: 30px;
-font-size: 15px;
-padding: 5px 20px;
-font-weight: 600;
-}
-.main-section > .goshopping > a:hover {
-background-color: #0c2668;
-color: #fff;
-border-radius: 30px;
-transition: 0.3s;
 }
 
 /* 선택바 */
