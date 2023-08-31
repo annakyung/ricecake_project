@@ -1,6 +1,7 @@
 /* 홍보 영상 */
 .promotion {
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
   height: 100%;
   background-color: #ffffff;
 }
@@ -41,7 +42,7 @@
   
 }
 .bt:hover {
-  background-color: rgb(119, 119, 119);
+  background-color: #152a5e;
 transition: 0.3s;
 }
 .bt:hover a {
