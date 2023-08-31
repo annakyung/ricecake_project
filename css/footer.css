@@ -1,14 +1,44 @@
-@charset "utf-8";
 /* 하단 */
 /*Auther: Abdelrhman Said*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+.footer {
+position: relative;
+display: block;
+background: url("../images/footer-bg.png") no-repeat center; 
+/* width: 100%; */
+width: 100vw;
 }
+.footer-logo{
+    position: absolute;
+    display: block;
+    width: 100px;
+    top: 60%;
+    left: 150px;
+}
+.sns-icon{
+    position: absolute;
+    display: block;
+    bottom: 50px;
+    right:200px;
+}
+.footer-menu{
+    position: relative;
+    display: block;
+    /* background-color: #1877F2; */
 
+}
+.footer-menu-list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+}
 /* sns 아이콘 */
 *:focus,
 *:active {
@@ -33,6 +63,7 @@ list-style: none;
 
 .wrapper .icon {
 position: relative;
+display: block;
 background: #ffffff;
 border-radius: 50%;
 padding: 15px;
