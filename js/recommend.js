@@ -41,13 +41,13 @@ window.addEventListener("load", function () {
     RECOMMEND_GOOD.forEach(function (item) {
       let tag = `
       <div class="swiper-slide">
-        <div class="good-box" style="background-color: ${item.maincolor};">
-          <div class="round" style="background-color: ${item.pointcolor};"></div>
+        <div class="good-box">
+          <div class="round"></div>
           <div class="image">
             <img src="${item.pic}" alt="${item.alt}">
           </div>
           <span>${item.name}</span>
-          <a href="${item.link}" class="recommend-btn" style="background-color: ${item.pointcolor};">제품 보러가기</a>
+          <a href="${item.link}" class="recommend-btn">제품 보러가기</a>
         </div>
       </div>
       `;
