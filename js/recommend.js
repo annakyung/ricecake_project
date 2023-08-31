@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
             <img src="${item.pic}" alt="${item.alt}">
           </div>
           <span>${item.name}</span>
-          <a href="${item.link}" class="recommend-btn" style="background-color: ${item.pointcolor};">사러가기</a>
+          <a href="${item.link}" class="recommend-btn" style="background-color: ${item.pointcolor};">제품 보러가기</a>
         </div>
       </div>
       `;
