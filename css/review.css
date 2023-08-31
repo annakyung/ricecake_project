@@ -3,6 +3,32 @@
     position: relative;
     display: block;
     background-color: #0c2668;
-    width: 100vh;
+    width: 100vw;
     height: 1000px;
+}
+.rolling_panel { 
+    position: relative; 
+    width: 1500px; 
+    height: 290px; 
+    top: 500px;
+    margin: 0 auto; 
+    padding: 0; 
+    border: 1px solid #c7c7c7; 
+    overflow: hidden; 
+}
+.rolling_panel ul {
+    position: absolute; 
+    margin: 5px; 
+    padding: 0; 
+    list-style: none; 
+    margin: 0 auto;
+}
+.rolling_panel ul li {
+    float: left; 
+
+}
+    
+.rolling_panel > ul > li > img{
+    position: relative;
+    display: block;
 }
