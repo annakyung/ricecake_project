@@ -1,1 +1,28 @@
 /* 브랜드 장점 */
+.brandinfo {
+  background-color: #152a5e;
+  position: relative;
+}
+.brandinfo > svg {
+  width: 1860px;
+  margin-left: 40px;
+}
+.line {
+  fill: none;
+  stroke: #ffec76;
+  stroke-width: 16;
+  stroke-miterlimit: 10;
+}
+.info_inner {
+  color: #fff;
+  width: 1300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(66, 255, 192);
+  margin: 0 auto;
+}
+.info_inner ul {
+  display: flex;
+  justify-content: space-around;
+}
