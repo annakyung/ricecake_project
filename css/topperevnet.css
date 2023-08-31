@@ -2,33 +2,32 @@
 .topperevent {
   width: 1920px;
   height: 460px;
-  background-color: #152a5e;
+  /* background-color: #152a5e; */
+  background-color: aqua;
   margin-bottom: 10px;
   display: flex;
-
   align-items: center;
 }
-.topperevent_inner {
-  width: 1300px;
+.topperevent_banner {
+  width: 68vw;
   height: 250px;
   margin: 0 auto;
   background-color: #fff8ce;
-  overflow: hidden;
-
+  /* overflow: hidden; */
 }
-.topperevent_inner h1 {
+.topperevent_banner h1 {
   font-size: 20px;
   font-weight: bold;
   margin-left: 310px;
   padding-top: 30px;
 }
-.topperevent_inner p {
+.topperevent_banner p {
   font-size: 15px;
   margin-left: 310px;
   padding: 15px 0;
 }
 
-.topperevent_inner button {
+.topperevent_banner button {
   width: 220px;
   height: 40px;
   background-color: #6b645f;
@@ -40,7 +39,7 @@
   margin-bottom: 30px;
   border: 1px solid black;
 }
-.topperevent_inner img {
+.topperevent_banner img {
   width: 180px;
   float: right;
   margin-top: 20px;
