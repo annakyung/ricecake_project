@@ -1,8 +1,8 @@
 /* 리뷰창 */
-.review{
-    position: relative;
-    display: block;
-    background-color: #0c2668;
-    width: 100vw;
-    height: 1000px;
+.review {
+  position: relative;
+  display: block;
+  background-color: #0c2668;
+  width: 100vw;
+  height: 1000px;
 }

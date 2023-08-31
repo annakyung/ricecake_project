@@ -1,1 +1,59 @@
 /* 콜라보 떡케이크 (주문제작 & 원데이클래스) */
+.collabo {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 1300px;
+  background-color: aquamarine;
+}
+.collabo-wrap {
+  position: relative;
+  display: block;
+  width: 93rem;
+  padding-top: 10.1794rem;
+  margin: 0 auto;
+}
+.collabo-box {
+  position: relative;
+  display: inline-block;
+  width: 42.5rem;
+  height: auto;
+}
+.collabo-box:first-child {
+  margin-right: 7.5rem;
+}
+.collabo-img {
+  position: relative;
+  display: inline-block;
+  width: 42.5rem;
+  height: 42.5rem;
+  border-radius: 25px;
+}
+.collabo-left {
+  background-color: #98cbea;
+}
+.collabo-right {
+  background-color: #f08e8b;
+}
+.collabo-btn {
+  position: relative;
+  display: block;
+  width: 16.9975rem;
+  height: 3.9375rem;
+  margin: 4rem auto 0;
+  border-radius: 25px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 3.9375rem;
+}
+.collabo-btn i {
+  padding-left: 0.4rem;
+}
+.collabo-box:first-child .collabo-btn {
+  background-color: #f2cf02;
+}
+.collabo-box:last-child .collabo-btn {
+  background-color: #0c2668;
+}
