@@ -1,1 +1,65 @@
 /* 나에게 맞는 떡케이크 찾기 */
+.choosecake {
+  position: relative;
+  display: block;
+  width: 100vw;
+  /* height: 100vh; */
+  height: auto;
+  background-color: #fff;
+}
+.choose-textwrap {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 4.8125rem;
+  padding-bottom: 2.0606rem;
+}
+.choose-textwrap h2 {
+  position: relative;
+  display: block;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.375rem;
+}
+.choose-textwrap span {
+  position: relative;
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 1.375rem;
+}
+.choose-textwrap a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 8.1875rem;
+  height: 2.9894rem;
+  line-height: 2.9894rem;
+  border-radius: 25px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.choose-ricecake {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5.875rem;
+}
+.choose-cakeA {
+  position: relative;
+  display: inline-block;
+  width: 31.25rem;
+  height: 38.25rem;
+  border-radius: 25px;
+  margin-right: 5rem;
+  background-color: beige;
+}
+.choose-cakeB {
+  position: relative;
+  display: inline-block;
+  width: 31.25rem;
+  height: 38.25rem;
+  border-radius: 25px;
+  background-color: beige;
+}
