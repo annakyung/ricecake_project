@@ -1,88 +1,103 @@
 /* 떡 세트 추천 */
 .recommend {
-    position: relative;
-    display: block;
-    padding: 50px 0;
-    background-color: aqua;
-    width: 100vw;
-    height: 800px;
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  background-color: aqua;
+  width: 100vw;
+  height: 800px;
 }
 .layout-wrap {
   position: relative;
   display: block;
 }
 .recommend h2 {
-    position: relative;
-    display: block;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 2rem 0;
-    background-color: palegoldenrod;
+  position: relative;
+  display: block;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  background-color: palegoldenrod;
 }
 .recommend-slide {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 .good-box {
-    position: relative;
-    display: block;
-    width: 14.4rem;
-    height: 19.4rem;
-    border-radius: 5%;
+  position: relative;
+  display: block;
+  width: 17.9988rem;
+  height: 24.3238rem;
+  border-radius: 5%;
 }
 .round {
-    position: absolute;
-    display: block;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 9.6rem;
-    height: 9.6rem;
-    border-radius: 50%;
+  position: absolute;
+  display: block;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11.8275rem;
+  height: 11.8275rem;
+  border-radius: 50%;
 }
 .image img {
-    position: absolute;
-    display: block;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10.7rem;
-    height: auto;
-    transition: all ease-in 0.2s;
+  position: absolute;
+  display: block;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13.3188rem;
+  height: auto;
+  transition: all ease-in 0.2s;
 }
 .good-box span {
-    position: relative;
-    display: block;
-    top: 71%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: bold;
-    font-size: 17px;
+  position: relative;
+  display: block;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3125rem;
+  font-weight: bold;
 }
 .good-box a {
-    position: relative;
-    display: block;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 6rem;
-    height: 1.6rem;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #fff;
+  position: relative;
+  display: block;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8.125rem;
+  height: 2.0569rem;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 2.0569rem;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  color: #fff;
 }
 .good-box:hover .image img {
-    width: 11.5rem;
+  width: 13.875rem;
 }
 .good-box a:hover {
-    background-color: #e0a13d;
+  background-color: #e0a13d;
 }
 .slide-control {
   position: relative;
-  display: block;
-  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 4.063rem;
   background-color: blueviolet;
+}
+
+.slide-control span {
+  position: relative;
+  display: inline-block;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0 0.625rem;
+  border-radius: 50%;
+  background-color: #fff;
 }
