@@ -1,9 +1,16 @@
 /* 토퍼 무료 제작 이벤트 */
+@font-face {
+  font-family: "HANAMDAUM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 .topperevent {
   width: 1920px;
   height: 460px;
-  /* background-color: #152a5e; */
-  background-color: aqua;
+  min-width: 360px;
+  background-color: #152a5e;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -11,40 +18,54 @@
 .topperevent_banner {
   width: 68vw;
   height: 250px;
+  min-width: 360px;
   margin: 0 auto;
   background-color: #fff8ce;
   /* overflow: hidden; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.topperevent_banner h1 {
+.topper_txt h1 {
+  font-size: 28px;
+  font-family: "HANAMDAUM";
+  color: #e5606a;
+  font-weight: bold;
+  padding-top: 40px;
+}
+.topper_txt h2 {
   font-size: 20px;
   font-weight: bold;
-  margin-left: 310px;
-  padding-top: 30px;
+  margin-top: 8px;
 }
-.topperevent_banner p {
+.topper_txt p {
   font-size: 15px;
-  margin-left: 310px;
-  padding: 15px 0;
+  margin: 10px 0 20px 0;
+  font-weight: 600;
+  color: #727272;
 }
-
-.topperevent_banner button {
+.topper_txt button {
   width: 220px;
+  /* width: 12vw; */
   height: 40px;
   background-color: #6b645f;
   border-radius: 10px;
   color: #ffff;
   font-weight: bold;
   font-size: 15px;
-  margin-left: 310px;
   margin-bottom: 30px;
   border: 1px solid black;
+  cursor: pointer;
 }
-.topperevent_banner img {
+.topper_txt button:active {
+  background-color: #534e4a;
+}
+.topper_img img {
   width: 180px;
-  float: right;
-  margin-top: 20px;
+}
+.topper_img {
+  min-width: 360px;
 }
 .topper_parents {
-  margin-right: 100px;
-  padding-top: 30px;
+  margin-top: 50px;
 }

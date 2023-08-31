@@ -1,4 +1,11 @@
 /* 홍보 영상 */
+@font-face {
+  font-family: "HANAMDAUM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 .promotion {
   /* width: 100%; */
   width: 100vw;
@@ -15,9 +22,11 @@
   align-items: center;
   border-radius: 10px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 .video h1 {
-  font-size: 40px;
+  font-family: "HANAMDAUM";
+  font-size: 45px;
   font-weight: 600;
   margin-top: 180px;
   margin-bottom: 100px;
@@ -27,23 +36,22 @@
   justify-content: center;
 }
 .bt {
-  /* background-color: rgb(58, 241, 180); */
   width: 21vw;
   min-width: 115px;
-  height: auto;
-  height: 85px;
-  line-height: 85px;
+  height: 4.2vw;
+  line-height: 4.2vw;
   border: 3px solid #152a5e;
   text-align: center;
   margin-bottom: 200px;
-  font-size: 20px;
+  font-size: 1vw;
   font-weight: bold;
   overflow: hidden;
-  
+  cursor: pointer;
 }
+
 .bt:hover {
   background-color: #152a5e;
-transition: 0.3s;
+  transition: 0.3s;
 }
 .bt:hover a {
   color: #fff;
