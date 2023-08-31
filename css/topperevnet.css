@@ -6,6 +6,7 @@
   font-weight: 400;
   font-style: normal;
 }
+/* 전체 */
 .topperevent {
   width: 1920px;
   height: 460px;
@@ -14,7 +15,9 @@
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
+/* 배너 */
 .topperevent_banner {
   width: 68vw;
   height: 250px;
