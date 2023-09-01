@@ -62,19 +62,19 @@
 }
 
 /* 반응형 */
-@media screen and (max-width: 1080px) {
+@media all and (max-width: 1080px) {
   .bt {
     height: 4.6vw;
     line-height: 4.6vw;
   }
 }
-@media screen and (max-width: 960px) {
+@media all and (max-width: 960px) {
   .bt {
     height: 4.8vw;
     line-height: 4.8vw;
   }
 }
-@media screen and (max-width: 720px) {
+@media all and (max-width: 720px) {
   .button {
     flex-direction: column;
     align-items: center;
@@ -90,7 +90,7 @@
     justify-content: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media all and (max-width: 480px) {
   .bt {
     font-size: 2.5vw;
   }

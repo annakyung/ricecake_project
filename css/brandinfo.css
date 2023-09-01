@@ -1,15 +1,14 @@
 /* 브랜드 장점 */
 /* 전체 */
 .brandinfo {
-  height: 1060px;
   background-color: #152a5e;
+  background-color: #7082af;
+
   position: relative;
-  width: ;
 }
 /* 라인 */
 .brandinfo > svg {
-  width: 1580px;
-  
+  width: 80%;
   margin: 0 auto;
   display: block;
 }
@@ -23,12 +22,8 @@
 /* 개요 */
 .info_inner {
   color: #fff;
-  width: 1300px;
-  height: 500px;
   position: relative;
-  /* top: 0; */
-  /* left: 0; */
-  margin: 0 auto;
+ margin: 0 auto;
 }
 .info_inner ul {
   position: absolute;

@@ -9,22 +9,17 @@
 /* 전체 */
 .topperevent {
   width: 100vw;
-  height: 460px;
+  padding: 100px 0;
   background-color: #152a5e;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+  background-color: #798bbb;
 }
 /* 배너 */
 .topperevent_banner {
-  width: 68vw;
-  height: 250px;
-  min-width: 27vw;
-  margin: 0 auto;
   background-color: #fff8ce;
-  /* overflow: hidden; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  padding: 20px 4% 20px 13%;
   align-items: center;
 }
 .topper_txt h1 {
@@ -32,7 +27,6 @@
   font-family: "HANAMDAUM";
   color: #e5606a;
   font-weight: bold;
-  padding-top: 40px;
 }
 .topper_txt h2 {
   font-size: 20px;
@@ -46,27 +40,40 @@
   color: #727272;
 }
 .topper_txt button {
-  width: 220px;
-  /* width: 12vw; */
-  height: 40px;
+  padding: 10px 20px;
   background-color: #6b645f;
   border-radius: 10px;
   color: #ffff;
   font-weight: bold;
   font-size: 15px;
-  margin-bottom: 30px;
   border: 1px solid black;
   cursor: pointer;
 }
 .topper_txt button:active {
   background-color: #534e4a;
 }
-.topper_img img {
-  width: 180px;
+.topper_txt span {
+  font-size: 15px;
 }
 .topper_img {
-  min-width: 360px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
 }
-.topper_parents {
-  margin-top: 50px;
+.topper_item {
+  width: 50%;
+}
+.topper_item img {
+  width: 100%;
+}
+
+/* 반응형 */
+
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 720px) {
+}
+@media all and (max-width: 480px) {
 }

@@ -1,88 +1,94 @@
 /* 상단 */
-body{
-    overflow-x: hidden;
-    overflow-y: auto;
+body {
+  /* overflow-x: hidden;
+    overflow-y: auto; */
 }
-.header{
-    position: relative;
-    display: block;
-    width: 100vw;
-    height: 100px;
-    /* background-color: #FFED86; */
-    z-index: 9999;
+.header {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100px;
+  /* background-color: #FFED86; */
+  z-index: 9999;
 }
 /*로고 */
-.logo{
-    position: relative;
-    display: block;
-
+.logo {
+  position: relative;
+  display: block;
 }
-.logo img{
-    position: absolute;
-    display: inline-block;
-    width: 170px;
-    padding: 0;
-    margin-left: 150px;
-    top: 10px;
+.logo img {
+  position: absolute;
+  display: inline-block;
+  width: 170px;
+  padding: 0;
+  margin-left: 150px;
+  top: 10px;
 }
 /* 탑메뉴 */
-.top-menu{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100px;
-    /* background-color: antiquewhite; */
+.top-menu {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+  /* background-color: antiquewhite; */
 }
-.menu-list-wrap{
-    position: relative;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    /* background-color: yellowgreen; */
+.menu-list-wrap {
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  /* background-color: yellowgreen; */
 }
-.menu-list{
-    position: relative;
-    display: flex;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    font-family: 'twaysky';
-    /* background-color: aqua; */
+.menu-list {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-family: "twaysky";
+  /* background-color: aqua; */
 }
 /* 호버이벤트 */
-.menu { 
-    color: #000;
-    display:inline-block; 
-    margin:0;
-    text-transform:uppercase; }
-    .menu:after {
-    display:block;
-    content: '';
-    border-bottom: solid 3px #f2cf02;  
-    transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
+.menu {
+  color: #000;
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
 }
-.menu:hover:after { transform: scaleX(1); }
-.menu.fromRight:after{ transform-origin:100% 50%; }
-.menu.fromLeft:after{  transform-origin:  0% 50%; }
+.menu:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #f2cf02;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.menu:hover:after {
+  transform: scaleX(1);
+}
+.menu.fromRight:after {
+  transform-origin: 100% 50%;
+}
+.menu.fromLeft:after {
+  transform-origin: 0% 50%;
+}
 
 /* 로그인 */
-.login{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    font-family: 'twaysky';
-    top: 40%;
-    right: 100px;
-    color: #000000;
+.login {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-family: "twaysky";
+  top: 40%;
+  right: 100px;
+  color: #000000;
 }
-.login > p{
-    margin-left: 20px;
-    color: #000000;
+.login > p {
+  margin-left: 20px;
+  color: #000000;
 }
