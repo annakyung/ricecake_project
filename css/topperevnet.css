@@ -8,18 +8,16 @@
 }
 /* 전체 */
 .topperevent {
-  width: 100vw;
   padding: 100px 0;
   background-color: #152a5e;
-  background-color: #798bbb;
 }
 /* 배너 */
 .topperevent_banner {
+  width: 100%;
   background-color: #fff8ce;
   display: flex;
   justify-content: space-between;
-
-  padding: 20px 4% 20px 13%;
+  padding: 4% 13%;
   align-items: center;
 }
 .topper_txt h1 {
@@ -40,7 +38,7 @@
   color: #727272;
 }
 .topper_txt button {
-  padding: 10px 20px;
+  padding: 3% 8%;
   background-color: #6b645f;
   border-radius: 10px;
   color: #ffff;
@@ -49,8 +47,11 @@
   border: 1px solid black;
   cursor: pointer;
 }
-.topper_txt button:active {
+.topper_txt button:hover {
   background-color: #534e4a;
+}
+.topper_txt button:active {
+  background-color: #6b645f;
 }
 .topper_txt span {
   font-size: 15px;
@@ -61,7 +62,7 @@
   align-items: end;
 }
 .topper_item {
-  width: 50%;
+  width: 30%;
 }
 .topper_item img {
   width: 100%;
@@ -72,8 +73,22 @@
 @media all and (max-width: 1080px) {
 }
 @media all and (max-width: 960px) {
+  .topperevent_banner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .topper_txt {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .topper_img {
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 3%;
+  }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 860px) {
 }
 @media all and (max-width: 480px) {
 }
