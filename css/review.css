@@ -4,5 +4,63 @@
   display: block;
   background-color: #0c2668;
   width: 100vw;
-  height: 1000px;
+  height: 1200px;
+
+}
+.review > .best{
+    position: absolute;
+    display: block;
+    margin-top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rolling_panel { 
+    position: relative; 
+    width: 1500px; 
+    height: 290px; 
+    top: 700px;
+    margin: 0 auto; 
+    padding: 0; 
+    /* border: 1px solid #c7c7c7;  */
+    overflow: hidden; 
+}
+.rolling_panel ul {
+    position: absolute; 
+    margin: 5px; 
+    padding: 0; 
+    list-style: none; 
+    margin: 0 auto;
+}
+.rolling_panel ul li {
+    float: left; 
+
+}
+    
+.rolling_panel > ul > li > img{
+    position: relative;
+    display: block;
+}
+.review-btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 500px;
+    /* background-color: aqua; */
+    top: 750px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.review-btn > button{
+    background: none;
+    border: 2px solid #fff;
+    padding: 20px 10px;
+    width: 230px;
+    color: #fff;
+}
+.review-btn > button:hover{
+    background-color: #fff;
+    color: #0c2668;
+    font-weight: 800;
 }
