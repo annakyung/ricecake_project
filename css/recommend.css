@@ -2,10 +2,9 @@
 .recommend {
   position: relative;
   display: block;
-  padding: 50px 0;
-  background-color: aqua;
+  padding: 3.125rem 0;
   width: 100vw;
-  height: 800px;
+  background-color: #fff;
 }
 .layout-wrap {
   position: relative;
@@ -17,7 +16,7 @@
   font-size: 1.75rem;
   font-weight: bold;
   padding: 2rem 0;
-  background-color: palegoldenrod;
+  /* background-color: palegoldenrod; */
 }
 .recommend-slide {
   position: relative;
@@ -29,6 +28,9 @@
   width: 17.9988rem;
   height: 24.3238rem;
   border-radius: 5%;
+  /* background-color: #fff0d8; */
+  /* background-color: #152a5e; */
+  background-color: #dce2f0;
 }
 .round {
   position: absolute;
@@ -39,6 +41,10 @@
   width: 11.8275rem;
   height: 11.8275rem;
   border-radius: 50%;
+  /* background-color: #ffc361; */
+  /* background-color: #fff6bf; */
+  /* background-color: #ffeb78; */
+  background-color: #50586c;
 }
 .image img {
   position: absolute;
@@ -60,6 +66,7 @@
   font-weight: bold;
   font-size: 1.3125rem;
   font-weight: bold;
+  color: rgb(36, 40, 48);
 }
 .good-box a {
   position: relative;
@@ -75,6 +82,11 @@
   font-size: 0.9375rem;
   font-weight: bold;
   color: #fff;
+  /* background-color: #ffc361; */
+  /* background-color: #fff6bf; */
+  /* background-color: #ffeb78; */
+  background-color: #50586C;
+  transition: all ease-in 0.1s;
 }
 .good-box:hover .image img {
   width: 13.875rem;
@@ -89,9 +101,9 @@
   align-items: center;
   width: 100%;
   margin-top: 4.063rem;
-  background-color: blueviolet;
+  margin-bottom: 3.125rem;
+  /* background-color: blueviolet; */
 }
-
 .slide-control span {
   position: relative;
   display: inline-block;
@@ -99,5 +111,5 @@
   height: 1.125rem;
   margin: 0 0.625rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #d9d9d9;
 }
