@@ -8,22 +8,22 @@
   display: block;
   width: 100%;
   height: 100px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 /*로고 */
 .logo {
   position: relative;
   display: block;
   width: 25%;
-  background-color: firebrick;
 }
 .logo img {
   position: absolute;
   display: inline-block;
   width: 50%;
+
   padding: 0;
   margin-left: 150px;
-  background-color: violet;
+  /* background-color: violet; */
 }
 .menu-list-wrap {
   position: relative;
@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%);
   width: 50%;
   height: 100%;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   
 }
 .menu-list {
@@ -46,7 +46,7 @@
   align-items: center;
   font-weight: 600;
   font-family: "twaysky";
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .menu {
@@ -85,11 +85,11 @@
   top: 40%;
   width: 10%;
   color: #000000;
-  background-color: #f2cf02;
+  /* background-color: #f2cf02; */
   right: 0;
 }
 .login > p {
-  background-color: turquoise;
+  /* background-color: turquoise; */
   margin-left: 20px;
   color: #000000;
 }

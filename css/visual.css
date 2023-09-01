@@ -102,16 +102,16 @@ filter: brightness(0.85) !important;
 
 /* 로고 */
 .letter-logo {
-z-index: 8;
 position: absolute;
 display: block;
-width: 120px;
-top: 80%;
+top: 20%;
 left: 50%;
 transform: translate(-50%, 50%);
 z-index: 99999;
 opacity: 1;
 transition: opacity 0.5s;
+/* background-color: aqua; */
+width: 10px;
 }
 .letter-logo-active {
 z-index: 10;
