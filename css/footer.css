@@ -25,7 +25,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html,
+/* html,
 body {
   display: grid;
   height: 100%;
@@ -33,7 +33,7 @@ body {
   font-family: "Poppins", sans-serif;
   place-items: center;
   background: linear-gradient(315deg, #ffffff, #d7e1ec);
-}
+} */
 
 .wrapper {
   display: inline-flex;
