@@ -4,7 +4,11 @@
     display: block;
     background-color: #0c2668;
     width: 100vw;
+<<<<<<< HEAD
     height: 1200px;
+=======
+    height: 1000px;
+>>>>>>> jueun
 }
 .review > .best{
     position: absolute;
