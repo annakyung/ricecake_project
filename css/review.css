@@ -16,8 +16,8 @@
 }
 .rolling_panel { 
     position: relative; 
-    width: 1500px; 
-    height: 290px; 
+    width: 75%; 
+    height: 20.1389vw; 
     top: 700px;
     margin: 0 auto; 
     padding: 0; 

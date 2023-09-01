@@ -1,980 +1,152 @@
 @font-face {
-  font-family: "HANAMDAUM";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "HANAMDAUM";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 @font-face {
-  font-family: "twaysky";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 /* 비주얼 */
-.bg-wrap {
-  position: relative;
-  display: block;
+.bg-wrap{
+    position: relative;
+    display: block;
 }
-.bg {
+.visual {
 position: relative;
-display: block;
-background-color: #152a5e;
-width: 100vw;
-height: 0px;
-margin-top: 700px;
-z-index: 9;
+background-color: #fff;
+width: 100%;
+text-align: center;
+padding: 30px 0vw;
 }
-/* .bg > video{
-    position: absolute;
-    width: 100%;
-    top: -1000px;
-} */
-.birth {
-  position: absolute;
-  display: block;
-  font-size: 600px;
-  font-family: "Shrikhand", cursive;
-  line-height: 0.9em;
-  color: #b6b6b6;
-  z-index: 9;
-  top: -620px;
-  left: 50%;
-  transform: translateX(-50%);
+.birth-txt {
+    font-size: 33vw;
+    font-family: "Shrikhand", cursive;
+    color: #b6b6b6;
+    line-height: 1;
 }
 
 /* 편지 봉투 */
 .event-letter {
-  position: absolute;
-  left: 50%;
-  top: -650px;
-  transform: translateX(-50%);
-  width: 970px;
-  height: 630px;
-  z-index: 99;
+position: absolute;
+left: 50%;
+bottom: 0%;
+transform: translateX(-50%);
+width: 50%;
+height: 32.813vw;
+z-index: 99;
 }
+.event-letter img{width: 100%;}
 /* 편지 bg */
 .letter-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
 }
 
 /* 편지지 */
 .letter-paper-wrap {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 120%;
-  overflow: hidden;
+position: absolute;
+top: 6.250vw;
+left: 00%;
+width: 100%;
+height: 120%;
+overflow: hidden;
+left: 0;
 }
 .letter-paper-wrap-active {
-  z-index: 7 !important;
+z-index: 7 !important;
 }
 
 .letter-paper {
-  position: absolute;
-  top: 180px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: top 1s;
+position: absolute;
+top: 9.3750vw;
+transition: top 1s;
+left: 0;
 }
 .letter-paper-active {
-  top: -58px !important;
+top: -58px !important;
 }
 
 /* 편지몸통 */
 .letter-cover {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 5;
+position: relative;
+z-index: 5;
 }
 .letter-cover-active {
-  z-index: 8 !important;
+z-index: 8 !important;
 }
 
 /* 편지날개 */
 .letter-top {
-  z-index: 6;
-  position: absolute;
-  left: 0;
-  top: 351px;
-  transform-origin: 0 0;
-  transform: rotateX(0deg);
-  filter: brightness(1);
-  /* backface-visibility: hidden; */
-  transform-style: preserve-3d;
-  transition: filter 0.5s, transform 1s;
-  cursor: pointer;
+    left: 0;
+z-index: 6;
+position: absolute;
+top: 54.5%;
+transform-origin: 0 0;
+filter: brightness(1);
+/* backface-visibility: hidden; */
+transform-style: preserve-3d;
+transition: filter 0.5s, transform 1s;
+cursor: pointer;
 }
 
 .letter-top-active {
-  top: 351px !important;
-  transform-origin: 0 0 !important;
-  transform: rotateX(180deg) !important;
-  filter: brightness(0.85) !important;
+transform: rotateX(180deg) !important;
+filter: brightness(0.85) !important;
 }
 
 /* 로고 */
 .letter-logo {
-  z-index: 8;
-  position: absolute;
-  display: block;
-  width: 120px;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  z-index: 99999;
-  opacity: 1;
-  transition: opacity 0.5s;
+position: absolute;
+display: block;
+top: 20%;
+left: 50%;
+transform: translate(-50%, 50%);
+z-index: 99999;
+opacity: 1;
+transition: opacity 0.5s;
+/* background-color: aqua; */
+width: 10px;
 }
 .letter-logo-active {
-  z-index: 10;
-  opacity: 0;
+z-index: 10;
+opacity: 0;
 }
 /* click 아이콘 */
-.letter-click {
-  z-index: 9;
-  position: absolute;
-  display: block;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  opacity: 1;
-  transition: opacity 0.3s;
+.event-letter .letter-click {
+z-index: 9;
+position: absolute;
+display: block;
+top: 75%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 60px;
+opacity: 1;
+width: 0px;
+transition: opacity 0.3s;
 }
 .letter-click-active {
-  opacity: 0 !important;
+opacity: 0 !important;
 }
 .letter-click-txt {
-  position: absolute;
-  display: inline-block;
-  top: 82%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 99999;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 800;
-  opacity: 1;
-  transition: opacity 0.3s;
+position: absolute;
+display: inline-block;
+top: 82%;
+left: 50%;
+transform: translateX(-50%);
+z-index: 99999;
+color: #fff;
+font-size: 20px;
+font-weight: 800;
+opacity: 1;
+transition: opacity 0.3s;
 }
 .letter-click-txt-active {
-  opacity: 0 !important;
+opacity: 0 !important;
 }
 /* ------------------------편지 봉투----------------- */
-
-/* 공통 css*/
-.main-section > .goshopping > a {
-  position: absolute;
-  display: block;
-  top: -150px;
-  left: 1150px;
-  background-color: #ffffff;
-  border: 2px solid #0c2668;
-  border-radius: 30px;
-  font-size: 15px;
-  padding: 5px 20px;
-  font-weight: 600;
-}
-.main-section > .goshopping > a:hover {
-  background-color: #0c2668;
-  color: #fff;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-/* 비주얼 section01 */
-.visual-section-01 {
-  position: relative;
-  display: block;
-  width: 1580px;
-  height: 900px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  top: 230px;
-}
-.visual-section-01 {
-  position: relative;
-  display: block;
-}
-.sale-text {
-  position: relative;
-  display: block;
-  width: 180px;
-  height: 30px;
-  background-color: #0c2668;
-  border-radius: 30px;
-  top: 100px;
-  left: 100px;
-  z-index: 999;
-}
-.sale-text > p {
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 10px;
-  left: 5px;
-  top: -2px;
-}
-.title-name {
-  position: relative;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 100px;
-  letter-spacing: -0.03em;
-  color: #888888;
-  margin-top: 130px;
-  line-height: 90px;
-  margin-left: 100px;
-}
-.left-section {
-  position: relaaative;
-  display: inline-block;
-  margin-left: 200px;
-  /* background-color: #f2cf02; */
-  z-index: 999;
-  margin-top: 70px;
-}
-.left-section > a > img {
-  position: relative;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-section > a:hover img {
-  transform: scale(1.4);
-  z-index: 999;
-  /* border: 3px solid #0C2668; */
-}
-.price-size {
-  position: absolute;
-  display: inline-block;
-  top: 420px;
-  left: 400px;
-  /* background-color: yellowgreen; */
-  font-size: 12px;
-}
-
-/* 케이크 상세 설명 */
-
-.main-section {
-  position: relative;
-  display: block;
-}
-.main-section > .left-cake {
-  position: absolute;
-  display: block;
-  width: 300px;
-  top: -610px;
-  left: 520px;
-}
-.main-section > .right-cake {
-  position: absolute;
-  display: block;
-  width: 240px;
-  top: -500px;
-  left: 850px;
-  opacity: 50%;
-  filter: blur(1.5px);
-  -webkit-filter: blur(1.5px);
-}
-.main-section > .explane-text {
-  position: absolute;
-  display: block;
-  top: -140px;
-  left: 485px;
-  text-align: right;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #888;
-}
-.main-section > .detailed-description01 {
-  position: absolute;
-  display: inline-block;
-  top: -570px;
-  left: 950px;
-  font-size: 12px;
-}
-.main-section > .detailed-description02 {
-  position: absolute;
-  display: inline-block;
-  top: -450px;
-  left: 1000px;
-  font-size: 12px;
-}
-.main-section > .detailed-description03 {
-  position: absolute;
-  display: inline-block;
-  top: -240px;
-  left: 980px;
-  font-size: 12px;
-}
-.main-section > .goshopping > a {
-  position: absolute;
-  display: block;
-  top: -150px;
-  left: 1150px;
-  background-color: #ffffff;
-  border: 2px solid #0c2668;
-  border-radius: 30px;
-  font-size: 15px;
-  padding: 5px 20px;
-  font-weight: 600;
-}
-.main-section > .goshopping > a:hover {
-  background-color: #0c2668;
-  color: #fff;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-/* 선택바 */
-.right-section {
-  position: relative;
-  display: block;
-}
-.right-cake-box {
-  position: absolute;
-  display: block;
-  top: -750px;
-  right: 50px;
-  width: 120px;
-  height: 650px;
-  /* opacity: 30%; */
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 100px;
-}
-.right-cake-img {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: #F2CF02; */
-  width: 90px;
-  height: 500px;
-  z-index: 999;
-}
-.right-cake-img > a > img {
-  position: relative;
-  display: block;
-  border-radius: 100%;
-  width: 70px;
-}
-.right-cake-img > a:hover > img {
-  transform: scale(1.3);
-  transition: all 0.2s linear;
-}
-.right-cake-img > .select {
-  position: relative;
-  display: block;
-  /* background-color: #bdcaec; */
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-}
-.right-cake-img > .select > img {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* 비주얼 section02 */
-.visual-section-02 {
-  position: relative;
-  display: block;
-  width: 1580px;
-  height: 900px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  margin-top: 134px;
-  top: 230px;
-}
-
-.sale-text {
-  position: relative;
-  display: block;
-  width: 180px;
-  height: 30px;
-  background-color: #0c2668;
-  border-radius: 30px;
-  top: 100px;
-  left: 100px;
-  z-index: 999;
-}
-.sale-text > p {
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 10px;
-  left: 5px;
-  top: -2px;
-}
-.title-name {
-  position: relative;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 100px;
-  letter-spacing: -0.03em;
-  color: #888888;
-  margin-top: 130px;
-  line-height: 90px;
-  margin-left: 100px;
-}
-.left-section {
-  position: relaaative;
-  display: inline-block;
-  margin-left: 200px;
-  /* background-color: #f2cf02; */
-  z-index: 999;
-  margin-top: 70px;
-}
-.left-section > a > img {
-  position: relative;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-section > a:hover img {
-  transform: scale(1.4);
-  z-index: 999;
-  /* border: 3px solid #0C2668; */
-}
-.price-size {
-  position: absolute;
-  display: inline-block;
-  top: 420px;
-  left: 400px;
-  /* background-color: yellowgreen; */
-  font-size: 12px;
-}
-
-/* 케이크 상세 설명 */
-.main-section {
-  position: relative;
-  display: block;
-  margin-top: 0px;
-}
-.main-section > .left-cake {
-  position: absolute;
-  display: block;
-  width: 300px;
-  top: -610px;
-  left: 520px;
-}
-.main-section > .right-cake {
-  position: absolute;
-  display: block;
-  width: 240px;
-  top: -500px;
-  left: 850px;
-  opacity: 50%;
-  filter: blur(1.5px);
-  -webkit-filter: blur(1.5px);
-}
-.main-section > .explane-text {
-  position: absolute;
-  display: block;
-  top: -140px;
-  left: 485px;
-  text-align: right;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #888;
-}
-.main-section > .detailed-description01 {
-  position: absolute;
-  display: inline-block;
-  top: -570px;
-  left: 950px;
-  font-size: 12px;
-}
-.main-section > .detailed-description02 {
-  position: absolute;
-  display: inline-block;
-  top: -450px;
-  left: 1000px;
-  font-size: 12px;
-}
-.main-section > .detailed-description03 {
-  position: absolute;
-  display: inline-block;
-  top: -240px;
-  left: 980px;
-  font-size: 12px;
-}
-
-/* 선택바 */
-.right-section {
-  position: relative;
-  display: block;
-}
-.right-cake-box {
-  position: absolute;
-  display: block;
-  top: -750px;
-  right: 50px;
-  width: 120px;
-  height: 650px;
-  /* opacity: 30%; */
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 100px;
-}
-.right-cake-img {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: #F2CF02; */
-  width: 90px;
-  height: 500px;
-  z-index: 999;
-}
-.right-cake-img > a > img {
-  position: relative;
-  display: block;
-  border-radius: 100%;
-  width: 70px;
-}
-.right-cake-img > a:hover > img {
-  transform: scale(1.3);
-  transition: all 0.2s linear;
-}
-.right-cake-img > .select {
-  position: relative;
-  display: block;
-  /* background-color: #bdcaec; */
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-}
-.right-cake-img > .select > img {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* 비주얼 section03 */
-.visual-section-03 {
-  position: relative;
-  display: block;
-  width: 1580px;
-  height: 900px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  margin-top: 134px;
-  top: 230px;
-}
-
-.sale-text {
-  position: relative;
-  display: block;
-  width: 180px;
-  height: 30px;
-  background-color: #0c2668;
-  border-radius: 30px;
-  top: 100px;
-  left: 100px;
-  z-index: 999;
-}
-.sale-text > p {
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 10px;
-  left: 5px;
-  top: -2px;
-}
-.title-name {
-  position: relative;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 100px;
-  letter-spacing: -0.03em;
-  color: #888888;
-  margin-top: 130px;
-  line-height: 90px;
-  margin-left: 100px;
-}
-.left-section {
-  position: relaaative;
-  display: inline-block;
-  margin-left: 200px;
-  /* background-color: #f2cf02; */
-  z-index: 999;
-  margin-top: 70px;
-}
-.left-section > a > img {
-  position: relative;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-section > a:hover img {
-  transform: scale(1.4);
-  z-index: 999;
-  /* border: 3px solid #0C2668; */
-}
-.price-size {
-  position: absolute;
-  display: inline-block;
-  top: 420px;
-  left: 400px;
-  /* background-color: yellowgreen; */
-  font-size: 12px;
-}
-
-/* 케이크 상세 설명 */
-.main-section {
-  position: relative;
-  display: block;
-  margin-top: 0px;
-}
-.main-section > .left-cake {
-  position: absolute;
-  display: block;
-  width: 300px;
-  top: -610px;
-  left: 520px;
-}
-.main-section > .right-cake {
-  position: absolute;
-  display: block;
-  width: 240px;
-  top: -500px;
-  left: 850px;
-  opacity: 50%;
-  filter: blur(1.5px);
-  -webkit-filter: blur(1.5px);
-}
-.main-section > .explane-text {
-  position: absolute;
-  display: block;
-  top: -140px;
-  left: 485px;
-  text-align: right;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #888;
-}
-.main-section > .detailed-description01 {
-  position: absolute;
-  display: inline-block;
-  top: -570px;
-  left: 950px;
-  font-size: 12px;
-}
-.main-section > .detailed-description02 {
-  position: absolute;
-  display: inline-block;
-  top: -450px;
-  left: 1000px;
-  font-size: 12px;
-}
-.main-section > .detailed-description03 {
-  position: absolute;
-  display: inline-block;
-  top: -240px;
-  left: 980px;
-  font-size: 12px;
-}
-.main-section > .goshopping > a {
-  position: absolute;
-  display: block;
-  top: -150px;
-  left: 1150px;
-  background-color: #ffffff;
-  border: 2px solid #0c2668;
-  border-radius: 30px;
-  font-size: 15px;
-  padding: 5px 20px;
-  font-weight: 600;
-}
-.main-section > .goshopping > a:hover {
-  background-color: #0c2668;
-  color: #fff;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-/* 선택바 */
-.right-section {
-  position: relative;
-  display: block;
-}
-.right-cake-box {
-  position: absolute;
-  display: block;
-  top: -750px;
-  right: 50px;
-  width: 120px;
-  height: 650px;
-  /* opacity: 30%; */
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 100px;
-}
-.right-cake-img {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: #F2CF02; */
-  width: 90px;
-  height: 500px;
-  z-index: 999;
-}
-.right-cake-img > a > img {
-  position: relative;
-  display: block;
-  border-radius: 100%;
-  width: 70px;
-}
-.right-cake-img > a:hover > img {
-  transform: scale(1.3);
-  transition: all 0.2s linear;
-}
-.right-cake-img > .select {
-  position: relative;
-  display: block;
-  /* background-color: #bdcaec; */
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-}
-.right-cake-img > .select > img {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* 비주얼 section04 */
-.visual-section-04 {
-  position: relative;
-  display: block;
-  width: 1580px;
-  height: 900px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  margin-top: 134px;
-  top: 230px;
-}
-
-.sale-text {
-  position: relative;
-  display: block;
-  width: 180px;
-  height: 30px;
-  background-color: #0c2668;
-  border-radius: 30px;
-  top: 100px;
-  left: 100px;
-  z-index: 999;
-}
-.sale-text > p {
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 10px;
-  left: 5px;
-  top: -2px;
-}
-.title-name {
-  position: relative;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 100px;
-  letter-spacing: -0.03em;
-  color: #888888;
-  margin-top: 130px;
-  line-height: 90px;
-  margin-left: 100px;
-}
-.left-section {
-  position: relaaative;
-  display: inline-block;
-  margin-left: 200px;
-  /* background-color: #f2cf02; */
-  z-index: 999;
-  margin-top: 70px;
-}
-.left-section > a > img {
-  position: relative;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-section > a:hover img {
-  transform: scale(1.4);
-  z-index: 999;
-  /* border: 3px solid #0C2668; */
-}
-.price-size {
-  position: absolute;
-  display: inline-block;
-  top: 420px;
-  left: 400px;
-  /* background-color: yellowgreen; */
-  font-size: 12px;
-}
-
-/* 케이크 상세 설명 */
-.main-section {
-  position: relative;
-  display: block;
-  margin-top: 0px;
-}
-.main-section > .left-cake {
-  position: absolute;
-  display: block;
-  width: 300px;
-  top: -610px;
-  left: 520px;
-}
-.main-section > .right-cake {
-  position: absolute;
-  display: block;
-  width: 240px;
-  top: -500px;
-  left: 850px;
-  opacity: 50%;
-  filter: blur(1.5px);
-  -webkit-filter: blur(1.5px);
-}
-.main-section > .explane-text {
-  position: absolute;
-  display: block;
-  top: -140px;
-  left: 485px;
-  text-align: right;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #888;
-}
-.main-section > .detailed-description01 {
-  position: absolute;
-  display: inline-block;
-  top: -570px;
-  left: 950px;
-  font-size: 12px;
-}
-.main-section > .detailed-description02 {
-  position: absolute;
-  display: inline-block;
-  top: -450px;
-  left: 1000px;
-  font-size: 12px;
-}
-.main-section > .detailed-description03 {
-  position: absolute;
-  display: inline-block;
-  top: -240px;
-  left: 980px;
-  font-size: 12px;
-}
-
-/* 선택바 */
-.right-section {
-  position: relative;
-  display: block;
-}
-.right-cake-box {
-  position: absolute;
-  display: block;
-  top: -750px;
-  right: 50px;
-  width: 120px;
-  height: 650px;
-  /* opacity: 30%; */
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 100px;
-}
-.right-cake-img {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  /* background-color: #F2CF02; */
-  width: 90px;
-  height: 500px;
-  z-index: 999;
-}
-.right-cake-img > a > img {
-  position: relative;
-  display: block;
-  border-radius: 100%;
-  width: 70px;
-}
-.right-cake-img > a:hover > img {
-  transform: scale(1.3);
-  transition: all 0.2s linear;
-}
-.right-cake-img > .select {
-  position: relative;
-  display: block;
-  /* background-color: #bdcaec; */
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-}
-.right-cake-img > .select > img {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
