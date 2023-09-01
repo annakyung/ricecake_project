@@ -37,8 +37,15 @@
   border-radius: 25px;
   background-color: #000;
   color: #fff;
+  border: 2px solid #000;
   font-size: 1.25rem;
   font-weight: bold;
+  transition: all ease-in 0.2s;
+}
+.choose-textwrap a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
 }
 .choose-ricecake {
   position: relative;
@@ -53,7 +60,8 @@
   height: 38.25rem;
   border-radius: 25px;
   margin-right: 5rem;
-  background-color: beige;
+  background: url("../images/choose-cakeA.jpg") no-repeat center;
+  background-size: cover;
 }
 .choose-cakeB {
   position: relative;
@@ -61,5 +69,6 @@
   width: 31.25rem;
   height: 38.25rem;
   border-radius: 25px;
-  background-color: beige;
+  background: url("../images/choose-cakeB.jpg") no-repeat center;
+  background-size: cover;
 }
