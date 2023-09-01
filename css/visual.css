@@ -18,13 +18,13 @@
   display: block;
 }
 .bg {
-  position: relative;
-  display: block;
-  background-color: #152a5e;
-  width: 100vw;
-  height: 4232px;
-  margin-top: 700px;
-  z-index: 9;
+position: relative;
+display: block;
+background-color: #152a5e;
+width: 100vw;
+height: 0px;
+margin-top: 700px;
+z-index: 9;
 }
 /* .bg > video{
     position: absolute;
@@ -168,6 +168,7 @@
   opacity: 0 !important;
 }
 /* ------------------------편지 봉투----------------- */
+
 /* 공통 css*/
 .main-section > .goshopping > a {
   position: absolute;
