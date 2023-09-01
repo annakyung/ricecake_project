@@ -34,8 +34,25 @@
   font-weight: 500;
   margin-top: 3%;
   line-height: 200%;
+  text-align: center;
 }
-
+.quiz h1 {
+  margin: 0 auto;
+}
+.quiz_multi {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.quiz_multi li {
+  background-color: #cedaf6;
+  border-radius: 20px;
+  box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.3);
+  padding: 4% 2%;
+  font-size: 3vw;
+  margin: 0 10px;
+}
 .quiz_info {
   padding: 0 80px;
   margin-top: 3%;
@@ -44,7 +61,7 @@
   width: 100%;
 }
 .sp_first {
-  font-weight: 600;
+  font-weight: 900;
 }
 .sp_color {
   font-weight: 900;
