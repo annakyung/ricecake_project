@@ -9,51 +9,175 @@
 .collabo-wrap {
   position: relative;
   display: block;
-  width: 93rem;
-  padding-top: 10.1794rem;
+  width: 77.5vw;
+  padding-top: 8.483vw;
   margin: 0 auto;
 }
 .collabo-box {
   position: relative;
   display: inline-block;
-  width: 42.5rem;
+  width: 35.417vw;
   height: auto;
 }
 .collabo-box:first-child {
-  margin-right: 7.5rem;
+  margin-right: 6.25vw;
 }
 .collabo-img {
   position: relative;
   display: inline-block;
-  width: 42.5rem;
-  height: 42.5rem;
-  border-radius: 25px;
+  width: 35.417vw;
+  height: 35.417vw;
+  padding: 3.542vw 0;
+  border-radius: 1.302vw;
+  box-shadow: 0 0.521vw 0.521vw rgba(0, 0, 0, 25%);
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
 }
 .collabo-left {
   background-color: #98cbea;
 }
 .collabo-right {
-  background-color: #f08e8b;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../images/creamyhouse_cake01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.collabo-img p {
+  position: relative;
+  display: block;
+  font-size: 1.042vw;
+}
+.collabo-img p:first-child {
+  display: inline-block;
+}
+.collabo-img img {
+  position: relative;
+  display: block;
+}
+.collabo-img img:nth-child(2) {
+  position: relative;
+  display: inline-block;
+  width: 10vw;
+  margin-left: 0.4vw;
+}
+.collabo-img img:nth-child(3) {
+  width: 21.563vw;
+  margin: 0 auto;
+}
+.collabo-textwrap {
+  position: relative;
+  display: block;
+  top: -4%;
+}
+.collabo-textwrap p {
+  font-weight: normal;
+}
+.collabo-textwrap strong {
+  color: #22459b;
+}
+.collabo-textwrap p strong {
+  font-size: 1.302vw;
+  font-weight: bold;
+}
+.collabo-textwrap h2 {
+  position: relative;
+  display: block;
+  font-size: 1.823vw;
+  line-height: 2.5vw;
+  margin-top: 0.8vw;
+}
+.collabo-round {
+  position: absolute;
+  display: block;
+  width: 0.365vw;
+  height: 0.365vw;
+  border-radius: 50%;
+  background-color: #22459b;
+}
+.collabo-round:nth-child(3) {
+  top: 23%;
+  left: 44.2%;
+}
+.collabo-round:nth-child(4) {
+  top: 23%;
+  left: 49.4%;
+}
+.collabo-img img:nth-child(5) {
+  position: absolute;
+  display: block;
+  width: 16vw;
+  top: -10%;
+  right: -15%;
+  transform: rotate(8deg);
+}
+.collabo-img img:nth-child(6) {
+  position: absolute;
+  display: block;
+  width: 12vw;
+  bottom: -5%;
+  left: -9%;
+}
+.collabo-img img:nth-child(7) {
+  position: absolute;
+  display: block;
+  width: 6.5vw;
+  bottom: 22%;
+  left: 0;
+}
+.collabo-img.collabo-right img {
+  width: 5.5vw;
+  top: -1%;
+}
+.collabo-img.collabo-right p:nth-child(3) {
+  margin-top: 7vw;
+  font-size: 1.042vw;
+  font-weight: normal;
+  color: #fff;
+}
+.collabo-img.collabo-right p:nth-child(3) strong {
+  font-weight: bold;
+  color: #ffdc0c;
+}
+.collabo-img.collabo-right h2 {
+  margin-top: 2.083vw;
+  font-size: 1.979vw;
+  line-height: 2.7vw;
+}
+.collabo-img.collabo-right p:nth-child(5) {
+  margin-top: 6.771vw;
+  font-size: 1.823vw;
+  font-weight: bold;
 }
 .collabo-btn {
   position: relative;
   display: block;
-  width: 16.9975rem;
-  height: 3.9375rem;
-  margin: 4rem auto 0;
-  border-radius: 25px;
-  font-size: 1.125rem;
+  width: 14.165vw;
+  height: 3.281vw;
+  margin: 3.333vw auto 0;
+  border-radius: 1.302vw;
+  font-size: 0.938vw;
   font-weight: bold;
   color: #fff;
   text-align: center;
-  line-height: 3.9375rem;
+  line-height: 3.281vw;
+  box-shadow: 0 0.521vw 0.521vw rgba(0, 0, 0, 25%);
 }
 .collabo-btn i {
-  padding-left: 0.4rem;
+  padding-left: 0.333vw;
 }
 .collabo-box:first-child .collabo-btn {
   background-color: #f2cf02;
 }
 .collabo-box:last-child .collabo-btn {
   background-color: #0c2668;
+}
+
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 720px) {
+}
+@media all and (max-width: 480px) {
 }

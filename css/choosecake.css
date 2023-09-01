@@ -11,64 +11,73 @@
   position: relative;
   display: block;
   text-align: center;
-  padding-top: 4.8125rem;
-  padding-bottom: 2.0606rem;
+  padding-top: 4.01vw;
+  padding-bottom: 1.717vw;
 }
 .choose-textwrap h2 {
   position: relative;
   display: block;
-  font-size: 1.75rem;
+  font-size: 1.458vw;
   font-weight: bold;
-  margin-bottom: 1.375rem;
+  margin-bottom: 1.146vw;
 }
 .choose-textwrap span {
   position: relative;
   display: block;
-  font-size: 1.25rem;
-  margin-bottom: 1.375rem;
+  font-size: 1.042vw;
+  margin-bottom: 1.146vw;
 }
 .choose-textwrap a {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 8.1875rem;
-  height: 2.9894rem;
-  line-height: 2.9894rem;
-  border-radius: 25px;
+  width: 6.823vw;
+  height: 2.491vw;
+  line-height: 2.491vw;
+  border-radius: 1.302vw;
   background-color: #000;
   color: #fff;
-  border: 2px solid #000;
-  font-size: 1.25rem;
+  border: 0.104vw solid #000;
+  font-size: 1.042vw;
   font-weight: bold;
   transition: all ease-in 0.2s;
 }
 .choose-textwrap a:hover {
   background-color: #fff;
   color: #000;
-  border: 2px solid #000;
+  border: 0.104vw solid #000;
 }
 .choose-ricecake {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 5.875rem;
+  margin-bottom: 4.896vw;
 }
 .choose-cakeA {
   position: relative;
   display: inline-block;
-  width: 31.25rem;
-  height: 38.25rem;
-  border-radius: 25px;
-  margin-right: 5rem;
+  width: 26.042vw;
+  height: 31.875vw;
+  border-radius: 1.302vw;
+  margin-right: 4.167vw;
   background: url("../images/choose-cakeA.jpg") no-repeat center;
   background-size: cover;
 }
 .choose-cakeB {
   position: relative;
   display: inline-block;
-  width: 31.25rem;
-  height: 38.25rem;
-  border-radius: 25px;
+  width: 26.042vw;
+  height: 31.875vw;
+  border-radius: 1.302vw;
   background: url("../images/choose-cakeB.jpg") no-repeat center;
   background-size: cover;
+}
+
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 720px) {
+}
+@media all and (max-width: 480px) {
 }

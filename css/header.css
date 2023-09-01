@@ -1,8 +1,8 @@
 /* 상단 */
-body {
+/* body {
   overflow-x: hidden;
   overflow-y: auto;
-}
+} */
 .header {
   position: relative;
   display: block;
