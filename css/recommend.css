@@ -2,7 +2,7 @@
 .recommend {
   position: relative;
   display: block;
-  padding: 3.125rem 0;
+  margin: 1.927vw 0;
   width: 100vw;
   background-color: #fff;
 }
@@ -13,10 +13,9 @@
 .recommend h2 {
   position: relative;
   display: block;
-  font-size: 1.75rem;
+  font-size: 1.563vw;
   font-weight: bold;
-  padding: 2rem 0;
-  /* background-color: palegoldenrod; */
+  padding: 1.875vw 0;
 }
 .recommend-slide {
   position: relative;
@@ -25,11 +24,9 @@
 .good-box {
   position: relative;
   display: block;
-  width: 17.9988rem;
-  height: 24.3238rem;
-  border-radius: 5%;
-  /* background-color: #fff0d8; */
-  /* background-color: #152a5e; */
+  width: 14.999vw;
+  height: 20.27vw;
+  border-radius: 1.302vw;
   background-color: #dce2f0;
 }
 .round {
@@ -38,12 +35,9 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 11.8275rem;
-  height: 11.8275rem;
+  width: 9.856vw;
+  height: 9.856vw;
   border-radius: 50%;
-  /* background-color: #ffc361; */
-  /* background-color: #fff6bf; */
-  /* background-color: #ffeb78; */
   background-color: #50586c;
 }
 .image img {
@@ -52,7 +46,7 @@
   top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 13.3188rem;
+  width: 11.099vw;
   height: auto;
   transition: all ease-in 0.2s;
 }
@@ -64,7 +58,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: bold;
-  font-size: 1.3125rem;
+  font-size: 1.094vw;
   font-weight: bold;
   color: rgb(36, 40, 48);
 }
@@ -74,25 +68,32 @@
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 8.125rem;
-  height: 2.0569rem;
-  border-radius: 25px;
+  width: 6.771vw;
+  height: 1.714vw;
+  border-radius: 1.302vw;
   text-align: center;
-  line-height: 2.0569rem;
-  font-size: 0.9375rem;
+  line-height: 1.714vw;
+  font-size: 0.781vw;
   font-weight: bold;
   color: #fff;
-  /* background-color: #ffc361; */
-  /* background-color: #fff6bf; */
-  /* background-color: #ffeb78; */
   background-color: #50586c;
   transition: all ease-in 0.1s;
 }
 .good-box:hover .image img {
-  width: 13.875rem;
+  width: 11.563vw;
 }
 .good-box a:hover {
   background-color: #e0a13d;
+}
+.swiper-pagination {
+  position: relative;
+  display: block;
+  margin-top: 3.385vw;
+  margin-bottom: 2.604vw;
+}
+.swiper-pagination span {
+  width: 0.833vw;
+  height: 0.833vw;
 }
 .slide-control {
   position: relative;
@@ -100,16 +101,37 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 4.063rem;
-  margin-bottom: 3.125rem;
-  /* background-color: blueviolet; */
+  margin-top: 3.376vw;
+  margin-bottom: 8.75vw;
 }
 .slide-control span {
   position: relative;
   display: inline-block;
-  width: 1.125rem;
-  height: 1.125rem;
-  margin: 0 0.625rem;
+  width: 0.938vw;
+  height: 0.938vw;
+  margin: 0 0.521vw;
   border-radius: 50%;
   background-color: #d9d9d9;
+}
+
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 720px) {
+}
+@media all and (max-width: 480px) {
+}
+
+@media (max-width: 767px) {
+  /* 모바일 */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 테블릿 세로 */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* 테블릿 가로 */
+}
+@media (min-width: 1200px) {
+  /* 데스크탑 일반 */
 }
