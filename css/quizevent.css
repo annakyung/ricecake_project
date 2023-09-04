@@ -1,7 +1,8 @@
 /* 퀴즈 이벤트 */
 /* 섹션 전체 영역 */
 .quizevent {
-  background-color: #152a5e;
+  width: 100%;
+  background-color: #0C2668;
   margin: 0 auto;
   padding-bottom: 20%;
 }

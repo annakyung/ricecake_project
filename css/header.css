@@ -74,11 +74,16 @@
   position: relative;
   display: none;
 }
+<<<<<<< HEAD
 
 /* ------------=------------------------480px---------- */
 
 @media all and (max-width: 480px) {
   /* 메뉴토글버튼 */
+=======
+/* ------------=------------------------720px---------- */
+@media all and (max-width: 720px) {
+>>>>>>> 65a1c53b17810d2f66a2b7dafc0778846c87ab9e
   .header {
     position: relative;
     display: block;
@@ -246,8 +251,14 @@
     left: 1050%;
   }
 }
+<<<<<<< HEAD
 @media all and (max-width: 720px) {
   /* 메뉴토글버튼 */
+=======
+/* ------------=------------------------480px---------- */
+
+@media all and (max-width: 480px) {
+>>>>>>> 65a1c53b17810d2f66a2b7dafc0778846c87ab9e
   .header {
     position: relative;
     display: block;
@@ -330,7 +341,11 @@
   #menu {
     position: absolute;
     display: block;
+<<<<<<< HEAD
     width: 50%;
+=======
+    width: 100%;
+>>>>>>> 65a1c53b17810d2f66a2b7dafc0778846c87ab9e
     margin: -100px 0 0 -30px;
     padding: 50px;
     padding-top: 160px;
