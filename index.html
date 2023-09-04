@@ -109,9 +109,23 @@
     />
     <!-- animate.css -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P2D5HZM3");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <!-- top button -->
@@ -127,8 +141,7 @@
       <header class="header">
         <!-- <div class="logo">
         </div> -->
-          <a href="#" class="logo"><img src="images/textlogo.png" alt="" /></a>
-
+        <a href="#" class="logo"><img src="images/textlogo.png" alt="" /></a>
 
         <nav role="navigation">
           <div id="menuToggle">
@@ -149,192 +162,296 @@
           <a href="#"><p>로그인</p></a>
           <a href="#"><p>회원가입</p></a>
         </div>
-        <a href="#" class="usericon"><img src="images/iconuser.png" alt="" ></a>
+        <a href="#" class="usericon"
+          ><img src="images/iconuser.png" alt=""
+        /></a>
       </header>
 
-        <!-- 비주얼 -->
-        <section class="visual">
-          <div class="birth">
-            <p class="birth-txt animate__animated animate__slideInUp">20th</p>
+      <!-- 비주얼 -->
+      <section class="visual">
+        <div class="birth">
+          <p class="birth-txt animate__animated animate__slideInUp">20th</p>
+        </div>
+        <div class="event-letter">
+          <img src="images/letter-bg.png" alt="" class="letter-bg" />
+
+          <div class="letter-paper-wrap">
+            <img src="images/letter-paper.png" alt="" class="letter-paper" />
           </div>
-          <div class="event-letter">
-            <img src="images/letter-bg.png" alt="" class="letter-bg">
-  
-            <div class="letter-paper-wrap">
-              <img src="images/letter-paper.png" alt="" class="letter-paper">
-            </div>
-  
-            <img src="images/letter-cover.png" alt="" class="letter-cover">
-            <img src="images/letter-top.png" alt="" class="letter-top">
-            <img src="images/main_logo.png" alt="" class="letter-logo">
-            <img src="images/click.png" alt="" class="letter-click">
-  
-            <p class="letter-click-txt">CLICK</p>
-          </div>
-          <a href="#" class="downicon" id="downicon"><i class="fa-solid fa-angles-down"></i></a>
-        </section>
+
+          <img src="images/letter-cover.png" alt="" class="letter-cover" />
+          <img src="images/letter-top.png" alt="" class="letter-top" />
+          <img src="images/main_logo.png" alt="" class="letter-logo" />
+          <img src="images/click.png" alt="" class="letter-click" />
+
+          <p class="letter-click-txt">CLICK</p>
+        </div>
+        <a href="#" class="downicon" id="downicon"
+          ><i class="fa-solid fa-angles-down"></i
+        ></a>
+      </section>
 
       <!-- 슬라이드 -->
       <section class="slide" id="slide">
         <div class="slide-wrap">
-              <!-- section01 -->
-              <div class="visual-section-01" id="section1" class="content">
-                <div class="sale-text">
-                  <p>20주년 기념 50% 할인!</p>
-                </div>
-                <div class="title-name">앙금플라워<br /> &nbsp; &nbsp;2단 찜케익</div>
-                <div class="left-section01">
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake01_detail01.png" alt="" /></a>
-                      <a href="#"><img src="images/cake01_detail02.png" alt="" /></a>
-                      <a href="#"><img src="images/cake01_detail03.png" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="price-size">
-                  <p>61,000원</p>
-                  <p>지름 23cm x 높이 11cm</p>
-                </div>
-                <div class="main-section">
-                  <img src="images/cake00001.png" alt="" class="cake-box">
-                  <div class="txt-box">
-                    <p class="detailed-description01 animate__animated animate__fadeInLeft" id="detailed-description01">앙금에 천연 색을 입혀 만든 수제 앙금꽃</p>
-                    <p class="detailed-description02" id="detailed-description02">흰 찜설기 사이 달콤한 건포도</p>
-                    <p class="detailed-description03" id="detailed-description03">국산 쌀가루로 만들어 부드러운 찜설기 케익과<br>고소한 흑임자 찜설기의 2단 케익</p>
-                  </div>
-                  <button class="goreview">리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                </div>
-              <div class="right-section">
-                    <ul class="right-cake-box">
-                      <li>
-                        <a href="#"><img src="images/cake01-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake02-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake03-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake04-a.png" alt=""></a>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-              <div class="visual-section-02">
-                <div class="sale-text">
-                  <p>20주년 기념 50% 할인!</p>
-                </div>
-                <div class="title-name">모듬떡케익<br /> &nbsp; &nbsp;5단 5호</div>
-                <div class="left-section01">
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake02_detail01.png" alt="" /></a>
-                      <a href="#"><img src="images/cake02_detail02.png" alt="" /></a>
-                      <a href="#"><img src="images/cake02_detail03.png" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="price-size">
-                  <p>54,000원</p>
-                  <p>지름 23cm x 높이 13cm</p>
-                </div>
-                <div class="main-section">
-                  <img src="images/cake002.png" alt="" class="cake-box">
-                  <div class="txt-box">
-                    <p class="detailed-description01" id="detailed-description01">100% 국산 쌀로 만들어 더욱 쫄깃한 떡</p>
-                    <p class="detailed-description02" id="detailed-description02">화려한 색감의 모듬떡으로 기념일 생일 등을 빛낼<br> 건강한 떡 케이크</p>
-                    <p class="detailed-description03" id="detailed-description03"></p>
-                  </div>
-                  <button class="goreview">리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                </div>
-              <div class="right-section">
-                    <ul class="right-cake-box">
-                      <li>
-                        <a href="#"><img src="images/cake01-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake02-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake03-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake04-a.png" alt=""></a>
-                      </li>
-                    </ul>
-                </div>
-                <a href="#" class="downicon2" id="downicon2"><i class="fa-solid fa-angles-down"></i></a>
-              </div>
-              <div class="visual-section-03">
-                <div class="sale-text">
-                  <p>20주년 기념 50% 할인!</p>
-                </div>
-                <div class="title-name">모듬떡케익<br /> &nbsp; &nbsp;5단 5호</div>
-                <div class="left-section01">
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake03_detail01.png" alt="" /></a>
-                      <a href="#"><img src="images/cake03_detail02.png" alt="" /></a>
-                      <a href="#"><img src="images/cake03_detail03.png" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="price-size">
-                  <p>127,000원</p>
-                  <p>지름 23cm x 높이 20cm</p>
-                </div>
-                <div class="main-section">
-                  <img src="images/cake003.png" alt="" class="cake-box">
-                  <div class="txt-box">
-                    <p class="detailed-description01" id="detailed-description01">수제로 만든 앙금꽃과 우유 컵설기가 포인트</p>
-                    <p class="detailed-description02" id="detailed-description02">쫄깃하고 부드러운 다양한 떡들의 알찬구성</p>
-                    <p class="detailed-description03" id="detailed-description03">케익 하단 속 개별포장떡 포함</p>
-                  </div>
-                  <button class="goreview">리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                </div>
-              <div class="right-section">
-                    <ul class="right-cake-box">
-                      <li>
-                        <a href="#"><img src="images/cake01-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake02-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake03-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake04-a.png" alt=""></a>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-              <div class="visual-section-04">
-                <div class="sale-text">
-                  <p>20주년 기념 50% 할인!</p>
-                </div>
-                <div class="title-name">행복담<br /> &nbsp; &nbsp;2단 3호</div>
-                <div class="left-section01">
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake04_detail01.png" alt="" /></a>
-                      <a href="#"><img src="images/cake04_detail02.png" alt="" /></a>
-                      <a href="#"><img src="images/cake04_detail03.png" alt="" /></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="price-size">
-                  <p>127,000원</p>
-                  <p>지름 23cm x 높이 20cm</p>
-                </div>
-                <div class="main-section">
-                  <img src="images/cake004.png" alt="" class="cake-box">
-                  <div class="txt-box">
-                    <p class="detailed-description01" id="detailed-description01">수제로 만든 앙금꽃과 우유 컵설기가 포인트</p>
-                    <p class="detailed-description02" id="detailed-description02">쫄깃하고 부드러운 다양한 떡들의 알찬구성</p>
-                    <p class="detailed-description03" id="detailed-description03">케익 하단 속 개별포장떡 포함</p>
-                  </div>
-                  <button class="goreview">리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                </div>
-              <div class="right-section">
-                    <ul class="right-cake-box">
-                      <li>
-                        <a href="#"><img src="images/cake01-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake02-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake03-a.png" alt=""></a>
-                        <a href="#"><img src="images/cake04-a.png" alt=""></a>
-                      </li>
-                    </ul>
-                </div>
+          <!-- section01 -->
+          <div class="visual-section-01" id="section1" class="content">
+            <div class="sale-text">
+              <p>20주년 기념 50% 할인!</p>
             </div>
+            <div class="title-name">
+              앙금플라워<br />
+              &nbsp; &nbsp;2단 찜케익
+            </div>
+            <div class="left-section01">
+              <ul class="left-imgwrap">
+                <li>
+                  <a href="#"
+                    ><img src="images/cake01_detail01.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake01_detail02.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake01_detail03.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="price-size">
+              <p>61,000원</p>
+              <p>지름 23cm x 높이 11cm</p>
+            </div>
+            <div class="main-section">
+              <img src="images/cake00001.png" alt="" class="cake-box" />
+              <div class="txt-box">
+                <p
+                  class="detailed-description01 animate__animated animate__fadeInLeft"
+                  id="detailed-description01"
+                >
+                  앙금에 천연 색을 입혀 만든 수제 앙금꽃
+                </p>
+                <p class="detailed-description02" id="detailed-description02">
+                  흰 찜설기 사이 달콤한 건포도
+                </p>
+                <p class="detailed-description03" id="detailed-description03">
+                  국산 쌀가루로 만들어 부드러운 찜설기 케익과<br />고소한 흑임자
+                  찜설기의 2단 케익
+                </p>
+              </div>
+              <button class="goreview">
+                리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
+            <div class="right-section">
+              <ul class="right-cake-box">
+                <li>
+                  <a href="#"><img src="images/cake01-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake02-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake03-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake04-a.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="visual-section-02">
+            <div class="sale-text">
+              <p>20주년 기념 50% 할인!</p>
+            </div>
+            <div class="title-name">
+              모듬떡케익<br />
+              &nbsp; &nbsp;5단 5호
+            </div>
+            <div class="left-section01">
+              <ul class="left-imgwrap">
+                <li>
+                  <a href="#"
+                    ><img src="images/cake02_detail01.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake02_detail02.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake02_detail03.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="price-size">
+              <p>54,000원</p>
+              <p>지름 23cm x 높이 13cm</p>
+            </div>
+            <div class="main-section">
+              <img src="images/cake002.png" alt="" class="cake-box" />
+              <div class="txt-box">
+                <p class="detailed-description01" id="detailed-description01">
+                  100% 국산 쌀로 만들어 더욱 쫄깃한 떡
+                </p>
+                <p class="detailed-description02" id="detailed-description02">
+                  화려한 색감의 모듬떡으로 기념일 생일 등을 빛낼<br />
+                  건강한 떡 케이크
+                </p>
+                <p
+                  class="detailed-description03"
+                  id="detailed-description03"
+                ></p>
+              </div>
+              <button class="goreview">
+                리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
+            <div class="right-section">
+              <ul class="right-cake-box">
+                <li>
+                  <a href="#"><img src="images/cake01-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake02-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake03-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake04-a.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="downicon2" id="downicon2"
+              ><i class="fa-solid fa-angles-down"></i
+            ></a>
+          </div>
+          <div class="visual-section-03">
+            <div class="sale-text">
+              <p>20주년 기념 50% 할인!</p>
+            </div>
+            <div class="title-name">
+              모듬떡케익<br />
+              &nbsp; &nbsp;5단 5호
+            </div>
+            <div class="left-section01">
+              <ul class="left-imgwrap">
+                <li>
+                  <a href="#"
+                    ><img src="images/cake03_detail01.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake03_detail02.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake03_detail03.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="price-size">
+              <p>127,000원</p>
+              <p>지름 23cm x 높이 20cm</p>
+            </div>
+            <div class="main-section">
+              <img src="images/cake003.png" alt="" class="cake-box" />
+              <div class="txt-box">
+                <p class="detailed-description01" id="detailed-description01">
+                  수제로 만든 앙금꽃과 우유 컵설기가 포인트
+                </p>
+                <p class="detailed-description02" id="detailed-description02">
+                  쫄깃하고 부드러운 다양한 떡들의 알찬구성
+                </p>
+                <p class="detailed-description03" id="detailed-description03">
+                  케익 하단 속 개별포장떡 포함
+                </p>
+              </div>
+              <button class="goreview">
+                리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
+            <div class="right-section">
+              <ul class="right-cake-box">
+                <li>
+                  <a href="#"><img src="images/cake01-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake02-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake03-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake04-a.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="visual-section-04">
+            <div class="sale-text">
+              <p>20주년 기념 50% 할인!</p>
+            </div>
+            <div class="title-name">
+              행복담<br />
+              &nbsp; &nbsp;2단 3호
+            </div>
+            <div class="left-section01">
+              <ul class="left-imgwrap">
+                <li>
+                  <a href="#"
+                    ><img src="images/cake04_detail01.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake04_detail02.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/cake04_detail03.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="price-size">
+              <p>127,000원</p>
+              <p>지름 23cm x 높이 20cm</p>
+            </div>
+            <div class="main-section">
+              <img src="images/cake004.png" alt="" class="cake-box" />
+              <div class="txt-box">
+                <p class="detailed-description01" id="detailed-description01">
+                  수제로 만든 앙금꽃과 우유 컵설기가 포인트
+                </p>
+                <p class="detailed-description02" id="detailed-description02">
+                  쫄깃하고 부드러운 다양한 떡들의 알찬구성
+                </p>
+                <p class="detailed-description03" id="detailed-description03">
+                  케익 하단 속 개별포장떡 포함
+                </p>
+              </div>
+              <button class="goreview">
+                리뷰 보러가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                구매하러 가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
+            <div class="right-section">
+              <ul class="right-cake-box">
+                <li>
+                  <a href="#"><img src="images/cake01-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake02-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake03-a.png" alt="" /></a>
+                  <a href="#"><img src="images/cake04-a.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -660,20 +777,19 @@
       <!-- 리뷰창 -->
       <section class="review" id="section5" class="content">
         <div class="best-wrap">
-          <img src="images/reviewinfo.png" alt="" class="info">
-          <img src="images/best01.png" alt="" class="best">
+          <img src="images/reviewinfo.png" alt="" class="info" />
+          <img src="images/best01.png" alt="" class="best" />
         </div>
         <div class="rolling_panel">
           <ul class="">
-              <li><img src="images/review01.png"></li>
-              <li><img src="images/review02.png"></li>
-              <li><img src="images/review03.png"></li>
-              <li><img src="images/review04.png"></li>
-              <li><img src="images/review05.png"></li>
-              <li><img src="images/review06.png"></li>
-              <li><img src="images/review07.png"></li>
-              <li><img src="images/review08.png"></li>
-
+            <li><img src="images/review01.png" /></li>
+            <li><img src="images/review02.png" /></li>
+            <li><img src="images/review03.png" /></li>
+            <li><img src="images/review04.png" /></li>
+            <li><img src="images/review05.png" /></li>
+            <li><img src="images/review06.png" /></li>
+            <li><img src="images/review07.png" /></li>
+            <li><img src="images/review08.png" /></li>
           </ul>
         </div>
         <div class="review-btn">
@@ -753,4 +869,14 @@
       </footer>
     </div>
   </body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-P2D5HZM3"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 </html>
