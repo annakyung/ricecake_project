@@ -186,9 +186,9 @@
 
           <p class="letter-click-txt">CLICK</p>
         </div>
-        <a href="#" class="downicon" id="downicon"
-          ><i class="fa-solid fa-angles-down"></i
-        ></a>
+        <a href="#" class="downicon" id="downicon">
+          <i class="fa-solid fa-angles-down"></i>
+        </a>
       </section>
 
       <!-- 슬라이드 -->
@@ -618,12 +618,12 @@
                   <button class="game-result-close">
                     <i class="fa-solid fa-xmark"></i>
                   </button>
-                  <div class="choose-textwrap" id="data-choosecake">
-                    <!-- 외부데이터 연동 js -->
+                  <div class="choose-textwrap">
                     <div>RESULT</div>
                     <span>당신에게 맞는 떡케이크는 이거인 것 같아요!</span>
-                    <img src="images/choose-question-cake01.jpg" alt="" />
-                    <p>떡케이크</p>
+                    <div id="game-result-html">
+                      <!-- 외부데이터 연동 js-->
+                    </div>
                     <div class="choose-btn">
                       <button class="bt-gotoproduct">제품 보러가기</button>
                       <button class="bt-game-restart">게임 다시하기</button>
@@ -664,6 +664,66 @@
                   alt="토퍼_행복할래빗"
                 />
               </div>
+            </div>
+            <a href="#" class="collabo-btn">
+              미리 예약하기
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 콜라보 떡케이크 (주문제작 & 원데이클래스) -->
+      <section class="collabo">
+        <div class="collabo-wrap">
+          <div class="collabo-box">
+            <div class="collabo-img collabo-left">
+              <p>떡끼의하루 X</p>
+              <img src="images/turtlehip_logo2.png" alt="터틀힙 로고" />
+              <img
+                src="images/turtlehip_cake01.png"
+                alt="터틀힙 케이크 이미지"
+              />
+              <div class="collabo-textwrap">
+                <p>내가 골라 디자인하는 <strong>주문제작</strong> 떡케이크</p>
+                <h2>
+                  세상에 <strong>하나</strong>밖에 없는<br />
+                  케이크를 선물해보세요!
+                </h2>
+                <div class="collabo-round"></div>
+                <div class="collabo-round"></div>
+              </div>
+              <img
+                src="images/turtlehip_cake02.png"
+                alt="터틀힙 케이크 이미지"
+              />
+              <img
+                src="images/turtlehip_cake03.png"
+                alt="터틀힙 케이크 이미지"
+              />
+              <img
+                src="images/turtlehip_cake04.png"
+                alt="터틀힙 케이크 이미지"
+              />
+            </div>
+            <a href="#" class="collabo-btn">
+              디자인 구경하러 가기
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="collabo-box">
+            <div class="collabo-img collabo-right">
+              <p>떡끼의 하루 X</p>
+              <img src="images/creamyhouse_logo.png" alt="크리미 하우스 로고" />
+              <p>
+                A부터 Z까지! 내가 만드는 떡케이크
+                <strong>원데이 클래스</strong>
+              </p>
+              <h2>
+                내가 만들어 선물하는<br />
+                즐거움을 느껴보세요!
+              </h2>
+              <p>coming soon!</p>
             </div>
             <a href="#" class="collabo-btn">
               미리 예약하기
@@ -738,18 +798,17 @@
           </div>
           <ul class="button">
             <li class="bt bt1">
-              <a href="https://www.dcake.co.kr/#t" target="_blank"
-                >추석 선물 세트 보러가기<i class="fa-solid fa-chevron-right"></i
-              ></a>
+              <a href="https://www.dcake.co.kr/#t" target="_blank">
+                추석 선물 세트 보러가기<i class="fa-solid fa-chevron-right"></i>
+              </a>
             </li>
             <li class="bt bt2">
               <a
                 href="https://www.youtube.com/@koreadcake/featured"
                 target="_blank"
-                >떡끼의 하루 유튜브 보러가기<i
-                  class="fa-solid fa-chevron-right"
-                ></i
-              ></a>
+                >떡끼의 하루 유튜브 보러가기
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -763,12 +822,6 @@
             <!-- 추천상품 슬라이드 -->
             <div class="recommend-slide" id="data-recommend">
               <!-- 외부데이터 연동 js -->
-            </div>
-
-            <div class="slide-control">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
           </div>
         </div>
@@ -870,13 +923,14 @@
     </div>
   </body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript
-    ><iframe
+  <noscript>
+    <iframe
       src="https://www.googletagmanager.com/ns.html?id=GTM-P2D5HZM3"
       height="0"
       width="0"
       style="display: none; visibility: hidden"
-    ></iframe
-  ></noscript>
+    >
+    </iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 </html>
