@@ -8,8 +8,9 @@
 }
 /* 전체 */
 .topperevent {
+  width: 100%;
   padding: 100px 0;
-  background-color: #152a5e;
+  background-color: #0c2668;
 }
 /* 배너 */
 .topperevent_banner {
