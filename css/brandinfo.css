@@ -1,28 +1,35 @@
 /* 브랜드 장점 */
 .brandinfo {
+  width: 100%;
   background-color: #152a5e;
-  position: relative;
+  background: url("../images/brandInfo_back.svg") center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.brandinfo > svg {
-  width: 1860px;
-  margin-left: 40px;
-}
-.line {
-  fill: none;
-  stroke: #ffec76;
-  stroke-width: 16;
-  stroke-miterlimit: 10;
-}
-.info_inner {
-  color: #fff;
-  width: 1300px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgb(66, 255, 192);
-  margin: 0 auto;
-}
-.info_inner ul {
+.infoImg ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-end;
+}
+.infoImg img {
+  width: 22vw;
+  padding: 0 25px;
+}
+.infoTxt h1 {
+  margin-bottom: 2.6042vw;
+}
+.infoTxt ul {
+  display: flex;
+  justify-content: center;
+}
+.infoTxt li {
+  font-size: 1vw;
+  text-align: center;
+  padding: 0 25px;
+  color: #fff;
+}
+.infoTxt span {
+  color: #f2cf02;
+  font-weight: 600;
 }

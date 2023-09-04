@@ -1,29 +1,33 @@
 /* 상단 */
-/* body {
-  overflow-x: hidden;
-  overflow-y: auto;
-} */
+
 .header {
   position: relative;
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100px;
-  /* background-color: antiquewhite; */
+  /* background-color: #FFED86; */
+  z-index: 9999;
 }
 /*로고 */
 .logo {
   position: relative;
   display: block;
-  width: 25%;
 }
 .logo img {
   position: absolute;
   display: inline-block;
-  width: 50%;
-
+  width: 170px;
   padding: 0;
   margin-left: 150px;
-  /* background-color: violet; */
+  top: 10px;
+}
+/* 탑메뉴 */
+.top-menu {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+  /* background-color: antiquewhite; */
 }
 .menu-list-wrap {
   position: relative;
@@ -32,7 +36,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  height: 100%;
   /* background-color: yellowgreen; */
   
 }

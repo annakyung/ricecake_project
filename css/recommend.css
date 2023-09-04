@@ -85,14 +85,24 @@
 .good-box a:hover {
   background-color: #e0a13d;
 }
+.swiper-pagination {
+  position: relative;
+  display: block;
+  margin-top: 3.385vw;
+  margin-bottom: 2.604vw;
+}
+.swiper-pagination span {
+  width: 0.833vw;
+  height: 0.833vw;
+}
 .slide-control {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 3.385vw;
-  margin-bottom: 2.604vw;
+  margin-top: 3.376vw;
+  margin-bottom: 8.75vw;
 }
 .slide-control span {
   position: relative;
@@ -111,4 +121,17 @@
 @media all and (max-width: 720px) {
 }
 @media all and (max-width: 480px) {
+}
+
+@media (max-width: 767px) {
+  /* 모바일 */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 테블릿 세로 */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* 테블릿 가로 */
+}
+@media (min-width: 1200px) {
+  /* 데스크탑 일반 */
 }

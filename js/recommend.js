@@ -21,7 +21,7 @@ window.addEventListener("load", function () {
   };
 
   // 자료를 호출한다.
-  console.log("자료를 가져온다. XMLHT.....");
+  // console.log("자료를 가져온다. XMLHT.....");
   xhttp.open("GET", "data.json");
   // 웹 브라우저 기능을 실행할 수 있도록 요청
   xhttp.send();
@@ -35,26 +35,27 @@ window.addEventListener("load", function () {
   function showRecommendGood() {
     let html = `
     <div class="swiper sw-recommend">
-    <div class="swiper-wrapper">
+      <div class="swiper-wrapper">
     `;
 
     RECOMMEND_GOOD.forEach(function (item) {
       let tag = `
-      <div class="swiper-slide">
-        <div class="good-box">
-          <div class="round"></div>
-          <div class="image">
-            <img src="${item.pic}" alt="${item.alt}">
+        <div class="swiper-slide">
+          <div class="good-box">
+            <div class="round"></div>
+            <div class="image">
+              <img src="${item.pic}" alt="${item.alt}">
+            </div>
+            <span>${item.name}</span>
+            <a href="${item.link}" class="recommend-btn">제품 보러가기</a>
           </div>
-          <span>${item.name}</span>
-          <a href="${item.link}" class="recommend-btn">제품 보러가기</a>
         </div>
-      </div>
       `;
       html += tag;
     });
     html += `
-    </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
     `;
 
@@ -68,8 +69,8 @@ window.addEventListener("load", function () {
         nextEl: ".recommend .slide-next",
       },
       pagination: {
-        el: ".recommend .slide-pg",
-        type: "fraction",
+        el: ".swiper-pagination",
+        clickable: true,
       },
     });
   }

@@ -6,12 +6,15 @@
   font-weight: 400;
   font-style: normal;
 }
+/* 전체 */
 .promotion {
-  /* width: 100%; */
   width: 100vw;
   height: 100%;
+  margin-bottom: 100px;
   background-color: #ffffff;
 }
+
+/* 비디오 */
 .promotion video {
   width: 100%;
   /* width: 1300px; */
@@ -21,34 +24,35 @@
   display: block;
   align-items: center;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 5%;
   cursor: pointer;
 }
 .video h1 {
   font-family: "HANAMDAUM";
-  font-size: 45px;
+  text-align: center;
+  font-size: 2.81vw;
   font-weight: 600;
-  margin-top: 180px;
-  margin-bottom: 100px;
+  margin-top: 20%;
+  margin-bottom: 10%;
 }
 .button {
+  width: 70%;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 .bt {
   width: 21vw;
-  min-width: 115px;
-  height: 4.2vw;
-  line-height: 4.2vw;
+  min-width: 100px;
+  height: 4.4vw;
+  line-height: 4.4vw;
   border: 3px solid #152a5e;
   text-align: center;
-  margin-bottom: 200px;
   font-size: 1vw;
   font-weight: bold;
   overflow: hidden;
   cursor: pointer;
 }
-
 .bt:hover {
   background-color: #152a5e;
   transition: 0.3s;
@@ -57,8 +61,49 @@
   color: #fff;
 }
 .bt1 {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .bt2 {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+/* 반응형 */
+@media all and (max-width: 1080px) {
+  .bt {
+    height: 4.6vw;
+    line-height: 4.6vw;
+  }
+}
+@media all and (max-width: 960px) {
+  .bt {
+    height: 4.8vw;
+    line-height: 4.8vw;
+  }
+}
+@media all and (max-width: 720px) {
+  .button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+  }
+  .bt {
+    width: 100%;
+    height: 40%;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bt1 {
+    margin-right: 0px;
+  }
+  .bt2 {
+    margin-left: 0px;
+  }
+}
+@media all and (max-width: 480px) {
+  .bt {
+    font-size: 2.5vw;
+  }
 }
