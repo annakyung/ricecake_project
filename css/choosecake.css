@@ -2,7 +2,6 @@
 .choosecake {
   position: relative;
   display: block;
-  /* width: 100vw; */
   width: 100%;
   height: 50vw;
   background-color: #fff;
@@ -154,10 +153,22 @@
   bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
+  /* font-size: 25px; */
   font-size: 1.6vw;
   font-weight: bold;
+  /* margin-bottom: 40px; */
 }
 /* 게임 결과 화면 */
+/* .game-stage-result {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+} */
 .game-stage-result {
   position: fixed;
   display: block;
@@ -210,7 +221,7 @@
   height: 100%;
   margin: 0;
 }
-.game-stage-result .choose-textwrap div:not(.choose-btn) {
+.game-stage-result .choose-textwrap div:not(.choose-btn, #game-result-html) {
   position: absolute;
   display: block;
   top: 3%;
@@ -233,15 +244,11 @@
   font-weight: bold;
   white-space: nowrap;
 }
-
 .game-stage-result .choose-textwrap #game-result-html {
   position: absolute;
   display: block;
-  /* top: 21%;
-  left: 50%; */
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -252,7 +259,6 @@
   top: 21%;
   left: 50%;
   transform: translateX(-50%);
-  width: 250px;
   width: 16.6vw;
 }
 .game-stage-result #game-result-html p {
@@ -261,7 +267,6 @@
   top: 73%;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
   font-size: 1.406vw;
   font-weight: bold;
   color: #000;
@@ -287,7 +292,6 @@
 @media all and (max-width: 1080px) {
   .choosecake {
     height: 59vw;
-    background-color: orange;
   }
   .choose-textwrap {
     margin-top: 4.063vw;
@@ -316,7 +320,6 @@
     width: 29.167vw;
     height: 35vw;
   }
-
   .choose-textwrap div:not(.choose-btn) {
     width: 12.037vw;
     height: 3.241vw;
@@ -325,9 +328,7 @@
     font-size: 1.389vw;
   }
   .game-stage-view .choose-textwrap span {
-    position: relative;
-    display: block;
-    font-size: 1.574vw;
+    font-size: 1.759vw;
     margin: 2.593vw 0;
     font-weight: bold;
   }

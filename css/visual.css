@@ -1,228 +1,227 @@
 @font-face {
-    font-family: "HANAMDAUM";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
-        format("woff2");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "HANAMDAUM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'twaysky';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "twaysky";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* 비주얼 */
-.bg-wrap{
-    position: relative;
-    display: block;
+.bg-wrap {
+  position: relative;
+  display: block;
 }
 .visual {
-position: relative;
-background-color: #fff;
-width: 100%;
-text-align: center;
-padding: 30px 0vw;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0vw;
 }
 .birth-txt {
-    font-size: 33vw;
-    font-family: "Shrikhand", cursive;
-    color: #b6b6b6;
-    line-height: 1;
+  font-size: 33vw;
+  font-family: "Shrikhand", cursive;
+  color: #b6b6b6;
+  line-height: 1;
 }
 
 /* 편지 봉투 */
 .event-letter {
-position: absolute;
-left: 50%;
-bottom: 0%;
-transform: translateX(-50%);
-width: 50%;
-height: 32.813vw;
-z-index: 99;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 32.813vw;
+  z-index: 99;
 }
 /* .event-letter img{width: 100%;} */
 /* 편지 bg */
 .letter-bg {
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* 편지지 */
 .letter-paper-wrap {
-position: absolute;
-top: 8.370vw;
-left: 00%;
-width: 100%;
-height: 120%;
-/* overflow: hidden; */
-left: 0;
+  position: absolute;
+  top: 8.37vw;
+  left: 00%;
+  width: 100%;
+  height: 120%;
+  /* overflow: hidden; */
+  left: 0;
 }
 .letter-paper-wrap-active {
-z-index: 7 !important;
+  z-index: 7 !important;
 }
 
 .letter-paper {
-position: absolute;
-top: 9.4vw;
-transition: top 1s;
-left: 0;
+  position: absolute;
+  top: 9.4vw;
+  transition: top 1s;
+  left: 0;
 }
 .letter-paper-active {
-top: -58px !important;
+  top: -58px !important;
 }
 
 /* 편지몸통 */
 .letter-cover {
-position: relative;
-z-index: 5;
+  position: relative;
+  z-index: 5;
 }
 .letter-cover-active {
-z-index: 8 !important;
+  z-index: 8 !important;
 }
 
 /* 편지날개 */
 .letter-top {
-    left: 0;
-z-index: 6;
-position: absolute;
-top: 54.5%;
-transform-origin: 0 0;
-filter: brightness(1);
-/* backface-visibility: hidden; */
-transform-style: preserve-3d;
-transition: filter 0.5s, transform 1s;
-cursor: pointer;
+  left: 0;
+  z-index: 6;
+  position: absolute;
+  top: 54.5%;
+  transform-origin: 0 0;
+  filter: brightness(1);
+  /* backface-visibility: hidden; */
+  transform-style: preserve-3d;
+  transition: filter 0.5s, transform 1s;
+  cursor: pointer;
 }
 
 .letter-top-active {
-transform: rotateX(180deg) !important;
-filter: brightness(0.85) !important;
+  transform: rotateX(180deg) !important;
+  filter: brightness(0.85) !important;
 }
 
 /* 로고 */
 .letter-logo {
-position: absolute;
-display: block;
-top: 85%;
-left: 50%;
-transform: translate(-50%, 50%);
-z-index: 99999;
-opacity: 1;
-transition: opacity 0.5s;
-width: 15%;
+  position: absolute;
+  display: block;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 99999;
+  opacity: 1;
+  transition: opacity 0.5s;
+  width: 15%;
 }
 .letter-logo-active {
-z-index: 10;
-opacity: 0;
+  z-index: 10;
+  opacity: 0;
 }
 /* click 아이콘 */
 .event-letter .letter-click {
-z-index: 9;
-position: absolute;
-display: block;
-top: 75%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 60px;
-opacity: 1;
-width: 7%;
-transition: opacity 0.3s;
+  z-index: 9;
+  position: absolute;
+  display: block;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  opacity: 1;
+  width: 7%;
+  transition: opacity 0.3s;
 }
 .letter-click-active {
-opacity: 0 !important;
+  opacity: 0 !important;
 }
 .letter-click-txt {
-position: absolute;
-display: inline-block;
-top: 82%;
-left: 50%;
-transform: translateX(-50%);
-z-index: 99999;
-color: #191567;
-font-size: 20px;
-font-weight: 900;
-opacity: 1;
-transition: opacity 0.3s;
+  position: absolute;
+  display: inline-block;
+  top: 82%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  color: #191567;
+  font-size: 20px;
+  font-weight: 900;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 .letter-click-txt-active {
-opacity: 0 !important;
+  opacity: 0 !important;
 }
 /* ------------------------편지 봉투----------------- */
 
-
 @media all and (max-width: 480px) {
-.visual {
+  .visual {
     position: relative;
     background-color: #0c2668;
     width: 100%;
-    height:192.1250vw ;
+    height: 192.125vw;
     text-align: center;
     padding: 30px 0vw;
-    }
-    .birth-txt {
-        position: relative;
-        display: block;
-        top: 100px;
-        font-size: 33vw;
-        font-family: "Shrikhand", cursive;
-        color: #ffffff;
-        line-height: 1;
-    }
-        /* 편지 봉투 */
-    .event-letter {
-        position: absolute;
-        top: 41.6667vw;
-        left: 50%;
-        bottom: 10%;
-        transform: translateX(-50%);
-        width: 95%;
-        z-index: 99;
-    }
-    /* 편지 bg */
-    .letter-bg {
+  }
+  .birth-txt {
+    position: relative;
+    display: block;
+    top: 100px;
+    font-size: 33vw;
+    font-family: "Shrikhand", cursive;
+    color: #ffffff;
+    line-height: 1;
+  }
+  /* 편지 봉투 */
+  .event-letter {
+    position: absolute;
+    top: 41.6667vw;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    width: 95%;
+    z-index: 99;
+  }
+  /* 편지 bg */
+  .letter-bg {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    }
-    
-    /* 편지지 */
-    .letter-paper-wrap {
+  }
+
+  /* 편지지 */
+  .letter-paper-wrap {
     position: absolute;
     top: 23.25vw;
     width: 100%;
     height: 120%;
     /* overflow: hidden; */
     left: 0;
-    }
-    .letter-paper-wrap-active {
+  }
+  .letter-paper-wrap-active {
     z-index: 7 !important;
     /* overflow: auto; */
-    }
+  }
 
-    
-    .letter-paper {
+  .letter-paper {
     position: absolute;
-    top: 9.3750vw;
+    top: 9.375vw;
     transition: top 1s;
     left: 0;
-    }
-    .letter-paper-active {
+  }
+  .letter-paper-active {
     top: -58px !important;
-    }
-    
-    /* 편지몸통 */
-    .letter-cover {
+  }
+
+  /* 편지몸통 */
+  .letter-cover {
     position: relative;
     z-index: 5;
-    }
-    .letter-cover-active {
+  }
+  .letter-cover-active {
     z-index: 8 !important;
-    }
-    
-    /* 편지날개 */
-    .letter-top {
+  }
+
+  /* 편지날개 */
+  .letter-top {
     left: 0;
     z-index: 6;
     position: absolute;
@@ -233,26 +232,26 @@ opacity: 0 !important;
     transform-style: preserve-3d;
     transition: filter 0.5s, transform 1s;
     cursor: pointer;
-    }
-    
-    .letter-top-active {
+  }
+
+  .letter-top-active {
     transform: rotateX(180deg) !important;
     filter: brightness(0.85) !important;
-    }
+  }
 
-    /* 화살표 */
-    .visual > #downicon{
-        position: absolute;
-        display: block;
-        margin-top: 115%;
-        left: 50%;
-        transform: translateX(-50%);    
-        font-size: 8.3333vw;
-        color: #fff;
-    }
+  /* 화살표 */
+  .visual > #downicon {
+    position: absolute;
+    display: block;
+    margin-top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8.3333vw;
+    color: #fff;
+  }
 
-    /* 로고 */
-.letter-logo {
+  /* 로고 */
+  .letter-logo {
     position: absolute;
     display: block;
     top: 165%;
@@ -262,14 +261,14 @@ opacity: 0 !important;
     opacity: 1;
     transition: opacity 0.5s;
     width: 15%;
-    }
-    .letter-logo-active {
+  }
+  .letter-logo-active {
     z-index: 10;
     opacity: 0;
-    }
+  }
 
-    /* click 아이콘 */
-    .event-letter .letter-click {
+  /* click 아이콘 */
+  .event-letter .letter-click {
     z-index: 9;
     position: absolute;
     display: block;
@@ -280,11 +279,11 @@ opacity: 0 !important;
     opacity: 1;
     width: 7%;
     transition: opacity 0.3s;
-    }
-    .letter-click-active {
+  }
+  .letter-click-active {
     opacity: 0 !important;
-    }
-    .letter-click-txt {
+  }
+  .letter-click-txt {
     position: absolute;
     display: inline-block;
     top: 160%;
@@ -296,8 +295,8 @@ opacity: 0 !important;
     font-weight: 900;
     opacity: 1;
     transition: opacity 0.3s;
-    }
-    .letter-click-txt-active {
+  }
+  .letter-click-txt-active {
     opacity: 0 !important;
-    }
+  }
 }

@@ -3,7 +3,8 @@
   position: relative;
   display: block;
   margin: 1.927vw 0;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 100%;
   background-color: #fff;
 }
 .layout-wrap {

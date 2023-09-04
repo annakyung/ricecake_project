@@ -17,6 +17,9 @@ window.addEventListener("load", function () {
       let obj = JSON.parse(str);
 
       CHOOSECAKE_GAME = obj.choosecakegame;
+
+      // 떡케이크 밸런스 게임을 화면에 배치
+      // showChoosecakeGame();
     }
   };
 
@@ -28,12 +31,27 @@ window.addEventListener("load", function () {
 
   // =========================================
   // 추천 상품 화면 출력 기능
+  // function showRecommendGood() {
   function showChoosecakeGame(item) {
+    // let html = ``;
     let html = `
         <img src="${item.pic && item.pic}" alt="${item.alt}">
         <p>${item.name}</p>
     `;
     choosecakeTag.html(html);
+    // const swRecommend = new Swiper(".sw-recommend", {
+    //   slidesPerView: 4, // 화면에 보여지는 갯수
+    //   spaceBetween: 40, // 슬라이드와 슬라이드의 사이 간격
+    //   slidesPerGroup: 4, // 슬라이드로 넘어가는 갯수
+    //   navigation: {
+    //     prevEl: ".recommend .slide-prev",
+    //     nextEl: ".recommend .slide-next",
+    //   },
+    //   pagination: {
+    //     el: ".recommend .slide-pg",
+    //     type: "fraction",
+    //   },
+    // });
   }
   // =========================================
 
@@ -47,6 +65,7 @@ window.addEventListener("load", function () {
   const gameLevelDivs = $(".game-level");
   // 결과화면
   const gameResultDiv = $(".game-stage-result");
+  const gameResultNum = $(".game-state-num");
   // 다시 시작하기 버튼
   const gameRestartBt = $(".bt-game-restart");
   // 결과창 닫기 버튼
@@ -56,6 +75,8 @@ window.addEventListener("load", function () {
   let gameLevelTotal = gameLevelDivs.length;
   let gameResult = "";
   let gameLevel = 0;
+  // 현재 게임의 상태
+  let gameState = "준비";
   //게임 레벨 보여주기
   function gameShowFN() {
     gameLevelDivs.hide();
@@ -73,6 +94,7 @@ window.addEventListener("load", function () {
           gameViewDiv.hide();
           // 결과창으로 보여주기
           gameResultDiv.addClass("game-stage-result-active");
+          // gameResultDiv.show();
           // 결과 내용 변경해서 출력하기
           gameResultShowFN();
         } else {
