@@ -1,0 +1,28 @@
+/* 탑 버튼 */
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 999;
+}
+.top-button .top-btn {
+  position: relative;
+  display: block;
+  width: 55px;
+  line-height: 55px;
+  background-color: skyblue;
+  border-radius: 50%;
+  text-align: center;
+}
+.top-button .top-btn img {
+  transform: rotate(180deg);
+}
+.top-button .top-btn img.up {
+  padding-bottom: 5px;
+  transform: rotate(0deg);
+}
