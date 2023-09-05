@@ -2,25 +2,19 @@
 .collabo {
   position: relative;
   display: block;
-  /* width: 100vw; */
   width: 100%;
-  height: 1300px;
-  height: 57.292vw;
-  background-color: aquamarine;
+  background-color: #fff;
 }
 .collabo-wrap {
   position: relative;
   display: flex;
   justify-content: center;
-  /* width: 77.5vw; */
-  padding-top: 8.021vw;
   margin: 0 auto;
 }
 .collabo-box {
   position: relative;
   display: inline-block;
   width: 35.417vw;
-  height: auto;
 }
 .collabo-box:first-child {
   margin-right: 6.25vw;
@@ -31,7 +25,7 @@
   width: 35.417vw;
   height: 35.417vw;
   padding: 3.542vw 0;
-  border-radius: 1.302vw;
+  border-radius: 20px;
   box-shadow: 0 0.521vw 0.521vw rgba(0, 0, 0, 25%);
   text-align: center;
   font-weight: bold;
@@ -65,15 +59,17 @@
   margin-left: 0.4vw;
 }
 .collabo-img img:nth-child(3) {
-  width: 21.563vw;
+  /* width: 21.563vw; */
+  width: 20.833vw;
   margin: 0 auto;
 }
 .collabo-textwrap {
   position: relative;
   display: block;
-  top: -4%;
+  top: -5%;
 }
 .collabo-textwrap p {
+  font-size: 1.042vw;
   font-weight: normal;
 }
 .collabo-textwrap strong {
@@ -86,7 +82,7 @@
 .collabo-textwrap h2 {
   position: relative;
   display: block;
-  font-size: 1.823vw;
+  font-size: 1.719vw;
   line-height: 2.5vw;
   margin-top: 0.8vw;
 }
@@ -99,11 +95,14 @@
   background-color: #22459b;
 }
 .collabo-round:nth-child(3) {
-  top: 23%;
-  left: 44.2%;
+  /* top: 23%; */
+  top: 30%;
+  /* left: 44.2%; */
+  left: 44.9%;
 }
 .collabo-round:nth-child(4) {
-  top: 23%;
+  /* top: 23%; */
+  top: 30%;
   left: 49.4%;
 }
 .collabo-img img:nth-child(5) {
@@ -118,14 +117,14 @@
   position: absolute;
   display: block;
   width: 12vw;
-  bottom: -5%;
-  left: -9%;
+  bottom: 0%;
+  left: -12%;
 }
 .collabo-img img:nth-child(7) {
   position: absolute;
   display: block;
   width: 6.5vw;
-  bottom: 22%;
+  bottom: 27%;
   left: 0;
 }
 .collabo-img.collabo-right img {
@@ -157,9 +156,8 @@
   display: block;
   width: 14.165vw;
   height: 3.281vw;
-  /* margin: 3.333vw auto 0; */
-  margin: 3.34vw auto 6.771vw;
-  border-radius: 1.302vw;
+  margin: 3.333vw auto 0;
+  border-radius: 25px;
   font-size: 0.938vw;
   font-weight: bold;
   color: #fff;
@@ -178,23 +176,60 @@
 }
 
 @media all and (max-width: 1080px) {
+  .collabo-textwrap {
+    top: -6%;
+  }
+  .collabo-round:nth-child(3) {
+    top: 30%;
+    left: 44.2%;
+  }
+  .collabo-round:nth-child(4) {
+    top: 30%;
+    left: 49.4%;
+  }
+  .collabo-btn {
+    width: 14.352vw;
+  }
 }
 @media all and (max-width: 960px) {
+  .collabo-textwrap {
+    top: -8%;
+  }
+  .collabo-round:nth-child(3) {
+    top: 32%;
+    left: 44.8%;
+  }
+  .collabo-round:nth-child(4) {
+    top: 32%;
+    left: 49.4%;
+  }
+  .collabo-textwrap p {
+    font-size: 1.042vw;
+  }
+  .collabo-textwrap p strong {
+    font-size: 1.302vw;
+  }
+  .collabo-textwrap h2 {
+    font-size: 1.563vw;
+    line-height: 2.4vw;
+    margin-top: 0.5vw;
+  }
+  .collabo-btn {
+    width: 14.861vw;
+  }
 }
 @media all and (max-width: 720px) {
+  .collabo-btn {
+    width: 14.861vw;
+  }
+  .collabo-round:nth-child(3) {
+    top: 32%;
+    left: 44.8%;
+  }
+  .collabo-round:nth-child(4) {
+    top: 32%;
+    left: 49.4%;
+  }
 }
 @media all and (max-width: 480px) {
-}
-
-@media (max-width: 767px) {
-  /* 모바일 */
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  /* 테블릿 세로 */
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* 테블릿 가로 */
-}
-@media (min-width: 1200px) {
-  /* 데스크탑 일반 */
 }

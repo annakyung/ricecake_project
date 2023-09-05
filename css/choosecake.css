@@ -3,30 +3,25 @@
   position: relative;
   display: block;
   width: 100%;
-  height: 50vw;
+  min-height: 500px;
   background-color: #fff;
 }
 .game-stage {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
   z-index: 99;
 }
 /* 시작 화면 */
 .game-stage-start {
-  position: absolute;
+  position: relative;
   display: block;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: auto;
 }
 .choose-textwrap {
   position: relative;
   display: block;
   text-align: center;
-  margin-top: 3.802vw;
   margin-bottom: 1.717vw;
 }
 .choose-textwrap h2 {
@@ -34,6 +29,8 @@
   display: block;
   font-size: 1.823vw;
   font-weight: bold;
+  font-family: "HANAMDAUM";
+  /* font-family: "SeoulHangangM"; */
 }
 .game-stage-start .choose-textwrap span {
   position: relative;
@@ -48,10 +45,10 @@
   width: 6.823vw;
   height: 2.491vw;
   line-height: 2.491vw;
-  border-radius: 1.302vw;
+  border-radius: 25px;
   background-color: #000;
   color: #fff;
-  border: 0.104vw solid #000;
+  border: 2px solid #000;
   font-size: 1.042vw;
   font-weight: bold;
   cursor: pointer;
@@ -60,12 +57,13 @@
 .bt-game-start:hover {
   background-color: #fff;
   color: #000;
-  border: 0.104vw solid #000;
+  border: 2px solid #000;
 }
 .choose-ricecake {
   position: relative;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .choose-cakeA {
   position: relative;
@@ -88,20 +86,14 @@
 }
 /* 게임 중 화면 */
 .game-stage-view {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
   width: 100%;
-  height: auto;
   display: none;
 }
 /* 게임 레벨 보이고, 숨기기 */
 .game-stage-view .game-level {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
   width: 100%;
-  height: auto;
   display: none;
 }
 .choose-textwrap div:not(.choose-btn) {
@@ -111,7 +103,7 @@
   width: 8.333vw;
   height: 2.604vw;
   line-height: 2.604vw;
-  border-radius: 1.302vw;
+  border-radius: 25px;
   background-color: #000;
   color: #fff;
   font-size: 1.042vw;
@@ -128,7 +120,7 @@
   position: relative;
   width: 26.042vw;
   height: 31.875vw;
-  border-radius: 1.302vw;
+  border-radius: 15px;
   background-color: #fff;
   border: 4px solid #d6d6d6;
   cursor: pointer;
@@ -155,6 +147,7 @@
   transform: translateX(-50%);
   font-size: 1.6vw;
   font-weight: bold;
+  white-space: nowrap;
 }
 /* 게임 결과 화면 */
 .game-stage-result {
@@ -178,7 +171,7 @@
   width: 45.6vw;
   height: 40vw;
   padding: 2.083vw 2.083vw;
-  border-radius: 1.302vw;
+  border-radius: 25px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -218,7 +211,7 @@
   width: 8.333vw;
   height: 2.604vw;
   line-height: 2.604vw;
-  border-radius: 1.302vw;
+  border-radius: 25px;
   background-color: #000;
   color: #fff;
 }
@@ -265,24 +258,31 @@
   top: 85%;
   left: 50%;
   transform: translateX(-50%);
+  white-space: nowrap;
 }
 .choose-btn button {
   display: inline-block;
   width: 8.854vw;
   height: 3.385vw;
-  border-radius: 0.521vw;
+  border-radius: 5px;
   font-size: 0.99vw;
   font-weight: bold;
-  background-color: transparent;
   cursor: pointer;
+  color: #1c1f1e;
+  border: 1px solid #1c1f1e;
+  background-color: transparent;
+  transition: 0.2s ease-out;
+}
+.choose-btn button:hover {
+  color: #fff;
+  background-color: #1c1f1e;
+}
+.choose-btn button:first-child {
+  margin-right: 0.521vw;
 }
 
 @media all and (max-width: 1080px) {
-  .choosecake {
-    height: 59vw;
-  }
   .choose-textwrap {
-    margin-top: 4.063vw;
     margin-bottom: 2.344vw;
   }
   .choose-textwrap h2 {
@@ -296,7 +296,6 @@
     width: 7.031vw;
     height: 2.708vw;
     line-height: 2.708vw;
-    border: 0.156vw solid #000;
     font-size: 1.302vw;
   }
   .choose-cakeA {
@@ -312,7 +311,6 @@
     width: 12.037vw;
     height: 3.241vw;
     line-height: 3.241vw;
-    border-radius: 2.315vw;
     font-size: 1.389vw;
   }
   .game-stage-view .choose-textwrap span {
@@ -323,11 +321,6 @@
   .choose-cake-btn {
     width: 29.167vw;
     height: 35vw;
-    border-radius: 1.389vw;
-    border: 0.463vw solid #d6d6d6;
-  }
-  .choose-cake-btn:active {
-    border: 0.463vw solid #ffec76;
   }
   .choose-cake-btn p {
     font-size: 1.852vw;
@@ -336,7 +329,6 @@
     width: 50.926vw;
     height: 44.444vw;
     padding: 2.5vw 2.5vw;
-    border-radius: 2.315vw;
   }
   .game-stage-result .game-result-close {
     font-size: 2.037vw;
@@ -348,7 +340,6 @@
     width: 11.111vw;
     height: 3.056vw;
     line-height: 3.056vw;
-    border-radius: 2.315vw;
   }
   .game-stage-result .choose-textwrap span {
     top: 15%;
@@ -378,13 +369,11 @@
   .choose-btn button {
     width: 10.185vw;
     height: 3.704vw;
-    border-radius: 0.926vw;
     font-size: 1.204vw;
   }
 }
 @media all and (max-width: 960px) {
   .choose-textwrap {
-    margin-top: 4.479vw;
     margin-bottom: 2.604vw;
   }
   .game-stage-start .choose-textwrap span {
@@ -394,7 +383,6 @@
     width: 6.406vw;
     height: 2.491vw;
     line-height: 2.491vw;
-    border: 0.156vw solid #000;
     font-size: 1.25vw;
   }
   .game-stage-result .game-result-close {
@@ -421,16 +409,11 @@
   .choose-btn button {
     width: 10.417vw;
     height: 3.704vw;
-    border-radius: 0.926vw;
     font-size: 1.204vw;
   }
 }
 @media all and (max-width: 720px) {
-  .choosecake {
-    height: 62vw;
-  }
   .choose-textwrap {
-    margin-top: 5.278vw;
     margin-bottom: 3.056vw;
   }
   .choose-textwrap h2 {
@@ -444,8 +427,6 @@
     width: 7.778vw;
     height: 3.056vw;
     line-height: 3.056vw;
-    border: 0.156vw solid #000;
-    border-radius: 3.472vw;
     font-size: 1.389vw;
   }
   .choose-cakeA {
@@ -461,7 +442,6 @@
     width: 13.194vw;
     height: 3.889vw;
     line-height: 3.889vw;
-    border-radius: 3.472vw;
     font-size: 1.806vw;
   }
   .game-stage-view .choose-textwrap span {
@@ -471,20 +451,59 @@
   .choose-cake-btn {
     width: 29.167vw;
     height: 36.389vw;
-    border-radius: 1.389vw;
-    border: 0.556vw solid #d6d6d6;
   }
-  .choose-cake-btn:active {
-    border: 0.556vw solid #ffec76;
+  .choose-btn button {
+    font-size: 1.111vw;
+  }
+  .game-result-wrap {
+    width: 62.5vw;
+    height: 52.778vw;
+    padding: 2.778vw 2.778vw;
+  }
+  .game-stage-result .game-result-close {
+    font-size: 2.778vw;
+  }
+  .game-stage-result .choose-textwrap div:not(.choose-btn, #game-result-html) {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12.5vw;
+    height: 3.889vw;
+    line-height: 3.889vw;
+  }
+  .game-stage-result .choose-textwrap span {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.944vw;
+  }
+  .game-stage-result #game-result-html img {
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20.833vw;
+  }
+  .game-stage-result #game-result-html p {
+    top: 71%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.083vw;
+  }
+  .game-stage-result .choose-textwrap .choose-btn {
+    position: absolute;
+    display: block;
+    top: 87%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .choose-btn button {
+    width: 12.5vw;
+    height: 3.704vw;
+    font-size: 1.204vw;
   }
 }
 @media all and (max-width: 480px) {
-  .choosecake {
-    height: 140vw;
-    background-color: orange;
-  }
   .choose-textwrap {
-    margin-top: 12.5vw;
     margin-bottom: 6.25vw;
   }
   .game-stage-start .choose-textwrap span {
@@ -498,22 +517,16 @@
     width: 18.75vw;
     height: 7.5vw;
     line-height: 7.5vw;
-    border: 0.156vw solid #000;
-    border-radius: 5.208vw;
     font-size: 3.125vw;
   }
   .bt-game-start:active {
     background-color: #fff;
     color: #000;
-    border: 0.156vw solid #000;
-  }
-  .choose-ricecake {
-    display: grid;
   }
   .choose-cakeA {
     display: block;
     width: 72.917vw;
-    height: 37.500vw;
+    height: 37.5vw;
     margin-right: 0;
     margin-bottom: 6.25vw;
   }
@@ -522,12 +535,10 @@
     width: 72.917vw;
     height: 37.500vw;
   }
-
   .choose-textwrap div:not(.choose-btn) {
     width: 22.917vw;
     height: 7.5vw;
     line-height: 7.5vw;
-    border-radius: 5.208vw;
     font-size: 3.125vw;
   }
   .game-stage-view .choose-textwrap span {
@@ -538,13 +549,10 @@
     position: relative;
     width: 72.917vw;
     height: 37.500vw;
-    border-radius: 2.083vw;
-    border: 0.833vw solid #d6d6d6;
-    margin-right: 0;
     margin-bottom: 8.333vw;
   }
-  .choose-cake-btn:active {
-    border: 0.833vw solid #ffec76;
+  .choose-cake-btn:first-child {
+    margin-right: 0;
   }
   .choose-cake-btn p {
     position: absolute;
@@ -563,54 +571,36 @@
     scale: 1.2;
   }
   .game-result-wrap {
-    width: 50.926vw;
     width: 71.667vw;
-    height: 44.444vw;
     height: 65.208vw;
-    padding: 2.5vw 2.5vw;
-    border-radius: 2.315vw;
+    padding: 4.167vw 4.167vw;
   }
   .game-stage-result .game-result-close {
-    font-size: 2.037vw;
+    font-size: 3.125vw;
   }
   .game-stage-result .choose-textwrap div:not(.choose-btn, #game-result-html) {
     top: 3%;
     left: 50%;
     transform: translateX(-50%);
-    width: 11.111vw;
-    height: 3.056vw;
-    line-height: 3.056vw;
-    border-radius: 2.315vw;
+    width: 14.583vw;
+    height: 4.167vw;
+    line-height: 4.167vw;
+    font-size: 2.5vw;
   }
   .game-stage-result .choose-textwrap span {
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.296vw;
+    top: 16%;
+    font-size: 2.5vw;
   }
   .game-stage-result #game-result-html img {
-    top: 24%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 17.315vw;
+    top: 27%;
+    width: 22.917vw;
   }
   .game-stage-result #game-result-html p {
-    top: 71%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.667vw;
-  }
-  .game-stage-result .choose-textwrap .choose-btn {
-    position: absolute;
-    display: block;
-    top: 85%;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 2.708vw;
   }
   .choose-btn button {
-    width: 10.185vw;
-    height: 3.704vw;
-    border-radius: 0.926vw;
+    width: 17.292vw;
+    height: 4.792vw;
     font-size: 1.204vw;
   }
 }
