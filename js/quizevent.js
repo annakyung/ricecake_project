@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
     const expectedAnswer = "국내최초";
 
     if (userAnswer === expectedAnswer) {
-      alert("정답입니다! 쿠폰이 발급되었습니다. ");
+      alert("정답입니다! 쿠폰이 발급되었습니다.");
     } else {
       alert("틀렸습니다. 다시 시도하세요.");
 
