@@ -1,15 +1,7 @@
 /* 토퍼 무료 제작 이벤트 */
-@font-face {
-  font-family: "HANAMDAUM";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
 /* 전체 */
 .topperevent {
   width: 100%;
-  padding: 100px 0;
   background-color: #0c2668;
 }
 /* 배너 */
@@ -21,30 +13,34 @@
   padding: 4% 13%;
   align-items: center;
 }
+.topper_txt {
+  width: 70%;
+}
 .topper_txt h1 {
-  font-size: 28px;
+  font-size: 1.5vw;
   font-family: "HANAMDAUM";
   color: #e5606a;
   font-weight: bold;
 }
 .topper_txt h2 {
-  font-size: 20px;
+  width: 100%;
+  font-size: 1.0417vw;
   font-weight: bold;
   margin-top: 8px;
 }
 .topper_txt p {
-  font-size: 15px;
+  font-size: 0.7813vw;
   margin: 10px 0 20px 0;
   font-weight: 600;
   color: #727272;
 }
 .topper_txt button {
-  padding: 3% 8%;
+  padding: 0.5208vw 1.5625vw;
   background-color: #6b645f;
-  border-radius: 10px;
+  border-radius: 0.5208vw;
   color: #ffff;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.7vw;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -55,7 +51,7 @@
   background-color: #6b645f;
 }
 .topper_txt span {
-  font-size: 15px;
+  font-size: 0.7813vw;
 }
 .topper_img {
   display: flex;
@@ -72,18 +68,26 @@
 /* 반응형 */
 
 @media all and (max-width: 960px) {
-  .topperevent_banner {
+  /* .topperevent_banner {
     display: flex;
     flex-wrap: wrap;
   }
   .topper_txt {
     margin: 0 auto;
-    text-align: center;
-  }
+  
+  } */
   .topper_img {
     justify-content: center;
     margin: 0 auto;
-    width: 100%;
+    width: 60%;
     padding-top: 3%;
+    /* display: none; */
+  }
+  .topper_txt p {
+    display: none;
+  }
+
+  .topper_txt button {
+    margin-top: 8px;
   }
 }
