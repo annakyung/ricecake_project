@@ -22,6 +22,9 @@
   display: block;
   background-color: #ffff;
 }
+section {
+  padding: 100px 0;
+}
 
 /* swiper 기본 셋팅 */
 .swiper {
