@@ -2,6 +2,8 @@
 .recommend {
   position: relative;
   display: block;
+  margin: 1.927vw 0;
+  /* width: 100vw; */
   width: 100%;
   background-color: #fff;
 }
@@ -14,7 +16,7 @@
   display: block;
   font-size: 1.563vw;
   font-weight: bold;
-  padding-bottom: 1.875vw;
+  padding: 1.875vw 0;
 }
 .recommend-slide {
   position: relative;
@@ -88,6 +90,7 @@
   position: relative;
   display: block;
   margin-top: 3.385vw;
+  margin-bottom: 2.604vw;
 }
 .swiper-pagination span {
   width: 0.833vw;
