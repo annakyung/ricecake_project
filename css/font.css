@@ -12,3 +12,12 @@
 /* Noto Sans */
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* HANAMDAUM */
+@font-face {
+  font-family: "HANAMDAUM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
