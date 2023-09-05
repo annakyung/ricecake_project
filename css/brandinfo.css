@@ -2,25 +2,47 @@
 .brandinfo {
   width: 100%;
   background-color: #0c2668;
-  background: url("../images/brandInfo_back.svg") center;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 300px;
 }
-
+.brandInfoWrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.infoTitle {
+  text-align: center;
+  color: #fff;
+}
+.infoTitle h1 {
+  font-family: "SeoulHangangM";
+  font-size: 2vw;
+  padding-bottom: 2.6042vw;
+}
+.infoTitle p {
+  font-size: 1vw;
+  padding-bottom: 1vw;
+}
 .infoImg ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-end;
 }
+.infoImg ul li {
+  width: 25%;
+}
+.infoImg ul li:first-child img {
+  position: relative;
+  top: 20px;
+
+}
 .infoImg img {
-  width: 22vw;
+  width: 100%;
   padding: 0 25px;
 }
-
+.infoTxt h1 {
+  font-family: "SeoulHangangM";
+}
 .infoTxt ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .infoTxt li {
   font-size: 1vw;
