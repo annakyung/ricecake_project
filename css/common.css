@@ -11,9 +11,13 @@
   display: block;
   max-width: 1300px;
   padding: 0 20px;
-  /* margin: 0 20px; */
   min-width: 480px;
   margin: 0 auto;
+}
+@media all and (max-width: 480px) {
+  .inner {
+    min-width: 0;
+  }
 }
 
 /* 전체 레이아웃 */
