@@ -16,7 +16,7 @@
 .sns-icon {
   position: absolute;
   display: block;
-  top: -40px;
+  top: -25px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -171,15 +171,20 @@
   position: absolute;
   display: inline-block;
   /* background-color: #0c2668; */
-  font-size: 50px;
+  font-size: 40px;
   top: 43%;
-  left: 58%;
+  left: 63%;
   font-weight: 700;
 }
 .call-center {
+  position: relative;
+  display: block;
   font-size: 20px;
   font-weight: 200;
+  height: 8px;
+  margin-bottom: 10px;
 }
+
 .copy {
   position: relative;
   display: block;
@@ -188,166 +193,247 @@
   margin-top: 45px;
 }
 
-/* =====================================모바일 반응형*/
-@media all and (max-width: 480px) {
-  .footer {
-    position: relative;
-    display: block;
-    background: url("../images/footer-bg.png") no-repeat center;
-    background-size: cover;
-    width: 100vw;
-    height: 360px;
-    background-color: #0c2668;
-  }
-  /* sns 아이콘 */
-  .sns-icon {
-    position: absolute;
-    display: block;
-    top: -20px;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  *:focus,
-  *:active {
-    outline: none !important;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .wrapper {
-    display: inline-flex;
-    list-style: none;
-  }
-  .wrapper .icon {
-    position: relative;
-    display: block;
-    background: #ffffff;
-    border-radius: 50%;
-    padding: 15px;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #ffffff;
-    color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  .wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
-    background: #1877f2;
-    color: #ffffff;
-  }
-
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
-    background: #1da1f2;
-    color: #ffffff;
-  }
-
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background: #e4405f;
-    color: #ffffff;
-  }
-
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
-    background: #333333;
-    color: #ffffff;
-  }
-
-  .wrapper .youtube:hover,
-  .wrapper .youtube:hover .tooltip,
-  .wrapper .youtube:hover .tooltip::before {
-    background: #cd201f;
-    color: #ffffff;
-  }
-
+@media all and (max-width: 1080px) {
   .footer-logo {
-    position: absolute;
+    position: relative;
     display: block;
-    width: 200px;
-    top: 34%;
-    left: 10%;
+    top: 120px;
+    left: 8%;
   }
-
+  
   .footer-menu {
     position: relative;
+    display: block;
+    top: -100px;
+  }
+  
+  .footer-menu-list {
+    position: relative;
+    display: flex;
+    font-size: 15px;
+    flex-wrap: wrap;
+    line-height: 3em;
+    top: 12vw;
+    justify-content: space-evenly;
+  }
+  
+  .list:hover {
+    font-weight: 800;
+    color: #0c2668;
+  }
+  
+  .adress-wrap {
     display: none;
-    /* background-color: #1877F2; */
+  }
+
+  .call {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 0.4em;
+    top: -50px;
+    left: 73%;
+    font-weight: 700;
+    color: #333;
+  }
+  .copy {
+    position: relative;
+    display: block;
+    text-align: center;
+    /* background-color: #0c2668; */
+    top:-20px;
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 960px) {
+  .footer-menu {
+    position: relative;
+    display: block;
+  }
+  .footer-menu-list {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    top:100px;
+    width: 70%;
+  }
+  .footer-logo {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    top: 200px;
   }
   .adress-wrap {
-    position: relative;
     display: none;
+  }
+  .copy {
+    position: relative;
+    display: block;
+    text-align: center;         
   }
   .call {
     position: absolute;
-    display: inline-block;
-    font-size: 35px;
-    top: 40%;
-    left: 58%;
-    font-weight: 700;
-    line-height: 0.5em;
-    color: #333;
-  }
-  .call-center {
-    font-size: 20px;
-    font-weight: 200;
-  }
-  .copy {
-    position: absolute;
     display: block;
-    text-align: center;
-    width: 80%;
-    top: 85%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
+    font-size: 20px;
+    line-height: 0.4em;
+    top: 70%;
+
+    left: 80%;
+    font-weight: 700;
     color: #333;
   }
 }
+@media all and (max-width: 720px) {
+  .footer-menu-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size:12px;
+    line-height: 2.2em;
+    top: 80px;
+    width: 30%;
+    background-color: yellowgreen;
+  }
+
+  .footer-logo {
+    position: relative;
+    display: block;
+    top: 100px;
+
+  }
+  .adress-wrap {
+    display: none;
+  }
+  
+  .call {
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    line-height: 0.4em;
+    top: 40%;
+    left: 70%;
+    font-weight: 700;
+    color: #333;
+  }
+.copy {
+    position: relative;
+    display: block;
+    text-align: center;
+    top: -50px;
+  }
+}
+@media all and (max-width: 480px) {
+  .footer {
+  position: relative;
+  display: block;
+  background: url("../images/footer-bg.png") no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 360px;
+  background-color: #0c2668;
+}
+/* sns 아이콘 */
+.sns-icon {
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+.wrapper .icon {
+  position: relative;
+  display: block;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer-logo {
+  position: relative;
+  display: block;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-menu {
+  display: none;
+}
+.adress-wrap {
+  display: none;
+}
+.call {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  top: 10px;
+left: 50%;
+transform: translateX(-50%);
+  margin: 0 auto;
+  line-height: 0.4em;
+  color: #333;
+}
+
+.copy {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 80%;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #333;
+}
+}
+
+

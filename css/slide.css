@@ -9,14 +9,15 @@
 /* 공통 css*/
 /* 20주년가념50%할인 */
 .sale-text {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 200px;
   height: 35px;
   background-color: #0c2668;
   border-radius: 30px;
-  top: 100px;
-  left: 100px;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
 }
 .sale-text > p {
@@ -33,47 +34,38 @@
 
 /* 케익이름 */
 .title-name {
-  position: relative;
+  position: absolute;
   display: block;
   font-family: "HANAMDAUM";
   font-size: 5.2083vw;
-  letter-spacing: -0.03em;
-  color: #353535;
-  margin-top: 115px;
-  line-height: 4.6875vw;
-  margin-left: 100px;
-}
-
-/* 구매하러가기 */
-.main-section > .goshopping > a {
-  position: absolute;
-  display: block;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 130px;
   left: 50%;
-  bottom: 20px;
   transform: translateX(-50%);
-  background-color: #ffffff;
-  border: 2px solid #0c2668;
-  font-size: 15px;
-  padding: 15px 40px;
-  font-weight: 600;
-}
-.main-section > .goshopping > a:hover {
-  background-color: #0c2668;
-  color: #fff;
-  border-radius: 30px;
-  transition: 0.3s;
+  text-align: center;
 }
 
 /* 3컷상세이미지 */
 .left-section01 {
   position: relative;
   display: block;
-  margin-top: 50px;
-  margin-left: 180px;
+}
+.left-imgwrap{
+  position: relative;
+  display: block;
+  width: 250px;
+  margin-top: 100%;
+  margin-left: -100px;
+}
+.left-imgwrap > li{
+  position: relative;
+  display: block;
 }
 .left-imgwrap > li > a > img {
   position: relative;
-  width: 180px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,12 +91,14 @@
 .goreview {
   position: absolute;
   display: inline-block;
-  width: 15%;
+  width: 13%;
+  height: 50px;
   background: none;
   border: 2px solid #0c2668;
   padding: 10px 50px;
-  top: -50px;
+  top: -10px;
   left: 34.5%;
+  white-space: nowrap;
   font-weight: 600;
 }
 .goreview:hover {
@@ -112,26 +106,30 @@
   display: block;
   background-color: #0c2668;
   color: #fff;
-  border: none;
+  border: 2px solid #0c2668;
   /* transition: 0.3s; */
 }
 .goshopping {
   position: absolute;
   display: inline-block;
-  width: 15%;
+  width: 17%;
+  height: 50px;
   background: none;
   border: 2px solid #0c2668;
   padding: 10px 50px;
-  top: -50px;
-  left: 50.5%;
+  top: -10px;
+  left: 48%;
+  white-space: nowrap;
   font-weight: 600;
+  background-color: #0c2668;
+  color: #fff;
 }
 .goshopping:hover {
   position: relative;
   display: block;
-  background-color: #0c2668;
-  color: #fff;
-  border: none;
+  background-color: #ffffff;
+  color: #0c2668;
+  border: 2px solid #0c2668;
   /* transition: 0.3s; */
 }
 .downicon2 {
@@ -156,7 +154,7 @@
 .main-section > img {
   position: absolute;
   display: block;
-  top: -600px;
+  top: -550px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -182,17 +180,19 @@
   border-radius: 100px;
   z-index: 999;
 }
+.right-cake-box > li{
+  position: absolute;
+}
 .right-cake-box > li > a > img {
   position: relative;
   display: block;
   width: 80%;
   margin: 0 auto;
   margin-top: 20%;
-  margin-bottom: 20%;
+  margin-bottom: 30%;
 }
-.right-cake-box > li > a:hover > img {
-  transform: scale(1.3);
-  transition: all 0.2s linear;
+.right-cake-box > li > a:hover{
+  cursor: pointer;
 }
 /* ============================================공통css */
 
@@ -205,6 +205,7 @@
   background-color: #ffffff;
   margin: 0 auto;
   top: 230px;
+  border-radius: 10px;
 }
 .left-section01 {
   position: relative;
@@ -224,26 +225,119 @@
   font-size: 15px;
 }
 /* 포인트상세설명 */
+.line1{
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.456);
+  top: -420px;
+  left: 50.1%;
+}
+.line1::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top:-4px;
+  left: 100%;
+  background-color: rgb(135, 141, 255);
+  box-shadow: 0 0 10px #dee040,
+  0 0 20px #dee040,
+  0 0 30px #dee040,
+  0 0 40px #dee040,
+  0 0 50px #dee040,
+  0 0 60px #dee040,
+  0 0 70px #dee040,
+  0 0 80px #dee040,
+  0 0 90px #dee040,
+  0 0 100px #dee040;
+}
 .detailed-description01 {
   position: absolute;
   display: inline-block;
-  top: -520px;
-  left: 890px;
-  font-size: 12px;
+  top: -430px;
+  left: 60%;
+  font-size: 14px;
+  font-weight: 500;
+}
+.line2{
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.456);
+  top: -310px;
+  left: 50.1%;
+}
+.line2::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top:-4px;
+  left: 100%;
+  background-color: rgb(135, 141, 255);
+  box-shadow: 0 0 10px #dee040,
+  0 0 20px #dee040,
+  0 0 30px #dee040,
+  0 0 40px #dee040,
+  0 0 50px #dee040,
+  0 0 60px #dee040,
+  0 0 70px #dee040,
+  0 0 80px #dee040,
+  0 0 90px #dee040,
+  0 0 100px #dee040;
 }
 .detailed-description02 {
   position: absolute;
   display: inline-block;
-  top: -430px;
-  left: 930px;
-  font-size: 12px;
+  top: -320px;
+  left: 65%;
+  font-size: 14px;
+  font-weight: 500;
+}
+.line3{
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.456);
+  top: -135px;
+  left: 50.1%;
+}
+.line3::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top:-4px;
+  left: 100%;
+  background-color: rgb(135, 141, 255);
+  box-shadow: 0 0 10px #dee040,
+  0 0 20px #dee040,
+  0 0 30px #dee040,
+  0 0 40px #dee040,
+  0 0 50px #dee040,
+  0 0 60px #dee040,
+  0 0 70px #dee040,
+  0 0 80px #dee040,
+  0 0 90px #dee040,
+  0 0 100px #dee040;
 }
 .detailed-description03 {
   position: absolute;
   display: inline-block;
-  top: -230px;
-  left: 900px;
-  font-size: 12px;
+  top: -145px;
+  left: 60%;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* 비주얼 section02 */
@@ -256,6 +350,7 @@
   margin: 0 auto;
   margin-top: 134px;
   top: 230px;
+  border-radius: 10px;
 }
 
 .left-section02 {
@@ -316,6 +411,7 @@
   margin: 0 auto;
   margin-top: 134px;
   top: 230px;
+  border-radius: 10px;
 }
 .left-section03 {
   position: relaaative;
@@ -375,6 +471,7 @@
   margin: 0 auto;
   margin-top: 134px;
   top: 230px;
+  border-radius: 10px;
 }
 
 .left-section04 {
@@ -431,19 +528,32 @@
 }
 /* -------------------------------모바일 반응형-------------------------------- */
 
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 720px) {
+  
+}
 @media all and (max-width: 480px) {
   /* 공통css */
   .slide {
     position: relative;
     display: block;
+    background-color: #0c2668;
   }
   .slide-wrap {
     position: relative;
     display: block;
     width: 100%;
-    height: 4000px;
+    height: 3530px;
+    background-color: #0c2668;
   }
-
+  .line1,
+  .line2,
+  .line3{
+    display: none;
+  }
   /* 20주년가념50%할인 */
   .sale-text {
     position: relative;
@@ -453,7 +563,7 @@
     background-color: #0c2668;
     border-radius: 30px;
     top: 13.125vw;
-    left: 10.3438vw;
+    left: 50%;
     z-index: 999;
   }
   .sale-text > p {
@@ -476,22 +586,21 @@
     font-size: 40px;
     letter-spacing: -0.03em;
     color: #353535;
-    margin-top: 14.1667vw;
+    margin-top: -50px;
     line-height: 9.61vw;
-    margin-left: 10%;
   }
 
   /* 리뷰/구매하러가기 */
   .goreview {
     position: absolute;
     display: block;
-    width: 38%;
+    width: 33%;
     left: 30%;
     transform: translateX(-50%);
-    top: 105.4583vw;
+    top: 96.4583vw;
     background: none;
     color: #000;
-    padding: 20px 50px;
+    padding:10px;
     white-space: nowrap;
     border: 1px solid #0c2668;
   }
@@ -502,13 +611,14 @@
   .goshopping {
     position: absolute;
     display: block;
-    width: 38%;
+    width: 43%;
     left: 70%;
     transform: translateX(-50%);
-    top: 86.4583vw;
+    top: 96.4583vw;
     background: none;
-    color: #000;
-    padding: 20px 50px;
+    color: #ffffff;
+    background-color: #0c2668;
+    padding: 10px 20px;
     white-space: nowrap;
     border: 1px solid #0c2668;
   }
@@ -567,11 +677,12 @@
   .price-size {
     position: absolute;
     display: inline-block;
-    top: 28%;
-    left: 53%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
     color: #222;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
   }
 
@@ -585,11 +696,11 @@
     width: 30%;
   }
   .main-section > img {
-    position: absolute;
+    position: relative;
     display: block;
-    top: -9.6042vw;
+    top: -50px;
     left: 50%;
-    width: 60%;
+    width: 70%;
     transform: translateX(-50%);
     z-index: 99999;
   }
@@ -608,55 +719,24 @@
   .visual-section-01 {
     position: relative;
     display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-  }
-
-  /* 3컷상세이미지 */
-  .left-section01 {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-  }
-  .left-section01 > .left-imgwrap {
-    position: relative;
-    display: inline-block;
-    /* background-color: #0c2668; */
-    width: 55%;
-    top: 79vw;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .left-section01 > ul > li {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .left-section01 > ul > li > a > img {
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 60px;
-    border-radius: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-imgwrap > li > a > img:hover img {
-    transform: scale(2);
-    z-index: 999;
+    width: 90%;
+    height: 93vh;
+    margin: 0 ;
+    background-color: #ffffff;
+    border-radius: 20px;
   }
 
+  
   /* 케이크 상세 설명 */
   .txt-box {
     position: relative;
-    display: block;
-    width: 300px;
+    display: none;
+    width: 350px;
     height: 300px;
-    top: -30px;
+    top:130px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #0c266827;
@@ -684,16 +764,62 @@
     top: 0;
     left: 0;
   }
+/* 3컷상세이미지 */
+.left-section01 {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  top:57%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left-section01 > .left-imgwrap {
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left-section01 > ul > li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-section01 > ul > li > a > img {
+  position: relative;
+  display: block;
+  width:110px;
+  height: 85px;
+  border-radius: 10px;
+  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
+  transition: all 0.2s linear;
+}
+
+.left-imgwrap > li > a > img:hover img {
+  transform: scale(2);
+  z-index: 999;
+}
 
   /* ==========================visual 2번 */
   .visual-section-02 {
     position: relative;
     display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 93vh;
+    margin: 0 ;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 60px;
   }
 
   /* 3컷상세이미지 */
@@ -735,11 +861,15 @@
   .visual-section-03 {
     position: relative;
     display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 93vh;
+    margin: 0 ;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 60px;
   }
 
   /* 3컷상세이미지 */
@@ -781,11 +911,15 @@
   .visual-section-04 {
     position: relative;
     display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 93vh;
+    margin: 0 ;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 60px;
   }
 
   /* 3컷상세이미지 */
@@ -823,3 +957,4 @@
     z-index: 333;
   }
 }
+
