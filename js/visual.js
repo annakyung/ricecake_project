@@ -48,4 +48,11 @@ window.addEventListener("load", function () {
   });
 
   // 스크롤 모션에 따른 css 추가 (https://greensock.com/scrolltrigger/)
+  downicon.addEventListener("click", function(){
+    window.scrollTo({
+      top: 886,
+      left: 0,
+      behavior: "smooth"
+    });
+  });
 });

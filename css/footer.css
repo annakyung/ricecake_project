@@ -253,14 +253,15 @@
     justify-content: space-around;
     align-items: center;
     font-size: 13px;
-    top:100px;
+    top:130px;
     width: 70%;
   }
   .footer-logo {
     position: relative;
     display: inline-block;
     width: 150px;
-    top: 200px;
+    top: 160px;
+    left: 35%;
   }
   .adress-wrap {
     display: none;
@@ -268,16 +269,16 @@
   .copy {
     position: relative;
     display: block;
-    text-align: center;         
+    text-align: center; 
+    top: 100px;        
   }
   .call {
     position: absolute;
     display: block;
     font-size: 20px;
     line-height: 0.4em;
-    top: 70%;
-
-    left: 80%;
+    top: 180px;
+    left: 55%;
     font-weight: 700;
     color: #333;
   }
@@ -291,13 +292,13 @@
     line-height: 2.2em;
     top: 80px;
     width: 30%;
-    background-color: yellowgreen;
   }
 
   .footer-logo {
     position: relative;
     display: block;
     top: 100px;
+    left: 10%;
 
   }
   .adress-wrap {
@@ -318,7 +319,7 @@
     position: relative;
     display: block;
     text-align: center;
-    top: -50px;
+    top: -30px;
   }
 }
 @media all and (max-width: 480px) {
