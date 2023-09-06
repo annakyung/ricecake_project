@@ -45,10 +45,11 @@
 .topmenu > a > li {
   position: relative;
   display: inline-block;
-  width: 100%;
+  width: 60%;
   font-family: "twaysky";
   font-size: 15px;
   color: #111;
+  white-space: nowrap;
 }
 
 /* 로그인 */
@@ -74,20 +75,11 @@
   position: relative;
   display: none;
 }
-<<<<<<< HEAD
-
-/* ------------=------------------------480px---------- */
-
-@media all and (max-width: 480px) {
-  /* 메뉴토글버튼 */
-=======
-/* ------------=------------------------720px---------- */
-@media all and (max-width: 720px) {
->>>>>>> 65a1c53b17810d2f66a2b7dafc0778846c87ab9e
+@media all and (max-width: 1080px) {
   .header {
     position: relative;
     display: block;
-    height: 16.6667vw;
+    height: 10.6667vw;
   }
   .topmenu {
     top: 0;
@@ -166,7 +158,177 @@
   #menu {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 40%;
+    height: 100vh;
+    margin: -100px 0 0 -30px;
+    padding: 50px;
+    padding-top: 160px;
+    background: #00000090;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu > a > li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  #menuToggle > input:checked ~ ul {
+    transform: none;
+  }
+  /*로고 */
+  .logo {
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+  }
+  .logo > img {
+    margin: 0;
+    left: 55%;
+    width: 30%;
+    margin-top: 13px;
+  }
+
+  .menu-list-wrap {
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+  }
+  .menu-list {
+    position: relative;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: "twaysky";
+    /* background-color: aqua; */
+  }
+
+  .menu {
+    color: #000;
+    display: inline-block;
+    font-size: 0.8333vw;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  /* 로그인 */
+  .login {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    /* background-color: yellowgreen; */
+    width: 15%;
+    top: 30%;
+    left:75%;
+  }
+
+  .header > .usericon > img {
+    display: none;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .header {
+    position: relative;
+    display: block;
+    height: 10.6667vw;
+  }
+  .topmenu {
+    top: 0;
+    left: 0;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle > .menu > a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle > a:hover {
+    color: rgb(255, 234, 0);
+  }
+
+  #menuToggle > input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle > span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle > span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle > span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle > input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle > input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle > input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    display: block;
+    width: 40%;
     margin: -100px 0 0 -30px;
     padding: 50px;
     padding-top: 160px;
@@ -198,9 +360,9 @@
   }
   .logo > img {
     margin: 0;
-    left: 62%;
+    left: 70%;
+    width: 30%;
     margin-top: 13px;
-    width: 40%;
   }
 
   .menu-list-wrap {
@@ -247,18 +409,13 @@
   .header > .usericon > img {
     position: absolute;
     display: block;
+    width: 40px;
     top: 0px;
-    left: 1050%;
+    left: 1100%;
   }
 }
-<<<<<<< HEAD
-@media all and (max-width: 720px) {
-  /* 메뉴토글버튼 */
-=======
-/* ------------=------------------------480px---------- */
 
-@media all and (max-width: 480px) {
->>>>>>> 65a1c53b17810d2f66a2b7dafc0778846c87ab9e
+@media all and (max-width: 720px) {
   .header {
     position: relative;
     display: block;
@@ -341,11 +498,8 @@
   #menu {
     position: absolute;
     display: block;
-<<<<<<< HEAD
     width: 50%;
-=======
-    width: 100%;
->>>>>>> 65a1c53b17810d2f66a2b7dafc0778846c87ab9e
+    height: 485px;
     margin: -100px 0 0 -30px;
     padding: 50px;
     padding-top: 160px;
@@ -426,7 +580,179 @@
   .header > .usericon > img {
     position: absolute;
     display: block;
-    top: 0px;
+    top: 0;
+    left: 1100%;
+    /* background-color: #000; */
+  }
+}
+
+
+@media all and (max-width: 480px) {
+  .header {
+    position: relative;
+    display: block;
+    height: 16.6667vw;
+  }
+  .topmenu {
+    top: 0;
+    left: 0;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle > .menu > a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle > a:hover {
+    color: rgb(255, 234, 0);
+  }
+
+  #menuToggle > input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle > span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle > span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle > span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle > input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle > input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle > input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: -100px 0 0 -30px;
+    padding: 50px;
+    padding-top: 160px;
+    background: #00000090;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu > a > li {
+    padding: 10px 0;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  #menuToggle > input:checked ~ ul {
+    transform: none;
+  }
+  /*로고 */
+  .logo {
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+  }
+  .logo > img {
+    margin: 0;
+    left: 62%;
+    margin-top: 13px;
+    width: 40%;
+  }
+
+  .menu-list-wrap {
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+  }
+  .menu-list {
+    position: relative;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: "twaysky";
+    /* background-color: aqua; */
+  }
+
+  .menu {
+    color: #000;
+    display: inline-block;
+    font-size: 0.8333vw;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  /* 로그인 */
+  .login {
+    position: relative;
+    display: none;
+  }
+  .header > .usericon {
+    position: absolute;
+    display: block;
+    width: 8%;
+  }
+  .header > .usericon > img {
+    position: absolute;
+    display: block;
+    top: -5px;
     left: 1050%;
   }
 }
+
