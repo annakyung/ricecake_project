@@ -75,172 +75,76 @@
   position: relative;
   display: none;
 }
+
 @media all and (max-width: 1080px) {
   .header {
     position: relative;
     display: block;
-    height: 10.6667vw;
-  }
-  .topmenu {
-    top: 0;
-    left: 0;
-  }
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 30px;
-    left: 30px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  #menuToggle > .menu > a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.3s ease;
-  }
-
-  #menuToggle > a:hover {
-    color: rgb(255, 234, 0);
-  }
-
-  #menuToggle > input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-    -webkit-touch-callout: none;
-  }
-
-  #menuToggle > span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  #menuToggle > span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  #menuToggle > span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  #menuToggle > input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-
-  #menuToggle > input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  #menuToggle > input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  #menu {
-    position: absolute;
-    display: block;
-    width: 40%;
-    height: 100vh;
-    margin: -100px 0 0 -30px;
-    padding: 50px;
-    padding-top: 160px;
-    background: #00000090;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-
-  #menu > a > li {
-    padding: 10px 0;
-    font-size: 22px;
-    color: #fff;
-    margin-top: 10px;
-  }
-
-  #menuToggle > input:checked ~ ul {
-    transform: none;
+    width: 100%;
+    height: 100px;
+    margin-top: 20;
+    z-index: 999999;
   }
   /*로고 */
   .logo {
-    position: absolute;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 70%;
-  }
-  .logo > img {
-    margin: 0;
-    left: 55%;
-    width: 30%;
-    margin-top: 13px;
-  }
-
-  .menu-list-wrap {
     position: relative;
     display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    height: 100%;
-    /* background-color: yellowgreen; */
+    width: 25%;
   }
-  .menu-list {
-    position: relative;
+  .logo img {
+    position: absolute;
+    display: inline-block;
+    width: 35%;
+    padding: 0;
+    margin-left: 95px;
+    margin-top: 30px;
+  }
+  
+  /* 메뉴 */
+  #menuToggle > input {
+    display: none;
+  }
+  .topmenu {
+    position: absolute;
     display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     justify-content: space-between;
     align-items: center;
-    font-weight: 600;
-    font-family: "twaysky";
-    /* background-color: aqua; */
+    width: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
   }
-
-  .menu {
-    color: #000;
+  .topmenu > a > li {
+    position: relative;
     display: inline-block;
-    font-size: 0.8333vw;
-    margin: 0;
-    text-transform: uppercase;
+    width: 60%;
+    font-family: "twaysky";
+    font-size: 11px;
+    color: #111;
+    white-space: nowrap;
   }
-
+  
   /* 로그인 */
   .login {
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 13px;
-    /* background-color: yellowgreen; */
-    width: 15%;
-    top: 30%;
-    left:75%;
+    font-size: 0.6771vw;
+    font-family: "twaysky";
+    top: 40%;
+    width: 10%;
+    color: #000000;
+    /* background-color: #f2cf02; */
+    right: 65px;
   }
-
-  .header > .usericon > img {
+  .login > p {
+    /* background-color: turquoise; */
+    margin-left: 20px;
+    color: #000000;
+  }
+  .usericon {
+    position: relative;
     display: none;
   }
 }
