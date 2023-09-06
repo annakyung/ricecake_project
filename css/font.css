@@ -1,13 +1,10 @@
 /* font css */
 
-/* Gmarket Sans */
-@font-face {
-  font-family: "GmafrketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+/* Noto Sans - 기본 폰트 */
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* SeoulHangangM - 강조 폰트 */
 @font-face {
   font-family: "SeoulHangangM";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff")
@@ -15,6 +12,21 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Noto Sans */
-/* font-family: 'Noto Sans KR', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* HANAMDAUM - 강조 폰트 */
+@font-face {
+  font-family: "HANAMDAUM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* twaysky - 비주얼 '20th' 폰트 */
+@font-face {
+  font-family: "twaysky";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

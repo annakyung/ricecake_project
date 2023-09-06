@@ -14,7 +14,6 @@
 .collabo-box {
   position: relative;
   display: inline-block;
-  width: 35.417vw;
 }
 .collabo-box:first-child {
   margin-right: 6.25vw;
@@ -66,7 +65,7 @@
 .collabo-textwrap {
   position: relative;
   display: block;
-  top: -5%;
+  top: -6%;
 }
 .collabo-textwrap p {
   font-size: 1.042vw;
@@ -177,15 +176,19 @@
 
 @media all and (max-width: 1080px) {
   .collabo-textwrap {
-    top: -6%;
+    top: -7%;
   }
   .collabo-round:nth-child(3) {
-    top: 30%;
-    left: 44.2%;
+    top: 35%;
+    left: 45.2%;
   }
   .collabo-round:nth-child(4) {
-    top: 30%;
+    top: 35%;
     left: 49.4%;
+  }
+  .collabo-textwrap h2 {
+    font-size: 1.574vw;
+    margin-top: 0.6vw;
   }
   .collabo-btn {
     width: 14.352vw;
@@ -194,14 +197,6 @@
 @media all and (max-width: 960px) {
   .collabo-textwrap {
     top: -8%;
-  }
-  .collabo-round:nth-child(3) {
-    top: 32%;
-    left: 44.8%;
-  }
-  .collabo-round:nth-child(4) {
-    top: 32%;
-    left: 49.4%;
   }
   .collabo-textwrap p {
     font-size: 1.042vw;
@@ -219,16 +214,26 @@
   }
 }
 @media all and (max-width: 720px) {
+  .collabo-textwrap {
+    top: -9%;
+  }
   .collabo-btn {
-    width: 14.861vw;
+    width: 18.889vw;
   }
   .collabo-round:nth-child(3) {
-    top: 32%;
-    left: 44.8%;
+    top: 37%;
+    left: 45.3%;
   }
   .collabo-round:nth-child(4) {
-    top: 32%;
-    left: 49.4%;
+    top: 37%;
+    left: 49.3%;
+  }
+  .collabo-textwrap h2 {
+    margin-top: 0.4vw;
+  }
+  .collabo-img {
+    width: 37.417vw;
+    height: 37.417vw;
   }
 }
 @media all and (max-width: 480px) {

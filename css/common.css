@@ -29,6 +29,14 @@
 section {
   padding: 100px 0;
 }
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 720px) {
+}
+@media all and (max-width: 480px) {
+}
 
 /* swiper 기본 셋팅 */
 .swiper {
