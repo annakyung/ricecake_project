@@ -47,6 +47,43 @@ window.addEventListener("load", function () {
     }
   });
 
+  letterClick.addEventListener("click", function () {
+    // 현재 펼쳐져 있는지 아닌지를 파악한다.
+    const activeState = letterPaperWrap.classList.contains(
+      "letter-paper-wrap-active"
+    );
+    if (!activeState) {
+      console.log("열려라");
+      letterTop.classList.add("letter-top-active");
+      setTimeout(function () {
+        letterPaperWrap.classList.add("letter-paper-wrap-active");
+        letterPaper.classList.add("letter-paper-active");
+        letterCover.classList.add("letter-cover-active");
+        // letterLogo.classList.toggle("letter-logo-active");
+      }, 1000);
+      letterClick.classList.add("letter-click-active");
+      letterTxt.classList.add("letter-click-txt-active");
+    }
+  });
+  letterTxt.addEventListener("click", function () {
+    // 현재 펼쳐져 있는지 아닌지를 파악한다.
+    const activeState = letterPaperWrap.classList.contains(
+      "letter-paper-wrap-active"
+    );
+    if (!activeState) {
+      console.log("열려라");
+      letterTop.classList.add("letter-top-active");
+      setTimeout(function () {
+        letterPaperWrap.classList.add("letter-paper-wrap-active");
+        letterPaper.classList.add("letter-paper-active");
+        letterCover.classList.add("letter-cover-active");
+        // letterLogo.classList.toggle("letter-logo-active");
+      }, 1000);
+      letterClick.classList.add("letter-click-active");
+      letterTxt.classList.add("letter-click-txt-active");
+    }
+  });
+
   // 스크롤 모션에 따른 css 추가 (https://greensock.com/scrolltrigger/)
   downicon.addEventListener("click", function(){
     window.scrollTo({

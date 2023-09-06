@@ -4,8 +4,9 @@
   display: block;
   width: 100%;
   height: 100px;
-  margin-top: 20;
-  z-index: 999999;
+  /* margin-top: 20; */
+  /* z-index: 999999; */
+  /* background-color: aqua; */
 }
 /*로고 */
 .logo {
@@ -57,11 +58,9 @@
   top: 40%;
   width: 10%;
   color: #000000;
-  /* background-color: #f2cf02; */
   right: 0;
 }
 .login > p {
-  /* background-color: turquoise; */
   margin-left: 20px;
   color: #000000;
 }
@@ -93,7 +92,7 @@
     margin-left: 95px;
     margin-top: 30px;
   }
-  
+
   /* 메뉴 */
   #menuToggle > input {
     display: none;
@@ -117,7 +116,7 @@
     color: #111;
     white-space: nowrap;
   }
-  
+
   /* 로그인 */
   .login {
     position: absolute;
@@ -142,7 +141,6 @@
     display: none;
   }
 }
-
 @media all and (max-width: 960px) {
   .header {
     position: relative;
@@ -156,8 +154,8 @@
   #menuToggle {
     display: block;
     position: relative;
-    top: 30px;
-    left: 30px;
+    margin-top: 30px;
+    /* left: 30px; */
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -183,7 +181,7 @@
     cursor: pointer;
     opacity: 0;
     z-index: 2;
-    -webkit-touch-callout: none;
+    /* -webkit-touch-callout: none; */
   }
 
   #menuToggle > span {
@@ -353,7 +351,7 @@
     cursor: pointer;
     opacity: 0;
     z-index: 2;
-    -webkit-touch-callout: none;
+    /* -webkit-touch-callout: none; */
   }
 
   #menuToggle > span {
@@ -524,7 +522,6 @@
     cursor: pointer;
     opacity: 0;
     z-index: 2;
-    -webkit-touch-callout: none;
   }
 
   #menuToggle > span {
