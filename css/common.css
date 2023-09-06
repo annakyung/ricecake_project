@@ -11,9 +11,13 @@
   display: block;
   max-width: 1300px;
   padding: 0 20px;
-  /* margin: 0 20px; */
   min-width: 480px;
   margin: 0 auto;
+}
+@media all and (max-width: 480px) {
+  .inner {
+    min-width: 0;
+  }
 }
 
 /* 전체 레이아웃 */
@@ -21,6 +25,17 @@
   position: relative;
   display: block;
   background-color: #ffff;
+}
+section {
+  padding: 100px 0;
+}
+@media all and (max-width: 1080px) {
+}
+@media all and (max-width: 960px) {
+}
+@media all and (max-width: 720px) {
+}
+@media all and (max-width: 480px) {
 }
 
 /* swiper 기본 셋팅 */

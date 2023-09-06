@@ -1,16 +1,8 @@
 /* 홍보 영상 */
-@font-face {
-  font-family: "HANAMDAUM";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
 /* 전체 */
 .promotion {
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
   background-color: #ffffff;
 }
 
@@ -30,9 +22,8 @@
 .video h1 {
   font-family: "HANAMDAUM";
   text-align: center;
-  font-size: 2.81vw;
+  font-size: 3vw;
   font-weight: 600;
-  margin-top: 20%;
   margin-bottom: 10%;
 }
 .button {
@@ -90,7 +81,7 @@
   .bt {
     width: 100%;
     height: 40%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,10 +91,5 @@
   }
   .bt2 {
     margin-left: 0px;
-  }
-}
-@media all and (max-width: 480px) {
-  .bt {
-    font-size: 2.5vw;
   }
 }

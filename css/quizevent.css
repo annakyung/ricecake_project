@@ -2,9 +2,8 @@
 /* 섹션 전체 영역 */
 .quizevent {
   width: 100%;
-  background-color: #0C2668;
+  background-color: #0c2668;
   margin: 0 auto;
-  padding-bottom: 20%;
 }
 /* 빈칸을 채워라 이미지 */
 .quiz_dash_title {
@@ -29,7 +28,7 @@
 }
 /* 퀴즈 내부 영역 */
 .quiz_contents {
-  padding: 0 80px;
+  padding: 0 50px;
 }
 /* 퀴즈 */
 .quiz {
@@ -104,9 +103,12 @@
   border-radius: 20px;
   cursor: pointer;
 }
+.quiz_btn:hover {
+  background-color: rgb(216, 71, 83);
+}
 /* 퀴즈 안내 사항 */
 .quiz_info {
-  padding: 0 80px;
+  padding: 0 50px;
   margin-top: 3%;
 }
 .quiz_info img {
@@ -120,4 +122,45 @@
 .sp_color {
   font-weight: 900;
   color: #e5606a;
+}
+@media all and (max-width: 1080px) {
+  .quiz {
+    padding: 4% 7%;
+  }
+  .quiz_contents {
+    padding: 0 45px;
+  }
+  .quiz_info {
+    padding: 0 45px;
+  }
+}
+@media all and (max-width: 960px) {
+  .quiz {
+    padding: 3% 6%;
+  }
+  .quiz_contents {
+    padding: 0 40px;
+  }
+  .quiz_info {
+    padding: 0 40px;
+  }
+}
+@media all and (max-width: 720px) {
+  .quiz {
+    padding: 2% 5%;
+  }
+  .quiz_contents {
+    padding: 0 35px;
+  }
+  .quiz_info {
+    padding: 0 35px;
+  }
+}
+@media all and (max-width: 480px) {
+  .quiz_contents {
+    padding: 0 20px;
+  }
+  .quiz_info {
+    padding: 0 20px;
+  }
 }

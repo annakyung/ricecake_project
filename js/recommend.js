@@ -61,9 +61,35 @@ window.addEventListener("load", function () {
 
     recommendTag.innerHTML = html;
     const swRecommend = new Swiper(".sw-recommend", {
-      slidesPerView: 4, // 화면에 보여지는 갯수
-      spaceBetween: 40, // 슬라이드와 슬라이드의 사이 간격
-      slidesPerGroup: 4, // 슬라이드로 넘어가는 갯수
+      breakpoints: {
+        // 화면의 넓이가 1080px 이상일 때
+        1080: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          slidesPerGroup: 4,
+        },
+        // 화면의 넓이가 960px 이상일 때
+        960: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          slidesPerGroup: 4,
+        },
+        // 화면의 넓이가 720px 이상일 때
+        720: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          slidesPerGroup: 4,
+        },
+        // 화면의 넓이가 360px 이상일 때
+        360: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          slidesPerGroup: 4,
+        },
+      },
+      //slidesPerView: 4, // 화면에 보여지는 갯수
+      //spaceBetween: 40, // 슬라이드와 슬라이드의 사이 간격
+      //slidesPerGroup: 4, // 슬라이드로 넘어가는 갯수
       navigation: {
         prevEl: ".recommend .slide-prev",
         nextEl: ".recommend .slide-next",
