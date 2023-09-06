@@ -3,7 +3,6 @@
   position: relative;
   display: block;
   margin: 1.927vw 0;
-  /* width: 100vw; */
   width: 100%;
   background-color: #fff;
 }
@@ -17,18 +16,24 @@
   font-size: 1.563vw;
   font-weight: bold;
   padding: 1.875vw 0;
+  font-family: "HANAMDAUM";
 }
 .recommend-slide {
   position: relative;
   display: block;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #dce2f0;
 }
 .good-box {
   position: relative;
   display: block;
   width: 14.999vw;
   height: 20.27vw;
-  border-radius: 1.302vw;
-  background-color: #dce2f0;
+  height: 24.479vw;
 }
 .round {
   position: absolute;
@@ -71,7 +76,7 @@
   transform: translate(-50%, -50%);
   width: 6.771vw;
   height: 1.714vw;
-  border-radius: 1.302vw;
+  border-radius: 25px;
   text-align: center;
   line-height: 1.714vw;
   font-size: 0.781vw;
@@ -116,23 +121,36 @@
 }
 
 @media all and (max-width: 1080px) {
+  .good-box span {
+    font-size: 13px;
+  }
+  .good-box a {
+    font-size: 9px;
+    width: 7.222vw;
+    height: 1.944vw;
+    line-height: 1.944vw;
+  }
 }
 @media all and (max-width: 960px) {
+  .good-box span {
+    font-size: 12px;
+  }
+  .good-box a {
+    font-size: 7px;
+    width: 9.222vw;
+    height: 2.3vw;
+    line-height: 2.3vw;
+  }
 }
 @media all and (max-width: 720px) {
+  .good-box span {
+    font-size: 10px;
+  }
+  .good-box a {
+    width: 11.222vw;
+    height: 2.8vw;
+    line-height: 2.8vw;
+  }
 }
 @media all and (max-width: 480px) {
-}
-
-@media (max-width: 767px) {
-  /* 모바일 */
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  /* 테블릿 세로 */
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* 테블릿 가로 */
-}
-@media (min-width: 1200px) {
-  /* 데스크탑 일반 */
 }

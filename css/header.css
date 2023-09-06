@@ -1,10 +1,4 @@
-@font-face {
-  font-family: "twaysky";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+/* 상단 */
 .header {
   position: relative;
   display: block;
@@ -237,7 +231,7 @@
     /* background-color: yellowgreen; */
     width: 15%;
     top: 30%;
-    left:75%;
+    left: 75%;
   }
 
   .header > .usericon > img {
@@ -586,7 +580,6 @@
   }
 }
 
-
 @media all and (max-width: 480px) {
   .header {
     position: relative;
@@ -755,4 +748,3 @@
     left: 1050%;
   }
 }
-
