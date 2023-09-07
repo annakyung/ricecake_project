@@ -13,7 +13,7 @@
 .recommend h2 {
   position: relative;
   display: block;
-  font-size: 1.563vw;
+  font-size: 1.9vw;
   font-weight: bold;
   padding: 1.875vw 0;
   font-family: "HANAMDAUM";
@@ -32,8 +32,7 @@
   position: relative;
   display: block;
   width: 14.999vw;
-  height: 20.27vw;
-  height: 24.479vw;
+  height: 30vw;
 }
 .round {
   position: absolute;
@@ -49,7 +48,7 @@
 .image img {
   position: absolute;
   display: block;
-  top: 38%;
+  top: 36%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 11.099vw;
@@ -59,30 +58,32 @@
 .good-box span {
   position: relative;
   display: block;
-  top: 71%;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: bold;
-  font-size: 1.094vw;
+  font-size: 1.5vw;
   font-weight: bold;
   color: rgb(36, 40, 48);
+  white-space: nowrap;
 }
 .good-box a {
   position: relative;
   display: block;
-  top: 80%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 6.771vw;
-  height: 1.714vw;
+  width: 10.771vw;
+  height: 2.5vw;
   border-radius: 25px;
   text-align: center;
-  line-height: 1.714vw;
-  font-size: 0.781vw;
+  line-height: 2.5vw;
+  font-size: 1.198vw;
   font-weight: bold;
   color: #fff;
   background-color: #50586c;
+  white-space: nowrap;
   transition: all ease-in 0.1s;
 }
 .good-box:hover .image img {
@@ -119,38 +120,58 @@
   border-radius: 50%;
   background-color: #d9d9d9;
 }
+.swiper-button-next::after {
+  top: 0%;
+  left: 0%;
+}
 
 @media all and (max-width: 1080px) {
   .good-box span {
-    font-size: 13px;
+    top: 67%;
+    font-size: 15px;
   }
   .good-box a {
-    font-size: 9px;
-    width: 7.222vw;
-    height: 1.944vw;
-    line-height: 1.944vw;
-  }
-}
-@media all and (max-width: 960px) {
-  .good-box span {
+    top: 77%;
     font-size: 12px;
-  }
-  .good-box a {
-    font-size: 7px;
-    width: 9.222vw;
-    height: 2.3vw;
-    line-height: 2.3vw;
-  }
-}
-@media all and (max-width: 720px) {
-  .good-box span {
-    font-size: 10px;
-  }
-  .good-box a {
-    width: 11.222vw;
+    width: 10.222vw;
     height: 2.8vw;
     line-height: 2.8vw;
   }
 }
+@media all and (max-width: 960px) {
+  .good-box span {
+    top: 64%;
+    font-size: 14px;
+  }
+  .good-box a {
+    top: 74%;
+    font-size: 11px;
+    width: 10.222vw;
+    height: 2.8vw;
+    line-height: 2.8vw;
+  }
+}
+@media all and (max-width: 720px) {
+  .good-box span {
+    top: 65%;
+    font-size: 13px;
+  }
+  .good-box a {
+    top: 75%;
+    font-size: 11px;
+    width: 13.222vw;
+    height: 2.9vw;
+    line-height: 2.9vw;
+  }
+}
 @media all and (max-width: 480px) {
+  .good-box span {
+    font-size: 11px;
+  }
+  .good-box a {
+    font-size: 10px;
+    width: 14.222vw;
+    height: 3vw;
+    line-height: 3vw;
+  }
 }
