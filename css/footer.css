@@ -4,7 +4,6 @@
   display: block;
   background: url("../images/footer-bg.png") no-repeat center;
   background-size: cover;
-  /* width: 100vw; */
   width: 100%;
   height: 300px;
   background-color: #0c2668;
@@ -119,19 +118,20 @@
   background: #cd201f;
   color: #ffffff;
 }
+/* ============================== */
+
 
 .footer-logo {
   position: absolute;
   display: block;
   width: 200px;
-  top: 37%;
-  left: 280px;
+  top: 50%;
+  left: 0px;
 }
 
 .footer-menu {
   position: relative;
   display: block;
-  /* background-color: #1877F2; */
 }
 
 .footer-menu-list {
@@ -139,7 +139,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 55%;
   top: 70px;
   left: 50%;
   transform: translateX(-50%);
@@ -161,7 +161,7 @@
   font-size: 11px;
   color: #202020;
   line-height: 1.5em;
-  margin-left: 570px;
+  margin-left: 280px;
   margin-top: 110px;
 }
 .call {
@@ -169,9 +169,11 @@
   display: inline-block;
   /* background-color: #0c2668; */
   font-size: 40px;
-  top: 43%;
-  left: 63%;
+  top: 50%;
+  left: 61%;
   font-weight: 700;
+  line-height: 0.5em;
+
 }
 .call-center {
   position: relative;

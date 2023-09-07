@@ -10,7 +10,6 @@
   margin: 0 auto;
   /* background-color: yellowgreen; */
   text-align: center;
-  top: 80px;
 
 }
 .review {
@@ -42,7 +41,7 @@
   position: absolute;
   width: 75%;
   height: 14.1389vw;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
@@ -73,7 +72,7 @@
   align-items: center;
   width: 500px;
   /* background-color: aqua; */
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translateX(-50%);
 }
