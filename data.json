@@ -1,70 +1,70 @@
 {
   "recommendgood": [
     {
-      "pic": "/images/recom-ricecake01.png",
+      "pic": "images/recom-ricecake01.png",
       "alt": "떡 추천 이미지",
       "name": "삼색송편팩(꿀떡)",
       "id": "0",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake02.png",
+      "pic": "images/recom-ricecake02.png",
       "alt": "떡 추천 이미지",
       "name": "삼색경단팩",
       "id": "1",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake03.png",
+      "pic": "images/recom-ricecake03.png",
       "alt": "떡 추천 이미지",
       "name": "단호박인절미팩",
       "id": "2",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake04.png",
+      "pic": "images/recom-ricecake04.png",
       "alt": "떡 추천 이미지",
-      "name": "모시송편(1kg)",
+      "name": "모시송편(1kg, 2kg)",
       "id": "3",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake05.png",
+      "pic": "images/recom-ricecake05.png",
       "alt": "떡 추천 이미지",
-      "name": "개별두텁떡모듬팩",
+      "name": "개별두텁떡모듬팩(6개)",
       "id": "4",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake06.png",
+      "pic": "images/recom-ricecake06.png",
       "alt": "떡 추천 이미지",
       "name": "개별호박팥시루",
       "id": "5",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake07.png",
+      "pic": "images/recom-ricecake07.png",
       "alt": "떡 추천 이미지",
       "name": "단호박찹쌀떡팩",
       "id": "6",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake08.png",
+      "pic": "images/recom-ricecake08.png",
       "alt": "떡 추천 이미지",
       "name": "호두찹쌀떡팩",
       "id": "7",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake09.png",
+      "pic": "images/recom-ricecake09.png",
       "alt": "떡 추천 이미지",
       "name": "곶감찹쌀떡팩",
       "id": "8",
       "link": "#"
     },
     {
-      "pic": "/images/recom-ricecake10.png",
+      "pic": "images/recom-ricecake10.png",
       "alt": "떡 추천 이미지",
       "name": "통팥찹쌀떡팩",
       "id": "9",
@@ -74,37 +74,37 @@
 
   "choosecakegame": [
     {
-      "pic": "/images/choose-question-cake01.jpg",
+      "pic": "images/choose-question-cake01.jpg",
       "alt": "떡케이크 밸런스 게임 이미지",
       "name": "모듬 떡케이크",
       "id": "0"
     },
     {
-      "pic": "/images/choose-question-cake02.jpg",
+      "pic": "images/choose-question-cake02.jpg",
       "alt": "떡케이크 밸런스 게임 이미지",
       "name": "커스텀 케이크 (앙금)",
       "id": "1"
     },
     {
-      "pic": "/images/choose-question-cake03.png",
+      "pic": "images/choose-question-cake03.png",
       "alt": "떡케이크 밸런스 게임 이미지",
       "name": "기성품",
       "id": "2"
     },
     {
-      "pic": "/images/choose-question-cake04.jpg",
+      "pic": "images/choose-question-cake04.jpg",
       "alt": "떡케이크 밸런스 게임 이미지",
       "name": "미니 케이크 (앙금)",
       "id": "3"
     },
     {
-      "pic": "/images/choose-question-cake05.jpg",
+      "pic": "images/choose-question-cake05.jpg",
       "alt": "떡케이크 밸런스 게임 이미지",
       "name": "쌀 (빵) 케이크",
       "id": "4"
     },
     {
-      "pic": "/images/choose-question-cake06.jpg",
+      "pic": "images/choose-question-cake06.jpg",
       "alt": "떡케이크 밸런스 게임 이미지",
       "name": "미니 케이크 쌀 (빵)",
       "id": "5"

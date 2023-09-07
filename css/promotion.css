@@ -1,20 +1,9 @@
 /* 홍보 영상 */
-/* 전체 */
-.promotion {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-}
-
+.promotion {}
 /* 비디오 */
 .promotion video {
   width: 100%;
-  /* width: 1300px; */
-  /* min-width: 390px; */
-  /* height: 730px; */
-  margin: 0 auto;
   display: block;
-  align-items: center;
   border-radius: 10px;
   margin-bottom: 5%;
   cursor: pointer;
@@ -26,22 +15,19 @@
   font-weight: 600;
   margin-bottom: 10%;
 }
-.button {
+ul.button {
   width: 70%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  gap: 20px;
 }
 .bt {
-  width: 21vw;
-  min-width: 100px;
-  height: 4.4vw;
-  line-height: 4.4vw;
+  width: 50%;
+  line-height: 3;
   border: 3px solid #152a5e;
   text-align: center;
-  font-size: 1vw;
   font-weight: bold;
-  overflow: hidden;
   cursor: pointer;
 }
 .bt:hover {
@@ -51,45 +37,19 @@
 .bt:hover a {
   color: #fff;
 }
-.bt1 {
-  margin-right: 10px;
-}
-.bt2 {
-  margin-left: 10px;
-}
 
 /* 반응형 */
-@media all and (max-width: 1080px) {
-  .bt {
-    height: 4.6vw;
-    line-height: 4.6vw;
-  }
+@media all and (max-width: 1024px) {
+  
 }
-@media all and (max-width: 960px) {
-  .bt {
-    height: 4.8vw;
-    line-height: 4.8vw;
-  }
-}
-@media all and (max-width: 720px) {
+@media all and (max-width: 768px) {
   .button {
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 90px;
   }
   .bt {
     width: 100%;
-    height: 40%;
-    font-size: 2.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  .bt1 {
-    margin-right: 0px;
-  }
-  .bt2 {
-    margin-left: 0px;
+  ul.button{
+    width: 100%;
   }
 }

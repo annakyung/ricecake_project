@@ -1,64 +1,71 @@
 /* 브랜드 장점 */
 .brandinfo {
-  width: 100%;
   background-color: #0c2668;
-}
-.brandInfoWrap {
-  width: 90%;
-  margin: 0 auto;
-}
-.infoTitle {
-  text-align: center;
+  line-height: 1.5;
   color: #fff;
+  text-align: center;
 }
-.infoTitle h1 {
+.info-title {
+  margin-bottom: 50px;
+}
+.info-title h1 {
   font-family: "SeoulHangangM";
-  font-size: 2vw;
-  padding-bottom: 2.6042vw;
+  margin-bottom: 50px;
+  font-size: 40px;
 }
-.infoTitle p {
-  font-size: 1vw;
-  padding-bottom: 1vw;
+.info-title p {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
-.infoImg ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-.infoImg ul li {
-  width: 25%;
-}
-.infoImg ul li:first-child img {
-  position: relative;
-  top: 20px;
 
-}
-.infoImg img {
-  width: 100%;
-  padding: 0 25px;
-}
-.infoTxt h1 {
-  font-family: "SeoulHangangM";
-}
-.infoTxt ul {
+.brandinfo-list{}
+.brandinfo-list ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.infoTxt li {
-  font-size: 1vw;
-  text-align: center;
-  padding: 0 25px;
-  color: #fff;
+.brandinfo-list ul li{
+  width: 30%;
 }
-.infoTxt span {
+.brandinfo-list ul li .brandinfo-img{
+  margin-bottom: 25px;
+}
+.brandinfo-list ul li .brandinfo-img img{
+  width: 100%;
+  max-width: 300px;
+}
+.brandinfo-list ul li .brandinfo-txt{}
+.brandinfo-list ul li .brandinfo-txt h1{
+  font-family: "SeoulHangangM";
+  position: relative;
+  padding-bottom: 30px;
+}
+.brandinfo-list ul li .brandinfo-txt h1 span{
   color: #f2cf02;
   font-weight: 600;
 }
-.info_line {
-  width: 5.2083vw;
-  height: 0.1042vw;
+.brandinfo-list ul li .brandinfo-txt h1::after{
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 50px; 
+  height: 1px;
   background-color: #fff;
-  z-index: 999;
-  display: block;
-  margin: 1.5vw auto;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+.brandinfo-list ul li .brandinfo-txt p{}
+
+
+@media all and (max-width: 1024px){
+
+  
+}
+@media all and (max-width: 768px){
+  .brandinfo-list ul{
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .brandinfo-list ul li{
+    width: 100%;
+  }
 }
