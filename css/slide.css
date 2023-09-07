@@ -1,1819 +1,399 @@
-.slide-wrap {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 4232px;
-  background-color: #0c2668;
+/* swiper */
+.swiper {
+  width: 90%;
+  height: 80%;
 }
-/* 공통 css*/
-/* 20주년가념50%할인 */
-.sale-text {
-  position: absolute;
-  display: inline-block;
-  width: 200px;
-  height: 35px;
-  background-color: #0c2668;
-  border-radius: 30px;
-  top: 7%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-}
-.sale-text > p {
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-/* 케익이름 */
-.title-name {
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 5.2083vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 130px;
-  left: 50%;
-  transform: translateX(-50%);
+.swiper-slide {
   text-align: center;
-}
-
-/* 3컷상세이미지 */
-.left-section01 {
-  position: relative;
-  display: block;
-}
-.left-imgwrap{
-  position: relative;
-  display: block;
-  width: 250px;
-  margin-top: 100%;
-  margin-left: -100px;
-}
-.left-imgwrap > li{
-  position: relative;
-  display: block;
-}
-.left-imgwrap > li > a > img {
-  position: relative;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-imgwrap > li > a:hover img {
-  transform: scale(1.3);
-  z-index: 999;
-}
-.price-size {
-  position: absolute;
-  display: inline-block;
-  top: 420px;
-  left: 400px;
-  font-size: 12px;
 }
 
-/* 리뷰,구매하러가기 */
-.goreview {
-  position: absolute;
-  display: inline-block;
-  width: 13%;
-  height: 50px;
-  background: none;
-  border: 2px solid #0c2668;
-  padding: 10px 50px;
-  top: -10px;
-  left: 34.5%;
-  white-space: nowrap;
-  font-weight: 600;
-}
-.goreview:hover {
+/* css*/
+.slide{
   position: relative;
   display: block;
+  margin-top: 300px;
   background-color: #0c2668;
-  color: #fff;
-  border: 2px solid #0c2668;
-  /* transition: 0.3s; */
+  height: 1298px;
 }
-.goshopping {
-  position: absolute;
-  display: inline-block;
-  width: 17%;
-  height: 50px;
-  background: none;
-  border: 2px solid #0c2668;
-  padding: 10px 50px;
-  top: -10px;
-  left: 48%;
-  white-space: nowrap;
-  font-weight: 600;
-  background-color: #0c2668;
-  color: #fff;
-}
-.goshopping:hover {
-  position: relative;
-  display: block;
-  background-color: #ffffff;
-  color: #0c2668;
-  border: 2px solid #0c2668;
-  /* transition: 0.3s; */
-}
-.downicon2 {
-  position: absolute;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 95%;
-  font-size: 30px;
-}
-
-/* 메인케이크이미지 */
-.main-section {
-  position: relative;
-  display: block;
-}
-.cake-box {
-  position: relative;
-  display: block;
-  width: 30%;
-}
-.main-section > img {
-  position: absolute;
-  display: block;
-  top: -550px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-/* 오른쪽4종이미지메뉴 */
-.right-section {
-  position: relative;
-  display: block;
-}
-
-.right-cake-box {
-  position: absolute;
-  display: block;
-  top: -350px;
-  right: 50px;
-  transform: translateY(-50%);
-  display: flex;
-  width: 5.2083vw;
-  height: 26.0417vw;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 100px;
-  z-index: 999;
-}
-.right-cake-box > li{
-  position: absolute;
-}
-.right-cake-box > li > a > img {
-  position: relative;
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 20%;
-  margin-bottom: 30%;
-}
-.right-cake-box > li > a:hover{
-  cursor: pointer;
-}
-/* ============================================공통css */
 
 /* 비주얼 section01 */
 .visual-section-01 {
   position: relative;
   display: block;
-  width: 82%;
-  height: 900px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
-  margin: 0 auto;
-  top: 230px;
   border-radius: 10px;
 }
-.left-section01 {
-  position: relative;
-  display: inline-block;
-  margin: 70px 0 0 200px;
-}
-
-/* 케이크 상세 설명 */
-.main-section > .explane-text1 {
-  position: absolute;
-  display: block;
-  top: -155px;
-  left: 500px;
-  text-align: right;
-  line-height: 1.2;
-  color: #222;
-  font-size: 15px;
-}
-/* 포인트상세설명 */
-.line1{
-  position: absolute;
-  display: block;
-  width: 130px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.456);
-  top: -420px;
-  left: 50.1%;
-}
-.line1::after{
+.visual-section-01::before{
   content: "";
-  position: relative;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  top:-4px;
-  left: 100%;
-  background-color: rgb(135, 141, 255);
-  box-shadow: 0 0 10px #dee040,
-  0 0 20px #dee040,
-  0 0 30px #dee040,
-  0 0 40px #dee040,
-  0 0 50px #dee040,
-  0 0 60px #dee040,
-  0 0 70px #dee040,
-  0 0 80px #dee040,
-  0 0 90px #dee040,
-  0 0 100px #dee040;
-}
-.detailed-description01 {
+  background:url(../images/cake01_detail01.png) no-repeat center;
+  background-size: cover;
+  opacity: 20%;
   position: absolute;
-  display: inline-block;
-  top: -430px;
-  left: 60%;
-  font-size: 14px;
-  font-weight: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  z-index: 1;
 }
-.line2{
-  position: absolute;
-  display: block;
-  width: 200px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.456);
-  top: -310px;
-  left: 50.1%;
-}
-.line2::after{
-  content: "";
-  position: relative;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  top:-4px;
-  left: 100%;
-  background-color: rgb(135, 141, 255);
-  box-shadow: 0 0 10px #dee040,
-  0 0 20px #dee040,
-  0 0 30px #dee040,
-  0 0 40px #dee040,
-  0 0 50px #dee040,
-  0 0 60px #dee040,
-  0 0 70px #dee040,
-  0 0 80px #dee040,
-  0 0 90px #dee040,
-  0 0 100px #dee040;
-}
-.detailed-description02 {
-  position: absolute;
-  display: inline-block;
-  top: -320px;
-  left: 65%;
-  font-size: 14px;
-  font-weight: 500;
-}
-.line3{
-  position: absolute;
-  display: block;
-  width: 130px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.456);
-  top: -135px;
-  left: 50.1%;
-}
-.line3::after{
-  content: "";
-  position: relative;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  top:-4px;
-  left: 100%;
-  background-color: rgb(135, 141, 255);
-  box-shadow: 0 0 10px #dee040,
-  0 0 20px #dee040,
-  0 0 30px #dee040,
-  0 0 40px #dee040,
-  0 0 50px #dee040,
-  0 0 60px #dee040,
-  0 0 70px #dee040,
-  0 0 80px #dee040,
-  0 0 90px #dee040,
-  0 0 100px #dee040;
-}
-.detailed-description03 {
-  position: absolute;
-  display: inline-block;
-  top: -145px;
-  left: 60%;
-  font-size: 14px;
-  font-weight: 500;
-}
-
 /* 비주얼 section02 */
 .visual-section-02 {
   position: relative;
   display: block;
-  width: 82%;
-  height: 900px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
-  margin: 0 auto;
-  margin-top: 134px;
-  top: 230px;
   border-radius: 10px;
 }
-
-.left-section02 {
-  position: relaaative;
-  display: inline-block;
-  margin-left: 200px;
-  /* background-color: #f2cf02; */
-  z-index: 999;
-  margin-top: 100px;
-}
-.left-section02 > a > img {
-  position: relative;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-section02 > a:hover img {
-  transform: scale(1.4);
-  z-index: 999;
-}
-
-/* 케이크 상세 설명 */
-.detailed-description04 {
+.visual-section-02::before{
+  content: "";
+  background:url(../images/cake02_detail01.png) no-repeat center;
+  background-size: cover;
+  opacity: 20%;
   position: absolute;
-  display: inline-block;
-  top: -570px;
-  left: 950px;
-  font-size: 12px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  z-index: 1;
 }
-.detailed-description05 {
-  position: absolute;
-  display: inline-block;
-  top: -450px;
-  left: 1000px;
-  font-size: 12px;
-}
-.detailed-description06 {
-  position: absolute;
-  display: inline-block;
-  top: -240px;
-  left: 980px;
-  font-size: 12px;
-}
-
 /* 비주얼 section03 */
 .visual-section-03 {
   position: relative;
   display: block;
-  width: 82%;
-  height: 900px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
-  margin: 0 auto;
-  margin-top: 134px;
-  top: 230px;
   border-radius: 10px;
 }
-.left-section03 {
-  position: relaaative;
-  display: inline-block;
-  margin-left: 200px;
-  /* background-color: #f2cf02; */
-  z-index: 999;
-  margin-top: 70px;
-}
-.left-section03 > a > img {
-  position: relative;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-section03 > a:hover img {
-  transform: scale(1.4);
-  z-index: 999;
-}
-
-/* 케이크 상세 설명 */
-.detailed-description07 {
+.visual-section-03::before{
+  content: "";
+  background:url(../images/cake03_detail01.png) no-repeat center;
+  background-size: cover;
+  opacity: 20%;
   position: absolute;
-  display: inline-block;
-  top: -570px;
-  left: 950px;
-  font-size: 12px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  z-index: 1;
 }
-.detailed-description08 {
-  position: absolute;
-  display: inline-block;
-  top: -450px;
-  left: 1000px;
-  font-size: 12px;
-}
-.detailed-description09 {
-  position: absolute;
-  display: inline-block;
-  top: -240px;
-  left: 980px;
-  font-size: 12px;
-}
-
 /* 비주얼 section04 */
 .visual-section-04 {
   position: relative;
   display: block;
-  width: 82%;
-  height: 900px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
+  border-radius: 10px;
+}
+.visual-section-04::before{
+  content: "";
+  background:url(../images/cake04_detail01.png) no-repeat center;
+  background-size: cover;
+  opacity: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+
+.sale-text-box{
+  position: relative;
+  display: block;
+  width: 13.4167vw;
+  height: 38px;
   margin: 0 auto;
-  margin-top: 134px;
-  top: 230px;
-  border-radius: 10px;
+  background-color: #0c2668;
+  border-radius: 30px;
+  margin-top:65px;
+  z-index: 2;
 }
-
-.left-section04 {
-  position: relaaative;
-  display: inline-block;
-  margin-left: 200px;
-  /* background-color: #f2cf02; */
-  z-index: 999;
-  margin-top: 70px;
-}
-.left-section04 > a > img {
+.sale-text {
   position: relative;
-  width: 180px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-  transition: all 0.2s linear;
-}
-.left-section04 > a:hover img {
-  transform: scale(1.4);
+  color: #fff;
   z-index: 999;
-  /* border: 3px solid #0C2668; */
+  font-size: 18px;
 }
 
-/* 케이크 상세 설명 */
-.detailed-description10 {
+
+.sub{
   position: absolute;
-  display: inline-block;
-  top: -570px;
-  left: 950px;
-  font-size: 12px;
+  display: block;
+  top: 34%;
+  font-size: 1.5em;
+  left: 11%;
+  text-align: left;
 }
-.detailed-description11 {
+
+
+.title-name01 {
   position: absolute;
-  display: inline-block;
-  top: -450px;
-  left: 1000px;
-  font-size: 12px;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 5%;
 }
-.detailed-description12 {
+.title-name01 span{
+  color: #E5606A;
+}
+.title-name02 {
   position: absolute;
-  display: inline-block;
-  top: -240px;
-  left: 980px;
-  font-size: 12px;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 6%;
+  z-index: 2;
 }
-.cakeclick {
-  position: relative;
-  display: none;
+.title-name03{
+  position: absolute;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 14%;
 }
-/* -------------------------------모바일 반응형-------------------------------- */
-
-@media all and (max-width: 1080px) {
-  .slide-wrap {
-    position: relative;
-    display: block;
-    /* width: 100vw; */
-    width: 100%;
-    height: 3330px;
-    background-color: #0c2668;
-  }
-  .title-name {
-    position: absolute;
-    display: block;
-    font-family: "HANAMDAUM";
-    font-size: 5.2083vw;
-    letter-spacing: -0.06em;
-    line-height: 0.9em;
-    color: #222;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  .visual-section-01 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 700px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    top: 230px;
-    border-radius: 10px;
-  }
-  .visual-section-02 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 700px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 100px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  .visual-section-03 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 700px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 100px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  .visual-section-04 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 700px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 100px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  .left-imgwrap > li > a > img {
-    position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-imgwrap{
-    position: relative;
-    display: block;
-    width: 250px;
-    margin-top: 120%;
-    margin-left: -100px;
-  }
-  .main-section > img {
-    position: absolute;
-    display: block;
-    top: -350px;
-    left: 50%;
-    width: 38%;
-    transform: translateX(-50%);
-  }
-  .line1{
-    position: absolute;
-    display: block;
-    width: 70px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.456);
-    top: -276px;
-    left: 50%;
-  }
-  .line2{
-    position: absolute;
-    display: block;
-    width: 82px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.456);
-    top: -230px;
-    left: 50%;
-  }
-  .line3{
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.456);
-    top: -55px;
-    left: 50%;
-  }
-  .detailed-description01 {
-    position: absolute;
-    display: inline-block;
-    top: -280px;
-    left: 60%;
-    font-size: 10px;
-    font-weight: 500;
-  }
-  .detailed-description02 {
-    position: absolute;
-    display: inline-block;
-    top: -235px;
-    left: 63%;
-    font-size: 10px;
-    font-weight: 500;
-  }
-  .detailed-description03 {
-    position: absolute;
-    display: inline-block;
-    top: -60px;
-    left: 58%;
-    font-size: 10px;
-    font-weight: 500;
-  }
-  .goreview {
-    position: absolute;
-    display: inline-block;
-    width: 16%;
-    height: 50px;
-    background: none;
-    border: 2px solid #0c2668;
-    padding: 10px 5px ;
-    top: 30px;
-    left: 34.5%;
-    white-space: nowrap;
-    font-weight: 600;
-  }
-  .goshopping {
-    position: absolute;
-    display: inline-block;
-    width: 17%;
-    height: 50px;
-    background: none;
-    border: 2px solid #0c2668;
-    padding: 10px 20px;
-    top: 30px;
-    left: 52%;
-    white-space: nowrap;
-    font-weight: 600;
-    background-color: #0c2668;
-    color: #fff;
-  }
-  .right-cake-box {
-    position: absolute;
-    display: block;
-    top: -185px;
-    right: 50px;
-    transform: translateY(-50%);
-    display: flex;
-    width: 5.2083vw;
-    height: 26.0417vw;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 100px;
-    z-index: 999;
-  }
+.title-name04{
+  position: absolute;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 65%;
 }
-@media all and (max-width: 960px) {
-  .slide{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 3400px;
-  }
-  .slide-wrap{
-    position: relative;
-    display: block;
-    top: -300px;
-    height: 3835px;
-  }
-  /* 3컷상세이미지 */
-  .left-section01 {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-  .left-imgwrap{
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 18%;
-    top: 250px;
-    left: 10%;
-    margin-top: 0;
-    margin: 0;
-    padding: 0;
-  }
-  .left-imgwrap > li{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-
-  }
-  .left-imgwrap > li > a > img {
-    position: relative;
-    width: 100px;
-    height: 9vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-
-  .price-size {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left:80%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 12px;
-  }
-  
-  /* 리뷰,구매하러가기 */
-  .goreview {
-    position: absolute;
-    display: inline-block;
-    width: 29%;
-    height: 50px;
-    background: none;
-    border: 2px solid #0c2668;
-    padding: 0;
-    top: 430px;
-    left: 20%;
-    white-space: nowrap;
-    font-weight: 600;
-  }
-  .goreview:hover {
-    position: relative;
-    display: block;
-    background-color: #0c2668;
-    color: #fff;
-    border: 2px solid #0c2668;
-    /* transition: 0.3s; */
-  }
-  .goshopping {
-    position: absolute;
-    display: inline-block;
-    width: 30%;
-    height: 50px;
-    background: none;
-    border: 2px solid #0c2668;
-    padding:0;
-    top: 430px;
-    left: 50%;
-    white-space: nowrap;
-    font-weight: 600;
-    background-color: #0c2668;
-    color: #fff;
-  }
-  .goshopping:hover {
-    position: relative;
-    display: block;
-    background-color: #ffffff;
-    color: #0c2668;
-    border: 2px solid #0c2668;
-    /* transition: 0.3s; */
-  }
-  .downicon2 {
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 95%;
-    font-size: 30px;
-  }
-  
-  /* 메인케이크이미지 */
-  .main-section {
-    position: relative;
-    display: block;
-  }
-  .cake-box {
-    position: relative;
-    display: block;
-    width: 30%;
-  }
-  .main-section > img {
-    position: relative;
-    display: inline-block;
-    width: 40%;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-  }
-  /* 오른쪽4종이미지메뉴 */
-  .right-section {
-    position: relative;
-    display: none;
-  }
-  /* ============================================공통css */
-  
-  /* 비주얼 section01 */
-  .visual-section-01 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 800px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    top: 230px;
-    border-radius: 10px;
-  }
-  
-  /* 케이크 상세 설명 */
-  .main-section > .explane-text1 {
-    position: absolute;
-    display: block;
-    top: -155px;
-    left: 500px;
-    text-align: right;
-    line-height: 1.2;
-    color: #222;
-    font-size: 15px;
-  }
-  /* 포인트상세설명 */
-  .line1{
-    display: none;
-  }
-  .txt-box{
-    position: relative;
-    display: block;
-    width: 60%;
-    border-radius: 20px;
-    height:107px;
-    top: -63px;
-    white-space: nowrap;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.062);
-  }
-
-  .txt-box .detailed-description01{
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-fill-mode: none;
-    font-size: 11px;
-    text-align: center;
-  } 
-  .txt-box .detailed-description02{
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-fill-mode: none;
-    font-size: 11px;
-    text-align: center;
-  }
-  .txt-box .detailed-description03{
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-fill-mode: none;
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .line2{
-    display: none;
-  }
-
-  .line3{
-    display:none;
-  }
-
-  /* 비주얼 section02 */
-  .visual-section-02 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 800px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 134px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  
-  .left-section02 {
-    position: relaaative;
-    display: inline-block;
-    margin-left: 200px;
-    /* background-color: #f2cf02; */
-    z-index: 999;
-    margin-top: 100px;
-  }
-  .left-section02 > a > img {
-    position: relative;
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-section02 > a:hover img {
-    transform: scale(1.4);
-    z-index: 999;
-  }
-
-  
-  /* 비주얼 section03 */
-  .visual-section-03 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 800px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 134px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  .left-section03 {
-    position: relaaative;
-    display: inline-block;
-    margin-left: 200px;
-    /* background-color: #f2cf02; */
-    z-index: 999;
-    margin-top: 70px;
-  }
-  .left-section03 > a > img {
-    position: relative;
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  /* 비주얼 section04 */
-  .visual-section-04 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 800px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 134px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  
-  .left-section04 {
-    position: relaaative;
-    display: inline-block;
-    margin-left: 200px;
-    /* background-color: #f2cf02; */
-    z-index: 999;
-    margin-top: 70px;
-  }
-  .left-section04 > a > img {
-    position: relative;
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-section04 > a:hover img {
-    transform: scale(1.4);
-    z-index: 999;
-    /* border: 3px solid #0C2668; */
-  }
-  
-  .cakeclick {
-    position: relative;
-    display: none;
-  }
+.title-name05{
+  position: absolute;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 11.5%;
 }
-@media all and (max-width: 720px) {
-  /* 케익이름 */
-  .title-name {
-    position: absolute;
-    display: block;
-    font-family: "HANAMDAUM";
-    font-size: 6.2083vw;
-    letter-spacing: -0.06em;
-    line-height: 0.9em;
-    color: #222;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  
-  /* 3컷상세이미지 */
-  .left-section01 {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-  .left-imgwrap{
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    top: 670px;
-    margin-top: 0;
-  }
-  .left-imgwrap > li{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-
-  }
-  .left-imgwrap > li > a > img {
-    position: relative;
-    width: 150px;
-    height: 14vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-imgwrap > li > a:hover img {
-    transform: scale(1.3);
-    z-index: 999;
-  }
-  .price-size {
-    position: absolute;
-    display: inline-block;
-    top: 55%;
-    left:50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 12px;
-  }
-  
-  /* 리뷰,구매하러가기 */
-  .goreview {
-    position: absolute;
-    display: inline-block;
-    width: 29%;
-    height: 50px;
-    background: none;
-    border: 2px solid #0c2668;
-    padding: 0;
-    top: 700px;
-    left: 20%;
-    white-space: nowrap;
-    font-weight: 600;
-  }
-  .goreview:hover {
-    position: relative;
-    display: block;
-    background-color: #0c2668;
-    color: #fff;
-    border: 2px solid #0c2668;
-    /* transition: 0.3s; */
-  }
-  .goshopping {
-    position: absolute;
-    display: inline-block;
-    width: 30%;
-    height: 50px;
-    background: none;
-    border: 2px solid #0c2668;
-    padding:0;
-    top: 700px;
-    left: 50%;
-    white-space: nowrap;
-    font-weight: 600;
-    background-color: #0c2668;
-    color: #fff;
-  }
-  .goshopping:hover {
-    position: relative;
-    display: block;
-    background-color: #ffffff;
-    color: #0c2668;
-    border: 2px solid #0c2668;
-    /* transition: 0.3s; */
-  }
-  .downicon2 {
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 95%;
-    font-size: 30px;
-  }
-  
-  /* 메인케이크이미지 */
-  .main-section {
-    position: relative;
-    display: block;
-  }
-  .cake-box {
-    position: relative;
-    display: block;
-    width: 30%;
-  }
-  .main-section > img {
-    position: relative;
-    display: inline-block;
-    width: 50%;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-  }
-  /* 오른쪽4종이미지메뉴 */
-  .right-section {
-    position: relative;
-    display: none;
-  }
-  /* ============================================공통css */
-  
-  /* 비주얼 section01 */
-  .visual-section-01 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 900px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    top: 230px;
-    border-radius: 10px;
-  }
-  
-  /* 케이크 상세 설명 */
-  .main-section > .explane-text1 {
-    position: absolute;
-    display: block;
-    top: -155px;
-    left: 500px;
-    text-align: right;
-    line-height: 1.2;
-    color: #222;
-    font-size: 15px;
-  }
-  /* 포인트상세설명 */
-  .line1{
-    display: none;
-  }
-  .txt-box{
-    position: relative;
-    display: block;
-    width: 60%;
-    border-radius: 20px;
-    height:90px;
-    top: 100px;
-    white-space: nowrap;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.062);
-  }
-
-  .txt-box .detailed-description01{
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-fill-mode: none;
-    font-size: 11px;
-    text-align: center;
-  } 
-  .txt-box .detailed-description02{
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-fill-mode: none;
-    font-size: 11px;
-    text-align: center;
-  }
-  .txt-box .detailed-description03{
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-fill-mode: none;
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .line2{
-    display: none;
-  }
-
-  .line3{
-    display:none;
-  }
-
-  /* 비주얼 section02 */
-  .visual-section-02 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 900px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 134px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  
-  .left-section02 {
-    position: relaaative;
-    display: inline-block;
-    margin-left: 200px;
-    /* background-color: #f2cf02; */
-    z-index: 999;
-    margin-top: 100px;
-  }
-  .left-section02 > a > img {
-    position: relative;
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-section02 > a:hover img {
-    transform: scale(1.4);
-    z-index: 999;
-  }
-
-  
-  /* 비주얼 section03 */
-  .visual-section-03 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 900px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 134px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  .left-section03 {
-    position: relaaative;
-    display: inline-block;
-    margin-left: 200px;
-    /* background-color: #f2cf02; */
-    z-index: 999;
-    margin-top: 70px;
-  }
-  .left-section03 > a > img {
-    position: relative;
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-section03 > a:hover img {
-    transform: scale(1.4);
-    z-index: 999;
-  }
-  
-  /* 비주얼 section04 */
-  .visual-section-04 {
-    position: relative;
-    display: block;
-    width: 82%;
-    height: 900px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    margin-top: 134px;
-    top: 230px;
-    border-radius: 10px;
-  }
-  
-  .left-section04 {
-    position: relaaative;
-    display: inline-block;
-    margin-left: 200px;
-    /* background-color: #f2cf02; */
-    z-index: 999;
-    margin-top: 70px;
-  }
-  .left-section04 > a > img {
-    position: relative;
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-section04 > a:hover img {
-    transform: scale(1.4);
-    z-index: 999;
-    /* border: 3px solid #0C2668; */
-  }
-  
-  .cakeclick {
-    position: relative;
-    display: none;
-  }
+.title-name06{
+  position: absolute;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 66%;
 }
-@media all and (max-width: 480px) {
-  /* 공통css */
-  .slide {
-    position: relative;
-    display: block;
-    background-color: #0c2668;
-    height: 3133px;
-  }
-  .slide-wrap {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 3130px;
-    background-color: #0c2668;
-  }
-  .line1,
-  .line2,
-  .line3{
-    display: none;
-  }
-  /* 20주년가념50%할인 */
-  .sale-text {
-    position: relative;
-    display: inline-block;
-    width: 25vw;
-    height: 4.0417vw;
-    background-color: #0c2668;
-    border-radius: 30px;
-    top: 13.125vw;
-    left: 50%;
-    z-index: 999;
-  }
-  .sale-text > p {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 10px;
-    font-weight: 600;
-    white-space: nowrap;
-  }
+.title-name07{
+  position: absolute;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 11.5%;
+}
+.title-name08{
+  position: absolute;
+  display: block;
+  font-family: "HANAMDAUM";
+  font-size: 6vw;
+  letter-spacing: -0.06em;
+  line-height: 0.9em;
+  color: #222;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 66%;
+}
 
-  /* 케익이름 */
-  .title-name {
-    position: relative;
-    display: block;
-    font-family: "HANAMDAUM";
-    font-size: 40px;
-    letter-spacing: -0.03em;
-    color: #353535;
-    margin-top: -50px;
-    line-height: 9.61vw;
-  }
 
-  /* 리뷰/구매하러가기 */
-  .goreview {
-    position: absolute;
-    display: block;
-    width: 33%;
-    left: 30%;
-    transform: translateX(-50%);
-    top: 96.4583vw;
-    background: none;
-    color: #000;
-    padding:10px;
-    white-space: nowrap;
-    border: 1px solid #0c2668;
-  }
-  .goreview > p {
-    position: absolute;
-    display: block;
-  }
-  .goshopping {
-    position: absolute;
-    display: block;
-    width: 43%;
-    left: 70%;
-    transform: translateX(-50%);
-    top: 96.4583vw;
-    background: none;
-    color: #ffffff;
-    background-color: #0c2668;
-    padding: 10px 20px;
-    white-space: nowrap;
-    border: 1px solid #0c2668;
-  }
-  .goshopping:hover {
-    background-color: #0c2668;
-    color: #fff;
-    transition: 0.3s;
-  }
-  .downicon2 {
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    top: 93%;
-    transform: translateX(-50%);
-    font-size: 30px;
-  }
-  /* 선택바 */
-  .right-section {
-    position: relative;
-    display: none;
-    top: 0;
-    left: 0;
-  }
-  .right-cake-box {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 330px;
-    left: 0;
-    background: none;
-    border: none;
-  }
-  .right-cake-box > li {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    top: 200px;
-    left: 50%;
-    text-align: center;
-    transform: translateX(-50%);
-  }
-  .right-cake-box > li > a > img {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-  }
-  .right-cake-box > li > a:hover > img {
-    transform: scale(1.3);
-    transition: all 0.2s linear;
-  }
 
-  /* 가격, 사이즈 */
-  .price-size {
-    position: absolute;
-    display: inline-block;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #222;
-    font-size: 12px;
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .main-section {
-    position: relative;
-    display: block;
-  }
-  .cake-box {
-    position: relative;
-    display: block;
-    width: 30%;
-  }
-  .main-section > img {
-    position: relative;
-    display: block;
-    top: -50px;
-    left: 50%;
-    width: 70%;
-    transform: translateX(-50%);
-    z-index: 99999;
-  }
-  .main-section > .cakeclick {
-    position: absolute;
-    display: block;
-    width: 10%;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #0c2668fd;
-    border-radius: 50%;
-  }
-
-  /* ==========================visual 1번 */
-  .visual-section-01 {
-    position: relative;
-    display: block;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 93vh;
-    margin: 0 ;
-    margin-top: 190px;
-    background-color: #ffffff;
-    border-radius: 20px;
-  }
-
-  
-  /* 케이크 상세 설명 */
-  .txt-box {
-    position: relative;
-    display: none;
-    width: 350px;
-    height: 300px;
-    top:130px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #0c266827;
-    border-radius: 100%;
-  }
-
-  .detailed-description01 {
-    position: relative;
-    display: none;
-    text-align: center;
-    top: 0;
-    left: 0;
-  }
-  .detailed-description02 {
-    position: relative;
-    display: none;
-    text-align: center;
-    top: 0;
-    left: 0;
-  }
-  .detailed-description03 {
-    position: relative;
-    display: none;
-    text-align: center;
-    top: 0;
-    left: 0;
-  }
-/* 3컷상세이미지 */
-.left-section01 {
+.left-imgwrap{
   position: relative;
   display: block;
-  margin: 0;
-  width: 100%;
-  height: 200px;
-  top:57%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.left-section01 > .left-imgwrap {
-  position: absolute;
-  display: inline-block;
-  margin: 0;
-  width: 85%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100px;
 }
 
-.left-section01 > ul > li {
+
+.cakeimg{
+  position: absolute;
+  display: block;
+  width: 30%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.cakeimg02{
+  position: absolute;
+  display: block;
+  width: 35%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.cakeimg03{
+  position: absolute;
+  display: block;
+  width: 35%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.cakeimg04{
+  position: absolute;
+  display: block;
+  width: 35%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+
+.left-imgwrap{
+  position: relative;
+  display: block;
+  margin:0;
+  margin-top:400px;
+  width: 24%;
+  margin-left: 9%;
+  z-index: 2;
+  }
+.left-imgwrap li{
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  top: -580px;
-  width: 100%;
 }
-
-.left-section01 > ul > li > a > img {
-  position: relative;
-  display: block;
-  width:110px;
-  height: 85px;
+.left-imgwrap li a img{
+  width: 95%;
+  height: 130px;
   border-radius: 10px;
-  filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
+  box-shadow: 0px 10px 10px -2px gray;
   transition: all 0.2s linear;
 }
-
-.left-imgwrap > li > a > img:hover img {
-  transform: scale(2);
-  z-index: 999;
+.left-imgwrap li a:hover img{
+  transform: scale(1.3);
+  z-index: 2;
 }
-
-  /* ==========================visual 2번 */
-  .visual-section-02 {
-    position: relative;
-    display: block;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 93vh;
-    margin: 0 ;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin-top: 60px;
-  }
-
-  /* 3컷상세이미지 */
-  .left-section02 {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-  }
-  .left-section02 > .left-imgwrap {
-    position: relative;
-    display: inline-block;
-    /* background-color: #0c2668; */
-    width: 55%;
-    top: 79vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .left-section02 > ul > li {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .left-section02 > ul > li > a > img {
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 60px;
-    border-radius: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-imgwrap > li > a > img:hover img {
-    transform: scale(2);
-    z-index: 333;
-  }
-
-  /* ==========================visual 3번 */
-  .visual-section-03 {
-    position: relative;
-    display: block;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 93vh;
-    margin: 0 ;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin-top: 60px;
-  }
-
-  /* 3컷상세이미지 */
-  .left-section03 {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-  }
-  .left-section03 > .left-imgwrap {
-    position: relative;
-    display: inline-block;
-    /* background-color: #0c2668; */
-    width: 55%;
-    top: 79vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .left-section03 > ul > li {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .left-section03 > ul > li > a > img {
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 60px;
-    border-radius: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-imgwrap > li > a > img:hover img {
-    transform: scale(2);
-    z-index: 333;
-  }
-
-  /* ==========================visual 4번 */
-  .visual-section-04 {
-    position: relative;
-    display: block;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 93vh;
-    margin: 0 ;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin-top: 60px;
-  }
-
-  /* 3컷상세이미지 */
-  .left-section04 {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-  }
-  .left-section04 > .left-imgwrap {
-    position: relative;
-    display: inline-block;
-    /* background-color: #0c2668; */
-    width: 55%;
-    top: 79vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .left-section04 > ul > li {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .left-section04 > ul > li > a > img {
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 60px;
-    border-radius: 10px;
-    filter: drop-shadow(5px 3px 3px #c3c3c3); /*그림자*/
-    transition: all 0.2s linear;
-  }
-  .left-imgwrap > li > a > img:hover img {
-    transform: scale(2);
-    z-index: 333;
-  }
+.price-size{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-top: -10px;
 }
-
+.explane-text{
+  position: absolute;
+  display: block;
+  top: 22%;
+  left: 66%;
+  text-align: right;
+  line-height: 1.9em;
+}
+.explane-text02{
+  position: absolute;
+  display: block;
+  top: 18%;
+  left: 70%;
+  text-align: right;
+  line-height: 1.9em;
+}
+.explane-text03{
+  position: absolute;
+  display: block;
+  top: 18%;
+  left: 70%;
+  text-align: right;
+  line-height: 1.9em;
+}
+.goreview{
+  position: absolute;
+  display: block;
+  width: 20%;
+  padding: 15px 50px;
+  background-color: #0c2668;
+  border: 2px solid #0c2668;
+  font-size: 15px;
+  top: 60%;
+  left: 67%;
+  z-index: 2;
+  color: #fff;
+  font-weight: 500;
+}
+.goshopping{
+  position: absolute;
+  display: block;
+  width: 20%;
+  padding: 15px 50px;
+  background: none;
+  border: 2px solid #0c2668;
+  font-size: 15px;
+  top: 68%;
+  left: 67%;
+}
+.end-menu{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 30px;
+  margin: 0 auto;
+margin-top: 75px;
+}
+.end-menu a li{
+  position: relative;
+  display: block;
+}
+.end-menu a li img{
+  width: 70px;
+}
+.swiper-pagination{
+  position: relative;
+  display: block;
+  background-color: yellowgreen;
+  z-index: 999999999999 !important;
+}
