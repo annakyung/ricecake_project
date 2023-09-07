@@ -9,7 +9,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
 }
 .collabo-box {
   position: relative;
@@ -170,8 +169,14 @@
 .collabo-box:first-child .collabo-btn {
   background-color: #f2cf02;
 }
+.collabo-box:first-child .collabo-btn:hover {
+  background-color: #caad0c;
+}
 .collabo-box:last-child .collabo-btn {
   background-color: #0c2668;
+}
+.collabo-box:last-child .collabo-btn:hover {
+  background-color: #0b1839;
 }
 
 @media all and (max-width: 1080px) {
@@ -237,4 +242,78 @@
   }
 }
 @media all and (max-width: 480px) {
+  .collabo-wrap {
+    flex-direction: column;
+  }
+  .collabo-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .collabo-box:first-child {
+    margin-right: 0;
+    margin-bottom: 7.292vw;
+  }
+  .collabo-img {
+    width: 52.083vw;
+    height: 52.083vw;
+    margin: 0 auto;
+  }
+  .collabo-img p {
+    font-size: 2.083vw;
+  }
+  .collabo-img img:nth-child(2) {
+    width: 11vw;
+  }
+  .collabo-img img:nth-child(3) {
+    width: 29.167vw;
+  }
+  .collabo-textwrap p strong {
+    font-size: 2.292vw;
+  }
+  .collabo-textwrap h2 {
+    font-size: 2.708vw;
+    line-height: 3.6vw;
+    margin-top: 1vw;
+  }
+  .collabo-textwrap {
+    top: -7%;
+  }
+  .collabo-img img:nth-child(5) {
+    width: 20vw;
+    top: -10%;
+    right: -14%;
+  }
+  .collabo-img img:nth-child(6) {
+    width: 17vw;
+    bottom: 0%;
+    left: -15%;
+  }
+  .collabo-img img:nth-child(7) {
+    width: 8.5vw;
+    bottom: 28%;
+    left: -3%;
+  }
+  .collabo-btn {
+    width: 27vw;
+    height: 5.417vw;
+    line-height: 5.417vw;
+  }
+  .collabo-img.collabo-right h2 {
+    margin-top: 6.042vw;
+    font-size: 3.125vw;
+    line-height: 4vw;
+  }
+  .collabo-img.collabo-right p:nth-child(5) {
+    margin-top: 11.458vw;
+    font-size: 2.708vw;
+    font-weight: bold;
+  }
+  .collabo-round:nth-child(3) {
+    top: 40%;
+    left: 45.3%;
+  }
+  .collabo-round:nth-child(4) {
+    top: 40%;
+    left: 49.3%;
+  }
 }

@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
         // 화면의 넓이가 1080px 이상일 때
         1080: {
           slidesPerView: 4,
-          spaceBetween: 40,
+          spaceBetween: 50,
           slidesPerGroup: 4,
         },
         // 화면의 넓이가 960px 이상일 때
@@ -76,15 +76,15 @@ window.addEventListener("load", function () {
         },
         // 화면의 넓이가 720px 이상일 때
         720: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-          slidesPerGroup: 4,
+          slidesPerView: 3,
+          spaceBetween: 60,
+          slidesPerGroup: 3,
         },
         // 화면의 넓이가 360px 이상일 때
         360: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-          slidesPerGroup: 4,
+          slidesPerView: 3,
+          spaceBetween: 40,
+          slidesPerGroup: 3,
         },
       },
       //slidesPerView: 4, // 화면에 보여지는 갯수
