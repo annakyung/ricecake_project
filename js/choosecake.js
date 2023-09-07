@@ -39,19 +39,6 @@ window.addEventListener("load", function () {
         <p>${item.name}</p>
     `;
     choosecakeTag.html(html);
-    // const swRecommend = new Swiper(".sw-recommend", {
-    //   slidesPerView: 4, // 화면에 보여지는 갯수
-    //   spaceBetween: 40, // 슬라이드와 슬라이드의 사이 간격
-    //   slidesPerGroup: 4, // 슬라이드로 넘어가는 갯수
-    //   navigation: {
-    //     prevEl: ".recommend .slide-prev",
-    //     nextEl: ".recommend .slide-next",
-    //   },
-    //   pagination: {
-    //     el: ".recommend .slide-pg",
-    //     type: "fraction",
-    //   },
-    // });
   }
   // =========================================
 

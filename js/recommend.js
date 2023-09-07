@@ -1,5 +1,9 @@
 // 떡 세트 추천
 window.addEventListener("load", function () {
+  // 추천상품
+  let RECOMMEND_GOOD;
+  let recommendTag = document.getElementById("data-recommend");
+
   // =========================================
   // data.json을 로딩 (new Date()처럼 복사해온 것)
   const xhttp = new XMLHttpRequest();
@@ -25,10 +29,6 @@ window.addEventListener("load", function () {
   xhttp.open("GET", "data.json");
   // 웹 브라우저 기능을 실행할 수 있도록 요청
   xhttp.send();
-
-  // 추천상품
-  let RECOMMEND_GOOD;
-  let recommendTag = document.getElementById("data-recommend");
 
   // =========================================
   // 추천 상품 화면 출력 기능

@@ -533,7 +533,7 @@
   .choose-cakeB {
     display: block;
     width: 72.917vw;
-    height: 37.500vw;
+    height: 37.5vw;
   }
   .choose-textwrap div:not(.choose-btn) {
     width: 22.917vw;
@@ -548,18 +548,21 @@
   .choose-cake-btn {
     position: relative;
     width: 72.917vw;
-    height: 37.500vw;
+    height: 37.5vw;
     margin-bottom: 8.333vw;
   }
   .choose-cake-btn:first-child {
     margin-right: 0;
+  }
+  .choose-cake-btn:last-child {
+    margin-bottom: 0;
   }
   .choose-cake-btn p {
     position: absolute;
     bottom: 50%;
     left: 55%;
     transform: translateY(50%);
-    font-size: 3.125vw;
+    font-size: 2.3vw;
   }
   .choose-cake-btn img {
     position: absolute;
