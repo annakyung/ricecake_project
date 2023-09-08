@@ -21,16 +21,16 @@
   position: relative;
   display: block;
   margin: 20px 0;
-  font-size: 2px;
+  font-size: 16px;
 }
 .bt-game-start {
   position: relative;
-  padding: 5px 15px;
+  padding: 5px 25px;
   border-radius: 25px;
   background-color: #000;
   color: #fff;
   border: 2px solid #000;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   transition: all ease-in 0.2s;
@@ -46,12 +46,12 @@
   flex-wrap: wrap;
   gap: 0 4%;
 }
-.choose-ricecake > div{
+.choose-ricecake > div {
   border-radius: 30px;
   width: 48%;
   max-width: 400px;
 }
-.choose-ricecake > div::after{
+.choose-ricecake > div::after {
   content: "";
   padding-bottom: 120%;
   display: block;
@@ -89,6 +89,7 @@
   position: relative;
   display: block;
   font-weight: bold;
+  font-size: 18px;
 }
 .choose-cake-btn {
   position: relative;
@@ -101,7 +102,7 @@
   cursor: pointer;
   transition: all ease-in;
 }
-.choose-cake-btn::after{
+.choose-cake-btn::after {
   content: "";
   padding-bottom: 120%;
   display: block;
@@ -124,6 +125,7 @@
   transform: translateX(-50%);
   font-size: 20px;
   font-weight: bold;
+  white-space: nowrap;
 }
 /* 게임 결과 화면 */
 .game-stage-result {
@@ -192,7 +194,7 @@
   background-color: transparent;
 }
 .game-stage-result #game-result-html img {
-  width: 90%;
+  width: 80%;
   margin-bottom: 1px;
 }
 .game-stage-result #game-result-html p {
@@ -222,9 +224,16 @@
   background-color: #1c1f1e;
 }
 
-@media all and (max-width: 1024px){
-  
+@media all and (max-width: 1024px) {
+  .game-stage {
+    margin: 0 100px;
+  }
+  .choose-textwrap h2 {
+    font-size: 34px;
+  }
+  .game-stage-start .choose-textwrap span {
+    font-size: 15px;
+  }
 }
-@media all and (max-width: 768px){
-
+@media all and (max-width: 768px) {
 }

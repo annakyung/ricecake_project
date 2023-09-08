@@ -1,5 +1,7 @@
 window.addEventListener("load", function () {
   var swiper = new Swiper(".cake-slide-swiper", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {

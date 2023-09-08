@@ -1,355 +1,28 @@
 /* swiper */
-.swiper {
+.slide .swiper {
   width: 90%;
   height: 80%;
 }
-.swiper-slide {
+.slide .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.slide .swiper-pagination {
+  visibility: hidden;
+}
 
 /* css*/
-.slide{
+.slide {
   position: relative;
   display: block;
-  /* margin-top: 300px; */
+  margin-top: 300px;
   background-color: #0c2668;
   /* height: 1298px; */
+  height: auto;
 }
-
-/* 비주얼 section01 */
-.visual-section-01 {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-.visual-section-01::before{
-  content: "";
-  background:url(../images/cake01_detail01.png) no-repeat center;
-  background-size: cover;
-  opacity: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 25px;
-  z-index: 1;
-}
-/* 비주얼 section02 */
-.visual-section-02 {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-.visual-section-02::before{
-  content: "";
-  background:url(../images/cake02_detail01.png) no-repeat center;
-  background-size: cover;
-  opacity: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 25px;
-  z-index: 1;
-}
-/* 비주얼 section03 */
-.visual-section-03 {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-.visual-section-03::before{
-  content: "";
-  background:url(../images/cake03_detail01.png) no-repeat center;
-  background-size: cover;
-  opacity: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 25px;
-  z-index: 1;
-}
-/* 비주얼 section04 */
-.visual-section-04 {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-.visual-section-04::before{
-  content: "";
-  background:url(../images/cake04_detail01.png) no-repeat center;
-  background-size: cover;
-  opacity: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 25px;
-  z-index: 1;
-}
-
-
-.sale-text-box{
-  position: relative;
-  display: block;
-  width: 13.4167vw;
-  height: 38px;
-  margin: 0 auto;
-  background-color: #0c2668;
-  border-radius: 30px;
-  margin-top:65px;
-  z-index: 2;
-}
-.sale-text {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  z-index: 999;
-  font-size: 18px;
-}
-
-
-.sub{
-  position: absolute;
-  display: block;
-  top: 34%;
-  font-size: 1.5em;
-  left: 11%;
-  text-align: left;
-}
-
-
-.title-name01 {
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  left: 5%;
-}
-.title-name01 span{
-  color: #E5606A;
-}
-.title-name02 {
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  right: 6%;
-  z-index: 2;
-}
-.title-name03{
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  left: 14%;
-}
-.title-name04{
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  left: 65%;
-}
-.title-name05{
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  left: 11.5%;
-}
-.title-name06{
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  left: 66%;
-}
-.title-name07{
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  left: 11.5%;
-}
-.title-name08{
-  position: absolute;
-  display: block;
-  font-family: "HANAMDAUM";
-  font-size: 6vw;
-  letter-spacing: -0.06em;
-  line-height: 0.9em;
-  color: #222;
-  top: 45%;
-  transform: translateY(-50%);
-  left: 66%;
-}
-
-
-
-.left-imgwrap{
-  position: relative;
-  display: block;
-  width: 100px;
-}
-
-
-.cakeimg{
-  position: absolute;
-  display: block;
-  width: 30%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-.cakeimg02{
-  position: absolute;
-  display: block;
-  width: 35%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-.cakeimg03{
-  position: absolute;
-  display: block;
-  width: 35%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-.cakeimg04{
-  position: absolute;
-  display: block;
-  width: 35%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-
-.left-imgwrap{
-  position: relative;
-  display: block;
-  margin:0;
-  margin-top:400px;
-  width: 24%;
-  margin-left: 9%;
-  z-index: 2;
-  }
-.left-imgwrap li{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.left-imgwrap li a img{
-  width: 95%;
-  height: 130px;
-  border-radius: 10px;
-  box-shadow: 0px 10px 10px -2px gray;
-  transition: all 0.2s linear;
-}
-.left-imgwrap li a:hover img{
-  transform: scale(1.3);
-  z-index: 2;
-}
-.price-size{
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.5em;
-  margin-top: -10px;
-}
-.explane-text{
-  position: absolute;
-  display: block;
-  top: 22%;
-  left: 66%;
-  text-align: right;
-  line-height: 1.9em;
-}
-.explane-text02{
-  position: absolute;
-  display: block;
-  top: 18%;
-  left: 70%;
-  text-align: right;
-  line-height: 1.9em;
-}
-.explane-text03{
-  position: absolute;
-  display: block;
-  top: 18%;
-  left: 70%;
-  text-align: right;
-  line-height: 1.9em;
-}
-.goreview{
+.goreview {
   position: absolute;
   display: block;
   width: 20%;
@@ -363,7 +36,7 @@
   color: #fff;
   font-weight: 500;
 }
-.goshopping{
+.goshopping {
   position: absolute;
   display: block;
   width: 20%;
@@ -374,26 +47,120 @@
   top: 68%;
   left: 67%;
 }
-.end-menu{
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 400px;
-  height: 30px;
-  margin: 0 auto;
-margin-top: 75px;
-}
-.end-menu a li{
-  position: relative;
+.swiper-pagination {
+  position: absolute;
   display: block;
 }
-.end-menu a li img{
-  width: 70px;
+.mb01 {
+  display: none;
 }
-.swiper-pagination{
+.mb02 {
+  display: none;
+}
+.mb03 {
+  display: none;
+}
+.mb04 {
+  display: none;
+}
+.pc01 {
   position: relative;
   display: block;
-  background-color: yellowgreen;
-  z-index: 999999999999 !important;
+  border-radius: 30px;
+}
+.pc02 {
+  position: relative;
+  display: block;
+  border-radius: 30px;
+}
+.pc03 {
+  position: relative;
+  display: block;
+  border-radius: 30px;
+}
+.pc04 {
+  position: relative;
+  display: block;
+  border-radius: 30px;
+}
+
+@media all and (max-width: 480px) {
+  .pc01 {
+    display: none;
+  }
+  .pc02 {
+    display: none;
+  }
+  .pc03 {
+    display: none;
+  }
+  .pc04 {
+    display: none;
+  }
+
+  .mb01 {
+    display: block;
+    width: 100%;
+  }
+  .mb02 {
+    display: block;
+    width: 100%;
+  }
+  .mb03 {
+    display: block;
+    width: 100%;
+  }
+  .mb04 {
+    display: block;
+    width: 100%;
+  }
+  .swiper {
+    width: 90%;
+    height: 80%;
+  }
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* css*/
+  .slide {
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    background-color: #0c2668;
+    /* height: 1000px; */
+  }
+  .goreview {
+    position: absolute;
+    display: block;
+    width: 219px;
+    padding: 10px 20px;
+    background-color: #0c2668;
+    border: 2px solid #0c2668;
+    font-size: 12px;
+    top: 78%;
+    left: 25%;
+    z-index: 2;
+    color: #fff;
+    font-weight: 700;
+    height: 50px;
+  }
+  .goshopping {
+    position: absolute;
+    display: block;
+    width: 219px;
+    padding: 10px 20px;
+    background: none;
+    border: 2px solid #0c2668;
+    font-size: 12px;
+    top: 85.5%;
+    left: 25%;
+    z-index: 2;
+    color: #0c2668;
+    font-weight: 700;
+    height: 50px;
+  }
 }

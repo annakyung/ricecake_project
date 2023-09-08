@@ -1,177 +1,80 @@
 /* 떡 세트 추천 */
 .recommend {
-  position: relative;
-  display: block;
-  margin: 1.927vw 0;
-  width: 100%;
-  background-color: #fff;
-}
-.layout-wrap {
-  position: relative;
-  display: block;
 }
 .recommend h2 {
-  position: relative;
-  display: block;
-  font-size: 1.9vw;
   font-weight: bold;
-  padding: 1.875vw 0;
+  margin-bottom: 40px;
   font-family: "HANAMDAUM";
+  font-size: 40px;
 }
-.recommend-slide {
-  position: relative;
-  display: block;
-}
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  border-radius: 25px;
-  background-color: #dce2f0;
+.recommend-slide .swiper {
+  padding-bottom: 50px;
 }
 .good-box {
   position: relative;
-  display: block;
-  width: 14.999vw;
-  height: 30vw;
+  padding: 30px 10px;
+  border-radius: 25px;
+  background-color: #dce2f0;
+  text-align: center;
+  font-weight: bold;
 }
-.round {
+.image {
+  position: relative;
+  width: 100%;
+  /* padding-bottom: 100%; */
+  padding-bottom: 75%;
+}
+.image::before {
+  content: "";
   position: absolute;
-  display: block;
-  top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 9.856vw;
-  height: 9.856vw;
+  transform: translateX(-50%);
+  top: 0;
+  /* width: 90%; */
+  height: 90%;
+  width: 67%;
+  /* height: 65%; */
   border-radius: 50%;
   background-color: #50586c;
 }
 .image img {
   position: absolute;
-  display: block;
-  top: 36%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 11.099vw;
-  height: auto;
-  transition: all ease-in 0.2s;
+  /* width: 100%; */
+  width: 73%;
+  transition: ease-in 0.2s;
+  z-index: 11;
 }
-.good-box span {
+.good-box p {
   position: relative;
-  display: block;
-  top: 68%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5vw;
-  font-weight: bold;
   color: rgb(36, 40, 48);
-  white-space: nowrap;
+  margin-bottom: 5px;
 }
 .good-box a {
   position: relative;
-  display: block;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10.771vw;
-  height: 2.5vw;
+  display: inline-block;
+  padding: 5px 10px;
   border-radius: 25px;
-  text-align: center;
-  line-height: 2.5vw;
-  font-size: 1.198vw;
-  font-weight: bold;
   color: #fff;
   background-color: #50586c;
-  white-space: nowrap;
   transition: all ease-in 0.1s;
 }
 .good-box:hover .image img {
-  width: 11.563vw;
+  transform: translate(-50%, -50%) scale(1.05);
 }
 .good-box a:hover {
   background-color: #e0a13d;
 }
-.swiper-pagination {
-  position: relative;
-  display: block;
-  margin-top: 3.385vw;
-  margin-bottom: 2.604vw;
-}
-.swiper-pagination span {
-  width: 0.833vw;
-  height: 0.833vw;
-}
-.slide-control {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 3.376vw;
-  margin-bottom: 8.75vw;
-}
-.slide-control span {
-  position: relative;
-  display: inline-block;
-  width: 0.938vw;
-  height: 0.938vw;
-  margin: 0 0.521vw;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-}
-.swiper-button-next::after {
-  top: 0%;
-  left: 0%;
+.recommend .swiper-pagination-bullet-active {
+  background-color: #50586c;
 }
 
-@media all and (max-width: 1080px) {
-  .good-box span {
-    top: 67%;
-    font-size: 15px;
-  }
-  .good-box a {
-    top: 77%;
-    font-size: 12px;
-    width: 10.222vw;
-    height: 2.8vw;
-    line-height: 2.8vw;
-  }
+@media all and (max-width: 1024px) {
 }
-@media all and (max-width: 960px) {
-  .good-box span {
-    top: 64%;
-    font-size: 14px;
-  }
-  .good-box a {
-    top: 74%;
-    font-size: 11px;
-    width: 10.222vw;
-    height: 2.8vw;
-    line-height: 2.8vw;
-  }
-}
-@media all and (max-width: 720px) {
-  .good-box span {
-    top: 65%;
-    font-size: 13px;
-  }
-  .good-box a {
-    top: 75%;
-    font-size: 11px;
-    width: 13.222vw;
-    height: 2.9vw;
-    line-height: 2.9vw;
-  }
-}
-@media all and (max-width: 480px) {
-  .good-box span {
-    font-size: 11px;
-  }
-  .good-box a {
-    font-size: 10px;
-    width: 14.222vw;
-    height: 3vw;
-    line-height: 3vw;
+@media all and (max-width: 768px) {
+  .recommend h2 {
+    font-size: 5.9vw;
   }
 }

@@ -42,11 +42,10 @@ window.addEventListener("load", function () {
       let tag = `
         <div class="swiper-slide">
           <div class="good-box">
-            <div class="round"></div>
             <div class="image">
               <img src="${item.pic}" alt="${item.alt}">
             </div>
-            <span>${item.name}</span>
+            <p>${item.name}</p>
             <a href="${item.link}" class="recommend-btn">제품 보러가기</a>
           </div>
         </div>
@@ -61,43 +60,75 @@ window.addEventListener("load", function () {
 
     recommendTag.innerHTML = html;
     const swRecommend = new Swiper(".sw-recommend", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesPerGroup: 2,
       breakpoints: {
-        // 화면의 넓이가 1080px 이상일 때
-        1080: {
-          slidesPerView: 4,
-          spaceBetween: 50,
-          slidesPerGroup: 4,
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          slidesPerGroup: 3,
         },
-        // 화면의 넓이가 960px 이상일 때
-        960: {
+        1024: {
           slidesPerView: 4,
           spaceBetween: 30,
           slidesPerGroup: 4,
         },
-        // 화면의 넓이가 720px 이상일 때
-        720: {
-          slidesPerView: 3,
-          spaceBetween: 60,
-          slidesPerGroup: 3,
-        },
-        // 화면의 넓이가 360px 이상일 때
-        360: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-          slidesPerGroup: 3,
-        },
-      },
-      //slidesPerView: 4, // 화면에 보여지는 갯수
-      //spaceBetween: 40, // 슬라이드와 슬라이드의 사이 간격
-      //slidesPerGroup: 4, // 슬라이드로 넘어가는 갯수
-      navigation: {
-        prevEl: ".recommend .slide-prev",
-        nextEl: ".recommend .slide-next",
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".recommend .swiper-pagination",
         clickable: true,
       },
     });
+    // const swRecommend = new Swiper(".sw-recommend", {
+    //   breakpoints: {
+    //     // 화면의 넓이가 1300px 이상일 때
+    //     1280: {
+    //       slidesPerView: 4,
+    //       spaceBetween: 50,
+    //       slidesPerGroup: 4,
+    //     },
+    //     // 화면의 넓이가 1080px 이상일 때
+    //     1080: {
+    //       slidesPerView: 4,
+    //       spaceBetween: 20,
+    //       slidesPerGroup: 4,
+    //     },
+    //     // 화면의 넓이가 960px 이상일 때
+    //     960: {
+    //       slidesPerView: 3,
+    //       spaceBetween: 30,
+    //       slidesPerGroup: 3,
+    //     },
+    //     // 화면의 넓이가 720px 이상일 때
+    //     720: {
+    //       slidesPerView: 3,
+    //       spaceBetween: 20,
+    //       slidesPerGroup: 3,
+    //     },
+    //     600: {
+    //       slidesPerView: 2,
+    //       spaceBetween: 20,
+    //       slidesPerGroup: 2,
+    //     },
+    //     // 화면의 넓이가 360px 이상일 때
+    //     360: {
+    //       slidesPerView: 2,
+    //       spaceBetween: 10,
+    //       slidesPerGroup: 2,
+    //     },
+    //   },
+    //   //slidesPerView: 4, // 화면에 보여지는 갯수
+    //   //spaceBetween: 40, // 슬라이드와 슬라이드의 사이 간격
+    //   //slidesPerGroup: 4, // 슬라이드로 넘어가는 갯수
+    //   navigation: {
+    //     prevEl: ".recommend .slide-prev",
+    //     nextEl: ".recommend .slide-next",
+    //   },
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    // });
   }
 });
