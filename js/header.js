@@ -1,11 +1,13 @@
-// 상단
+// header
 window.addEventListener("load", function () {
-
-
-  document.querySelector('.topmenu').addEventListener('click',e=>{
-      if(e.target.nodeName === 'LI'){
-        let id_value = e.target.dataset.link;
-        document.querySelector(id_value).scrollIntoView({behavior : 'smooth'});
-      }
-    });
+  const moMenuBtn = document.querySelector(".btn-mo-menu");
+  const moMenu = document.querySelector(".menu");
+  moMenuBtn.addEventListener("click", function () {
+    this.classList.toggle("active");
+    moMenu.classList.toggle("active");
+  });
+  moMenu.addEventListener("click", function () {
+    moMenuBtn.classList.remove("active");
+    this.classList.remove("active");
+  });
 });

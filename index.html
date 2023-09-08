@@ -140,105 +140,232 @@
     <div class="wrap">
       <!-- 상단 -->
       <header class="header">
-        <a href="index.html" class="logo">
-          <img src="images/textlogo.png" alt="" />
-        </a>
-        <nav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu" class="topmenu">
-              <a href="#section1"><li data-link="#section1">50%할인이벤트</li></a>
-              <a href="#"><li data-link="#section2">떡끼의하루 개요</li></a>
-              <a href="#"><li data-link="#section3">내가 찾는 떡케익은?</li></a>
-              <a href="#"><li data-link="#section4">100%당첨퀴즈</li></a>
-              <a href="#"><li data-link="#section5">포토리뷰 보러가기</li></a>
+        <div class="inner">
+          <!-- 모바일 메뉴 버튼 -->
+          <div class="btn-mo-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- 로고 -->
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="images/textlogo.png" alt="" />
+            </a>
+          </div>
+          <!-- 메뉴리스트 -->
+          <div class="menu">
+            <ul class="menu-list">
+              <li><a href="#section1">50%할인이벤트</a></li>
+              <li><a href="#section2">떡끼의하루 개요</a></li>
+              <li><a href="#section3">내가 찾는 떡케익은?</a></li>
+              <li><a href="#section4">100%당첨퀴즈</a></li>
+              <li><a href="#section5">포토리뷰 보러가기</a></li>
             </ul>
           </div>
-        </nav>
-        <div class="login">
-          <a href="#"><p>로그인</p></a>
-          <a href="#"><p>회원가입</p></a>
+          <!-- 로그인 메뉴리스트 -->
+          <div class="login">
+            <ul class="login-list">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+          <!-- 모바일 로그인 버튼 -->
+          <div class="btn-mo-login">
+            <a href="#"><img src="images/iconuser.png" alt="usericon" /></a>
+          </div>
         </div>
-        <a href="#" class="usericon"
-          ><img src="images/iconuser.png" alt=""
-        /></a>
       </header>
 
       <!-- 비주얼 -->
       <section class="visual">
+        <div class="birth">
+          <p class="birth-txt animate__animated animate__slideInUp">20th</p>
+        </div>
+        <div class="event-letter">
+          <img src="images/letter-bg.png" alt="" class="letter-bg" />
+
+          <div class="letter-paper-wrap">
+            <img src="images/letter-paper.png" alt="" class="letter-paper" />
+          </div>
+
+          <img src="images/letter-cover.png" alt="" class="letter-cover" />
+          <img src="images/letter-top.png" alt="" class="letter-top" />
+          <img src="images/main_logo.png" alt="" class="letter-logo" />
+          <img src="images/click.png" alt="" class="letter-click" />
+
+          <p class="letter-click-txt">CLICK</p>
+        </div>
+        <a href="#" class="downicon" id="downicon">
+          <i class="fa-solid fa-angles-down"></i>
+        </a>
+      </section>
+      <!-- <section class="visual">
         <p class="birth-txt animate__animated animate__slideInUp">20th</p>
-        <!-- 편지봉투 -->
+        편지봉투
         <div class="event-letter visual-letter">
           <div class="letter-bg">
-            <img src="images/letter-bg.png" alt=""/>
+            <img src="images/letter-bg.png" alt="" />
           </div>
           <div class="letter-paper">
-            <img src="images/letter-paper.png" alt=""/>
+            <img src="images/letter-paper.png" alt="" />
           </div>
           <div class="letter-cover">
-            <img src="images/letter-cover.png" alt=""/>
+            <img src="images/letter-cover.png" alt="" />
           </div>
           <div class="letter-top">
-            <img src="images/letter-top.png" alt=""/>
+            <img src="images/letter-top.png" alt="" />
           </div>
-          
+
           <div class="letter-logo">
-            <img src="images/main_logo.png" alt=""/>
+            <img src="images/main_logo.png" alt="" />
           </div>
           <div class="letter-click">
-            <img src="images/click.png" alt=""/>
+            <img src="images/click.png" alt="" />
             <p>CLICK</p>
           </div>
         </div>
-        <!-- <a href="#" class="downicon" id="downicon">
+        e
+        <a href="#" class="downicon" id="downicon">
           <i class="fa-solid fa-angles-down"></i>
-        </a> -->
-      </section>
+        </a>
+      </section> -->
 
       <!-- swiper 슬라이드 -->
       <section class="slide content" id="slide section1">
         <div class="swiper cake-slide-swiper">
           <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/slideimg01.png" alt="케익이미지1" class="pc01" />
+              <img src="images/mobile01.png" alt="케익이미지1" class="mb01" />
+              <button class="goreview">
+                바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
 
             <div class="swiper-slide">
-                <div class="visual-section-01 content" id="section1">
+              <img src="images/slideimg02.png" alt="케익이미지2" class="pc02" />
+              <img src="images/mobile02.png" alt="케익이미지2" class="mb02" />
+              <button class="goreview">
+                바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/slideimg03.png" alt="케익이미지3" class="pc03" />
+              <img src="images/mobile03.png" alt="케익이미지3" class="mb03" />
+              <button class="goreview">
+                바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/slideimg04.png" alt="케익이미지4" class="pc04" />
+              <img src="images/mobile04.png" alt="케익이미지4" class="mb04" />
+              <button class="goreview">
+                바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+              <button class="goshopping">
+                장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  class="fa-solid fa-angle-right"
+                ></i>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- <section class="slide content" id="slide section1">
+        <div class="swiper cake-slide-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="visual-section-01 content" id="section1">
                 <div class="sale-text-box">
                   <p class="sale-text">20주년 기념 50% 할인!</p>
                 </div>
                 <p class="sub">특별한 날을 더욱 특별하게</p>
                 <p class="title-name01"><span>앙금</span>플라워</p>
                 <p class="title-name02">2단 찜케익</p>
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake01_detail02.png" alt="케이크상세이미지" /></a>
-                      <a href="#"><img src="images/cake01_detail03.png" alt="케이크상세이미지" /></a>
-                    </li>
-                  </ul>
+                <ul class="left-imgwrap">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/cake01_detail02.png"
+                        alt="케이크상세이미지"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="images/cake01_detail03.png"
+                        alt="케이크상세이미지"
+                    /></a>
+                  </li>
+                </ul>
                 <div class="price-size">
                   <p>61,000원</p>
                   <p>지름 23cm x 높이 11cm</p>
                 </div>
-                  <img src="images/cake01-a.png" alt="cake01" class="cakeimg">
-                  <ul class="explane-text">
-                    <li>1. 앙금에 천연의 색을 입혀 만든 수제 앙금꽃</li>
-                    <li>2. 흰 찜설시 사이 달콤한 건포도</li>
-                    <li>3. 국산 쌀가루로 만들어 부드러운 찜설기 케익과 부드러운 흑임자</li>
+                <img src="images/cake01-a.png" alt="cake01" class="cakeimg" />
+                <ul class="explane-text">
+                  <li>1. 앙금에 천연의 색을 입혀 만든 수제 앙금꽃</li>
+                  <li>2. 흰 찜설시 사이 달콤한 건포도</li>
+                  <li>
+                    3. 국산 쌀가루로 만들어 부드러운 찜설기 케익과 부드러운
+                    흑임자
+                  </li>
+                </ul>
+                <button class="goreview">
+                  바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <button class="goshopping">
+                  장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <div class="end-menu">
+                  <span></span>
+                  <ul class="end-menu">
+                    <a href="#"
+                      ><li><img src="images/cake01-a.png" alt="cake01" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake02-a.png" alt="cake02" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake03-a.png" alt="cake03" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake04-a.png" alt="cake04" /></li
+                    ></a>
                   </ul>
-                  <button class="goreview">바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                  <div class="end-menu">
-                    <span></span>
-                    <ul class="end-menu">
-                      <a href="#"><li><img src="images/cake01-a.png" alt="cake01"></li></a>
-                      <a href="#"><li><img src="images/cake02-a.png" alt="cake02"></li></a>
-                      <a href="#"><li><img src="images/cake03-a.png" alt="cake03"></li></a>
-                      <a href="#"><li><img src="images/cake04-a.png" alt="cake04"></li></a>
-                    </ul>
-                    </div>
                 </div>
+              </div>
             </div>
 
             <div class="swiper-slide">
@@ -249,33 +376,57 @@
                 <p class="sub">특별한 날을 더욱 특별하게</p>
                 <p class="title-name03">떡케익</p>
                 <p class="title-name04">5단 5호</p>
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake02_detail02.png" alt="케이크상세이미지" /></a>
-                      <a href="#"><img src="images/cake02_detail03.png" alt="케이크상세이미지" /></a>
-                    </li>
-                  </ul>
+                <ul class="left-imgwrap">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/cake02_detail02.png"
+                        alt="케이크상세이미지"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="images/cake02_detail03.png"
+                        alt="케이크상세이미지"
+                    /></a>
+                  </li>
+                </ul>
                 <div class="price-size">
                   <p>54,000원</p>
                   <p>지름 23cm x 높이 13cm</p>
                 </div>
-                  <img src="images/cake02-a.png" alt="cake02" class="cakeimg02">
-                  <ul class="explane-text">
-                    <li>1. 쫄깃하고 부드러운 다양한 떡들의 알찬구성</li>
-                    <li>2. 100% 국산 쌀로 만들어 더욱 쫄깃한 떡</li>
-                    <li>3. 케익 하단 속 개별포장떡 포함</li>
+                <img src="images/cake02-a.png" alt="cake02" class="cakeimg02" />
+                <ul class="explane-text">
+                  <li>1. 쫄깃하고 부드러운 다양한 떡들의 알찬구성</li>
+                  <li>2. 100% 국산 쌀로 만들어 더욱 쫄깃한 떡</li>
+                  <li>3. 케익 하단 속 개별포장떡 포함</li>
+                </ul>
+                <button class="goreview">
+                  바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <button class="goshopping">
+                  장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <div class="end-menu">
+                  <span></span>
+                  <ul class="end-menu">
+                    <a href="#"
+                      ><li><img src="images/cake01-a.png" alt="cake01" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake02-a.png" alt="cake02" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake03-a.png" alt="cake03" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake04-a.png" alt="cake04" /></li
+                    ></a>
                   </ul>
-                  <button class="goreview">바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                  <div class="end-menu">
-                    <span></span>
-                    <ul class="end-menu">
-                      <a href="#"><li><img src="images/cake01-a.png" alt="cake01"></li></a>
-                      <a href="#"><li><img src="images/cake02-a.png" alt="cake02"></li></a>
-                      <a href="#"><li><img src="images/cake03-a.png" alt="cake03"></li></a>
-                      <a href="#"><li><img src="images/cake04-a.png" alt="cake04"></li></a>
-                    </ul>
-                    </div>
+                </div>
               </div>
             </div>
 
@@ -287,33 +438,57 @@
                 <p class="sub">특별한 날을 더욱 특별하게</p>
                 <p class="title-name05"><span>행복담</span></p>
                 <p class="title-name06">찜케익</p>
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake03_detail02.png" alt="케익상세이미지" /></a>
-                      <a href="#"><img src="images/cake03_detail03.png" alt="케익상세이미지" /></a>
-                    </li>
-                  </ul>
+                <ul class="left-imgwrap">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/cake03_detail02.png"
+                        alt="케익상세이미지"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="images/cake03_detail03.png"
+                        alt="케익상세이미지"
+                    /></a>
+                  </li>
+                </ul>
                 <div class="price-size">
                   <p>61,000원</p>
                   <p>지름 23cm x 높이 11cm</p>
                 </div>
-                  <img src="images/cake03-a.png" alt="cake03" class="cakeimg03">
-                  <ul class="explane-text">
-                    <li>1. 국산 쌀가루로 만들어 부드러운 미니 찜설기 케익</li>
-                    <li>2. 수제로 만든 앙금꽃과 미니 티아라 왕관이 포인트</li>
-                    <li>3. 케익 하단 속 개별포장떡 포함</li>
+                <img src="images/cake03-a.png" alt="cake03" class="cakeimg03" />
+                <ul class="explane-text">
+                  <li>1. 국산 쌀가루로 만들어 부드러운 미니 찜설기 케익</li>
+                  <li>2. 수제로 만든 앙금꽃과 미니 티아라 왕관이 포인트</li>
+                  <li>3. 케익 하단 속 개별포장떡 포함</li>
+                </ul>
+                <button class="goreview">
+                  바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <button class="goshopping">
+                  장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <div class="end-menu">
+                  <span></span>
+                  <ul class="end-menu">
+                    <a href="#"
+                      ><li><img src="images/cake01-a.png" alt="cake01" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake02-a.png" alt="cake02" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake03-a.png" alt="cake03" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake04-a.png" alt="cake04" /></li
+                    ></a>
                   </ul>
-                  <button class="goreview">바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                  <div class="end-menu">
-                    <span></span>
-                    <ul class="end-menu">
-                      <a href="#"><li><img src="images/cake01-a.png" alt="cake01"></li></a>
-                      <a href="#"><li><img src="images/cake02-a.png" alt="cake02"></li></a>
-                      <a href="#"><li><img src="images/cake03-a.png" alt="cake03"></li></a>
-                      <a href="#"><li><img src="images/cake04-a.png" alt="cake04"></li></a>
-                    </ul>
-                    </div>
+                </div>
               </div>
             </div>
 
@@ -325,42 +500,65 @@
                 <p class="sub">특별한 날을 더욱 특별하게</p>
                 <p class="title-name07">행복담</p>
                 <p class="title-name08">2단 3호</p>
-                  <ul class="left-imgwrap">
-                    <li>
-                      <a href="#"><img src="images/cake04_detail02.png" alt="케이크상세이미지" /></a>
-                      <a href="#"><img src="images/cake04_detail03.png" alt="케이크상세이미지" /></a>
-                    </li>
-                  </ul>
+                <ul class="left-imgwrap">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/cake04_detail02.png"
+                        alt="케이크상세이미지"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="images/cake04_detail03.png"
+                        alt="케이크상세이미지"
+                    /></a>
+                  </li>
+                </ul>
                 <div class="price-size">
                   <p>127,000원</p>
                   <p>지름 33cm x 높이 20cm</p>
                 </div>
-                  <img src="images/cake04-a.png" alt="cake04" class="cakeimg04">
-                  <ul class="explane-text">
-                    <li>1. 수제로 만든 앙금꽃과 우유 컵설기가 포인트</li>
-                    <li>2. 케익 하단 속 개별포장떡 포함</li>
-                    <li>3. 100% 국산 쌀로 만들어 더욱 쫄깃한 떡</li>
+                <img src="images/cake04-a.png" alt="cake04" class="cakeimg04" />
+                <ul class="explane-text">
+                  <li>1. 수제로 만든 앙금꽃과 우유 컵설기가 포인트</li>
+                  <li>2. 케익 하단 속 개별포장떡 포함</li>
+                  <li>3. 100% 국산 쌀로 만들어 더욱 쫄깃한 떡</li>
+                </ul>
+                <button class="goreview">
+                  바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <button class="goshopping">
+                  장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-angle-right"
+                  ></i>
+                </button>
+                <div class="end-menu">
+                  <span></span>
+                  <ul class="end-menu">
+                    <a href="#"
+                      ><li><img src="images/cake01-a.png" alt="cake01" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake02-a.png" alt="cake02" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake03-a.png" alt="cake03" /></li
+                    ></a>
+                    <a href="#"
+                      ><li><img src="images/cake04-a.png" alt="cake04" /></li
+                    ></a>
                   </ul>
-                  <button class="goreview">바로구매하기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i> </button>
-                  <button class="goshopping">장바구니담기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-right"></i></button>
-                  <div class="end-menu">
-                    <span></span>
-                    <ul class="end-menu">
-                      <a href="#"><li><img src="images/cake01-a.png" alt="cake01"></li></a>
-                      <a href="#"><li><img src="images/cake02-a.png" alt="cake02"></li></a>
-                      <a href="#"><li><img src="images/cake03-a.png" alt="cake03"></li></a>
-                      <a href="#"><li><img src="images/cake04-a.png" alt="cake04"></li></a>
-                    </ul>
-                    </div>
+                </div>
               </div>
             </div>
-
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
           </div>
-      </section>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
 
       <!-- 브랜드 장점 -->
       <section class="brandinfo" id="section2">
@@ -383,7 +581,7 @@
                 <div class="brandinfo-txt">
                   <h1>고품질 <span>국산쌀 사용</span></h1>
                   <p>
-                    순수 국산쌀을 사용함은 물론, <br/>
+                    순수 국산쌀을 사용함은 물론, <br />
                     부재료의 국산화에 노력하고 있습니다.
                   </p>
                 </div>
@@ -395,7 +593,7 @@
                 <div class="brandinfo-txt">
                   <h1>고품질 <span>국산쌀 사용</span></h1>
                   <p>
-                    순수 국산쌀을 사용함은 물론, <br/>
+                    순수 국산쌀을 사용함은 물론, <br />
                     부재료의 국산화에 노력하고 있습니다.
                   </p>
                 </div>
@@ -407,7 +605,7 @@
                 <div class="brandinfo-txt">
                   <h1>고품질 <span>국산쌀 사용</span></h1>
                   <p>
-                    순수 국산쌀을 사용함은 물론, <br/>
+                    순수 국산쌀을 사용함은 물론, <br />
                     부재료의 국산화에 노력하고 있습니다.
                   </p>
                 </div>
@@ -590,7 +788,12 @@
       <!-- 콜라보 떡케이크 (주문제작 & 원데이클래스) -->
       <section class="collabo">
         <div class="collabo-wrap">
-          <div class="collabo-box">
+          <div
+            class="collabo-box"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-offset="-500"
+          >
             <div class="collabo-img collabo-left">
               <p>떡끼의하루 X</p>
               <img src="images/turtlehip_logo2.png" alt="터틀힙 로고" />
@@ -625,7 +828,12 @@
               <i class="fa-solid fa-chevron-right"></i>
             </a>
           </div>
-          <div class="collabo-box">
+          <div
+            class="collabo-box"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-offset="-500"
+          >
             <div class="collabo-img collabo-right">
               <p>떡끼의 하루 X</p>
               <img src="images/creamyhouse_logo.png" alt="크리미 하우스 로고" />
@@ -753,28 +961,28 @@
           <div class="swiper sw-review">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="images/review01.png">
+                <img src="images/review01.png" />
               </div>
               <div class="swiper-slide">
-                <img src="images/review02.png">
+                <img src="images/review02.png" />
               </div>
               <div class="swiper-slide">
-                <img src="images/review03.png">
+                <img src="images/review03.png" />
               </div>
               <div class="swiper-slide">
-                <img src="images/review04.png">
+                <img src="images/review04.png" />
               </div>
               <div class="swiper-slide">
-                <img src="images/review05.png">
+                <img src="images/review05.png" />
               </div>
               <div class="swiper-slide">
-                <img src="images/review06.png">
+                <img src="images/review06.png" />
               </div>
               <div class="swiper-slide">
-                <img src="images/review07.png">
+                <img src="images/review07.png" />
               </div>
               <div class="swiper-slide">
-                <img src="images/review08.png">
+                <img src="images/review08.png" />
               </div>
             </div>
           </div>
@@ -791,20 +999,23 @@
           <div class="sns-icon">
             <ul>
               <li class="icon facebook">
-                <a href="https://www.facebook.com/koreacaketteok/"
-                target="_blank">
+                <a
+                  href="https://www.facebook.com/koreacaketteok/"
+                  target="_blank"
+                >
                   <span><i class="fab fa-facebook-f"></i></span>
                 </a>
               </li>
               <li class="icon instagram">
-                <a href="https://www.instagram.com/korea_dcake/"
-                target="_blank">
+                <a
+                  href="https://www.instagram.com/korea_dcake/"
+                  target="_blank"
+                >
                   <span><i class="fab fa-instagram"></i></span>
                 </a>
               </li>
               <li class="icon youtube">
-                <a href="https://www.youtube.com/@koreadcake"
-                target="_blank">
+                <a href="https://www.youtube.com/@koreadcake" target="_blank">
                   <span><i class="fab fa-youtube"></i></span>
                 </a>
               </li>
