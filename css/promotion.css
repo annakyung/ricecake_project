@@ -1,5 +1,4 @@
 /* 홍보 영상 */
-.promotion {}
 /* 비디오 */
 .promotion video {
   width: 100%;
@@ -11,9 +10,11 @@
 .video h1 {
   font-family: "HANAMDAUM";
   text-align: center;
-  font-size: 3vw;
+  /* font-size: 3vw; */
+  font-size: 40px;
   font-weight: 600;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
+  margin-bottom: 40px;
 }
 ul.button {
   width: 70%;
@@ -51,5 +52,8 @@ ul.button {
   }
   ul.button{
     width: 100%;
+  }
+  .video h1 {
+    font-size: 5.9vw;
   }
 }

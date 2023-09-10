@@ -17,7 +17,7 @@
   font-weight: bold;
   font-family: "HANAMDAUM";
 }
-.game-stage-start .choose-textwrap span {
+.game-stage-start .choose-textwrap p {
   position: relative;
   display: block;
   margin: 20px 0;
@@ -231,9 +231,104 @@
   .choose-textwrap h2 {
     font-size: 34px;
   }
-  .game-stage-start .choose-textwrap span {
+  .game-stage-start .choose-textwrap p {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 960px) {
+  .game-stage {
+    margin: 0 70px;
+  }
+  .choose-textwrap h2 {
+    font-size: 31px;
+  }
+  .bt-game-start {
+    font-size: 16px;
+    padding: 5px 23px;
+  }
+  .choose-textwrap > div:not(.choose-btn) {
+    font-size: 15px;
+  }
+  .game-stage-view .choose-textwrap span {
+    font-size: 17px;
+  }
+  .choose-cake-btn p {
+    font-size: 18px;
+  }
+  .game-result-wrap {
+    max-width: 480px;
+  }
+  .game-stage-result .game-result-close {
+    font-size: 27px;
+  }
+  .game-stage-result #game-result-html img {
+    width: 75%;
+  }
+  .game-stage-result #game-result-html p {
     font-size: 15px;
   }
 }
 @media all and (max-width: 768px) {
+  .game-stage {
+    margin: 0 30px;
+  }
+  .choose-textwrap h2 {
+    font-size: 28px;
+  }
+  .choose-textwrap h2 span {
+    display: block;
+  }
+  .game-stage-start .choose-textwrap p {
+    font-size: 13px;
+  }
+  .game-stage-start .choose-textwrap p span {
+    display: block;
+  }
+  .bt-game-start {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+  .choose-ricecake > div {
+    width: 90%;
+    max-width: none;
+    margin-bottom: 5%;
+  }
+  .choose-ricecake > div:last-child {
+    margin-bottom: 0;
+  }
+  .choose-ricecake > div::after {
+    padding-bottom: 48%;
+  }
+  .choose-cake-btn {
+    width: 90%;
+    max-width: none;
+    margin-bottom: 5%;
+  }
+  .choose-cake-btn:last-child {
+    margin-bottom: 0;
+  }
+  .choose-cake-btn::after {
+    padding-bottom: 48%;
+  }
+  .choose-cake-btn p {
+    font-size: 16px;
+  }
+  .game-result-wrap {
+    max-width: 430px;
+  }
+  .game-stage-result .game-result-close {
+    font-size: 25px;
+  }
+  .choose-textwrap > div:not(.choose-btn) {
+    font-size: 13px;
+  }
+  .game-stage-result .choose-textwrap span {
+    font-size: 15px;
+  }
+  .game-stage-result #game-result-html img {
+    width: 70%;
+  }
+  .game-stage-result #game-result-html p {
+    font-size: 15px;
+  }
 }

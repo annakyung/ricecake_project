@@ -9,22 +9,19 @@
   position: relative;
   display: flex;
   justify-content: center;
+  gap: 0 5%;
 }
 .collabo-box {
-  position: relative;
-  display: inline-block;
-}
-.collabo-box:first-child {
-  margin-right: 6.25vw;
+  width: 100%;
+  max-width: 430px;
 }
 .collabo-img {
   position: relative;
-  display: inline-block;
-  width: 35.417vw;
-  height: 35.417vw;
-  padding: 3.542vw 0;
+  width: 100%;
+  height: 85%;
+  padding: 50px;
   border-radius: 20px;
-  box-shadow: 0 0.521vw 0.521vw rgba(0, 0, 0, 25%);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 25%);
   text-align: center;
   font-weight: bold;
   color: #fff;
@@ -41,7 +38,7 @@
 .collabo-img p {
   position: relative;
   display: block;
-  font-size: 1.042vw;
+  font-size: 18px;
 }
 .collabo-img p:first-child {
   display: inline-block;
@@ -53,57 +50,53 @@
 .collabo-img img:nth-child(2) {
   position: relative;
   display: inline-block;
-  width: 10vw;
-  margin-left: 0.4vw;
+  width: 110px;
+  margin-left: 5px;
 }
 .collabo-img img:nth-child(3) {
-  /* width: 21.563vw; */
-  width: 20.833vw;
+  max-width: 84%;
   margin: 0 auto;
 }
 .collabo-textwrap {
   position: relative;
   display: block;
-  top: -6%;
 }
 .collabo-textwrap p {
-  font-size: 1.042vw;
+  font-size: 15px;
   font-weight: normal;
 }
 .collabo-textwrap strong {
   color: #22459b;
 }
 .collabo-textwrap p strong {
-  font-size: 1.302vw;
+  font-size: 18px;
   font-weight: bold;
 }
 .collabo-textwrap h2 {
   position: relative;
   display: block;
-  font-size: 1.719vw;
-  line-height: 2.5vw;
-  margin-top: 0.8vw;
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 10px;
 }
-.collabo-round {
+.collabo-textwrap h2 strong::after {
+  content: "";
   position: absolute;
-  display: block;
-  width: 0.365vw;
-  height: 0.365vw;
+  width: 4px;
+  height: 4px;
+  top: -7%;
+  left: 43%;
   border-radius: 50%;
   background-color: #22459b;
 }
-.collabo-round:nth-child(3) {
-  top: 30%;
-  left: 44.9%;
-}
-.collabo-round:nth-child(4) {
-  top: 30%;
+.collabo-textwrap h2 strong:nth-child(2)::after {
+  top: -7%;
   left: 49.4%;
 }
 .collabo-img img:nth-child(5) {
   position: absolute;
   display: block;
-  width: 16vw;
+  max-width: 47%;
   top: -10%;
   right: -15%;
   transform: rotate(8deg);
@@ -111,58 +104,59 @@
 .collabo-img img:nth-child(6) {
   position: absolute;
   display: block;
-  width: 12vw;
+  max-width: 40%;
   bottom: 0%;
   left: -12%;
 }
 .collabo-img img:nth-child(7) {
   position: absolute;
   display: block;
-  width: 6.5vw;
+  max-width: 21%;
   bottom: 27%;
-  left: 0;
+  left: -2%;
 }
 .collabo-img.collabo-right img {
-  width: 5.5vw;
-  top: -1%;
+  width: 70px;
+  margin-top: -8px;
 }
-.collabo-img.collabo-right p:nth-child(3) {
-  margin-top: 7vw;
-  font-size: 1.042vw;
+.collabo-img.collabo-right .collabo-textwrap {
+  margin: 34% 0;
+}
+.collabo-img.collabo-right .collabo-textwrap p {
+  font-size: 14px;
   font-weight: normal;
   color: #fff;
 }
-.collabo-img.collabo-right p:nth-child(3) strong {
+.collabo-img.collabo-right .collabo-textwrap p strong {
   font-weight: bold;
   color: #ffdc0c;
 }
-.collabo-img.collabo-right h2 {
-  margin-top: 2.083vw;
-  font-size: 1.979vw;
-  line-height: 2.7vw;
+.collabo-img.collabo-right .collabo-textwrap h2 {
+  margin-top: 27px;
+  font-size: 26px;
+  line-height: 1.3;
 }
-.collabo-img.collabo-right p:nth-child(5) {
-  margin-top: 6.771vw;
-  font-size: 1.823vw;
+.collabo-img.collabo-right p:last-child {
+  font-size: 23px;
   font-weight: bold;
 }
 .collabo-btn {
   position: relative;
   display: block;
-  width: 14.165vw;
-  height: 3.281vw;
+  width: 190px;
+  height: 42px;
+  line-height: 42px;
   margin: 3.333vw auto 0;
   border-radius: 25px;
-  font-size: 0.938vw;
+  font-size: 12px;
   font-weight: bold;
   color: #fff;
   text-align: center;
-  line-height: 3.281vw;
-  box-shadow: 0 0.521vw 0.521vw rgba(0, 0, 0, 25%);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 25%);
   transition: all ease-in 0.1s;
 }
 .collabo-btn i {
-  padding-left: 0.333vw;
+  padding-left: 5px;
 }
 .collabo-box:first-child .collabo-btn {
   background-color: #f2cf02;
@@ -177,141 +171,104 @@
   background-color: #00164d;
 }
 
-@media all and (max-width: 1080px) {
-  .collabo-textwrap {
-    top: -7%;
+@media all and (max-width: 1024px) {
+  .collabo-wrap {
+    margin: 0 30px;
   }
-  .collabo-round:nth-child(3) {
-    top: 35%;
-    left: 45.2%;
-  }
-  .collabo-round:nth-child(4) {
-    top: 35%;
-    left: 49.4%;
-  }
-  .collabo-textwrap h2 {
-    font-size: 1.574vw;
-    margin-top: 0.6vw;
-  }
-  .collabo-btn {
-    width: 14.352vw;
+  .collabo-box {
+    width: 100%;
   }
 }
 @media all and (max-width: 960px) {
-  .collabo-textwrap {
-    top: -8%;
+  .collabo-img {
+    height: 80%;
+    padding: 40px;
+  }
+  .collabo-img img:nth-child(2) {
+    width: 105px;
+  }
+  .collabo-img img:nth-child(3) {
+    max-width: 67%;
+    width: 72%;
+    max-width: 220px;
   }
   .collabo-textwrap p {
-    font-size: 1.042vw;
+    font-size: 13px;
+  }
+  .collabo-textwrap h2 {
+    font-size: 21px;
+  }
+  .collabo-img img:nth-child(5) {
+    max-width: 42%;
+    right: -13%;
+  }
+  .collabo-img img:nth-child(6) {
+    max-width: 35%;
+  }
+  .collabo-img img:nth-child(7) {
+    max-width: 18%;
+  }
+  .collabo-img.collabo-right .collabo-textwrap {
+    margin: 22% 0;
+  }
+  .collabo-img.collabo-right .collabo-textwrap p {
+    font-size: 12px;
   }
   .collabo-textwrap p strong {
-    font-size: 1.302vw;
+    font-size: 16px;
   }
-  .collabo-textwrap h2 {
-    font-size: 1.563vw;
-    line-height: 2.4vw;
-    margin-top: 0.5vw;
+  .collabo-right .collabo-textwrap p strong {
+    display: block;
   }
-  .collabo-btn {
-    width: 14.861vw;
+  .collabo-img.collabo-right .collabo-textwrap h2 {
+    font-size: 22px;
+  }
+  .collabo-img.collabo-right p:last-child {
+    font-size: 21px;
+  }
+  .collabo-img p {
+    font-size: 14px;
+  }
+  .collabo-img.collabo-right img {
+    width: 65px;
+    margin-top: -10px;
   }
 }
-@media all and (max-width: 720px) {
-  .collabo-textwrap {
-    top: -9%;
+@media all and (max-width: 768px) {
+  .collabo-wrap {
+    flex-wrap: wrap;
   }
-  .collabo-btn {
-    width: 18.889vw;
+  .collabo-box {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 45px;
   }
-  .collabo-round:nth-child(3) {
-    top: 37%;
-    left: 45.3%;
-  }
-  .collabo-round:nth-child(4) {
-    top: 37%;
-    left: 49.3%;
-  }
-  .collabo-textwrap h2 {
-    margin-top: 0.4vw;
+  .collabo-box:last-child {
+    margin-bottom: 0;
   }
   .collabo-img {
-    width: 37.417vw;
-    height: 37.417vw;
+    height: 85%;
+  }
+  .collabo-right .collabo-textwrap p strong {
+    display: inline-block;
+  }
+  .collabo-img img:nth-child(5) {
+    max-width: 35%;
+    right: -4%;
   }
 }
 @media all and (max-width: 480px) {
-  .collabo-wrap {
-    flex-direction: column;
-  }
   .collabo-box {
-    display: flex;
-    flex-direction: column;
-  }
-  .collabo-box:first-child {
-    margin-right: 0;
-    margin-bottom: 7.292vw;
+    margin-bottom: 50px;
   }
   .collabo-img {
-    width: 52.083vw;
-    height: 52.083vw;
-    margin: 0 auto;
+    height: 88%;
   }
-  .collabo-img p {
-    font-size: 2.083vw;
-  }
-  .collabo-img img:nth-child(2) {
-    width: 11vw;
-  }
-  .collabo-img img:nth-child(3) {
-    width: 29.167vw;
-  }
-  .collabo-textwrap p strong {
-    font-size: 2.292vw;
-  }
-  .collabo-textwrap h2 {
-    font-size: 2.708vw;
-    line-height: 3.6vw;
-    margin-top: 1vw;
-  }
-  .collabo-textwrap {
-    top: -7%;
+  .collabo-img.collabo-right .collabo-textwrap {
+    margin: 26% 0;
   }
   .collabo-img img:nth-child(5) {
-    width: 20vw;
-    top: -10%;
-    right: -14%;
-  }
-  .collabo-img img:nth-child(6) {
-    width: 17vw;
-    bottom: 0%;
-    left: -15%;
-  }
-  .collabo-img img:nth-child(7) {
-    width: 8.5vw;
-    bottom: 28%;
-    left: -3%;
-  }
-  .collabo-btn {
-    width: 27vw;
-    height: 5.417vw;
-    line-height: 5.417vw;
-  }
-  .collabo-img.collabo-right h2 {
-    margin-top: 6.042vw;
-    font-size: 3.125vw;
-    line-height: 4vw;
-  }
-  .collabo-img.collabo-right p:nth-child(5) {
-    margin-top: 11.458vw;
-    font-size: 2.708vw;
-    font-weight: bold;
-  }
-  .collabo-round:nth-child(3) {
-    top: 40%;
-    left: 45.3%;
-  }
-  .collabo-round:nth-child(4) {
-    top: 40%;
-    left: 49.3%;
+    max-width: 35%;
+    right: -5%;
   }
 }
