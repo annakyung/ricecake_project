@@ -7,7 +7,8 @@
   position: relative;
   color: #fff;
   font-family: "HANAMDAUM";
-  font-size: 2.6042vw;
+  /* font-size: 2.6042vw; */
+  font-size: 40px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -62,5 +63,8 @@
   }
   .review-btn button{
     width: 100%;
+  }
+  .review-title {
+    font-size: 5.9vw;
   }
 }

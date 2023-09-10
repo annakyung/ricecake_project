@@ -1,11 +1,10 @@
 /* 떡 세트 추천 */
-.recommend {
-}
 .recommend h2 {
   font-weight: bold;
   margin-bottom: 40px;
   font-family: "HANAMDAUM";
   font-size: 40px;
+  text-align: center;
 }
 .recommend-slide .swiper {
   padding-bottom: 50px;
@@ -21,7 +20,6 @@
 .image {
   position: relative;
   width: 100%;
-  /* padding-bottom: 100%; */
   padding-bottom: 75%;
 }
 .image::before {
@@ -30,10 +28,8 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  /* width: 90%; */
   height: 90%;
   width: 67%;
-  /* height: 65%; */
   border-radius: 50%;
   background-color: #50586c;
 }
@@ -42,7 +38,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 100%; */
   width: 73%;
   transition: ease-in 0.2s;
   z-index: 11;
