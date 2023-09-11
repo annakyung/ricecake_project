@@ -15,7 +15,6 @@
   justify-content: space-between;
 }
 /* 모바일 햄버거 메뉴 */
-
 .header .btn-mo-menu {
   display: none;
 }
@@ -55,7 +54,7 @@
 }
 .header .menu-list {
   display: flex;
-  gap: 0 20px;
+  gap: 0 35px;
 }
 .header .menu-list li {
 }
@@ -81,6 +80,30 @@
 }
 .header .btn-mo-login a img {
   height: 100%;
+}
+
+/* 메뉴호버 */
+.menu ul li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+#hover li::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-bottom: 3px solid #f8cb00;
+  transition: all 250ms ease-out;
+  left: 50%;
+  width: 0;
+}
+
+#hover li:hover::after {
+  transition: all 250ms ease-out;
+  left: 0%;
+  width: 100%;
 }
 
 @media all and (max-width: 1024px) {
