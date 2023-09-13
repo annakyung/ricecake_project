@@ -13,59 +13,72 @@
   margin-bottom: 50px;
   font-size: 40px;
 }
+.title_480 {
+  display: none;
+}
 .info-title p {
   font-size: 20px;
   padding-bottom: 20px;
 }
 
-.brandinfo-list{}
-.brandinfo-list ul{
+.brandinfo-list {
+}
+.brandinfo-list ul {
   display: flex;
   justify-content: space-between;
 }
-.brandinfo-list ul li{
+.brandinfo-list ul li {
   width: 30%;
 }
-.brandinfo-list ul li .brandinfo-img{
+.brandinfo-list ul li .brandinfo-img {
   margin-bottom: 25px;
 }
-.brandinfo-list ul li .brandinfo-img img{
+.brandinfo-list ul li .brandinfo-img img {
   width: 100%;
   max-width: 300px;
 }
-.brandinfo-list ul li .brandinfo-txt{}
-.brandinfo-list ul li .brandinfo-txt h1{
+.brandinfo-list ul li .brandinfo-txt {
+}
+.brandinfo-list ul li .brandinfo-txt h1 {
   font-family: "SeoulHangangM";
   position: relative;
   padding-bottom: 30px;
 }
-.brandinfo-list ul li .brandinfo-txt h1 span{
+.brandinfo-list ul li .brandinfo-txt h1 span {
   color: #f2cf02;
   font-weight: 600;
 }
-.brandinfo-list ul li .brandinfo-txt h1::after{
+.brandinfo-list ul li .brandinfo-txt h1::after {
   content: "";
   position: absolute;
   bottom: 15px;
-  width: 50px; 
+  width: 50px;
   height: 1px;
   background-color: #fff;
-  left: 50%; 
+  left: 50%;
   transform: translateX(-50%);
 }
-.brandinfo-list ul li .brandinfo-txt p{}
-
-
-@media all and (max-width: 1024px){
-
-  
+.brandinfo-list ul li .brandinfo-txt p {
 }
-@media all and (max-width: 768px){
-  .brandinfo-list ul{
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+  .info-title span {
+    display: block;
+  }
+  .brandinfo-list ul {
     flex-wrap: wrap;
     gap: 50px;
   }
-  .brandinfo-list ul li{
+  .brandinfo-list ul li {
     width: 100%;
+  }
+  .info-title .title_1920 {
+    display: none;
+  }
+  .info-title .title_480 {
+    display: block;
+    font-size: 18px;
   }
 }
